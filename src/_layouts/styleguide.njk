@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<html lang="de">
+
+		<head>
+			<meta charset='utf-8'>
+			<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+			<title>{{ title }}</title>
+			<meta name='viewport' content='width=device-width, initial-scale=1'>
+			<link rel='stylesheet' type='text/css' media='screen' href='/assets/main.css'>
+			<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+			<script src='/assets/main.js'></script>
+
+		</head>
+		<body>
+
+			<div class="theme-wrapper theme-dark color-scheme-default">
+				<div class="inset"></div>
+				<div class="row">
+					<div class="column large-4">
+						{% include "styleguide/styleguide_navigation.njk" %}
+					</div>
+					<div class="column large-8">
+						<main class="main_content">
+							{{ content | safe }}
+						</main>
+					</div>
+				</div>
+
+			</div>
+			<script src='/assets/vendor.js'></script>
+		</body>
+
+	</html>

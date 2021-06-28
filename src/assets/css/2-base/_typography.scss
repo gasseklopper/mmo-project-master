@@ -1,0 +1,83 @@
+// Headlines -------------------------------------------------------------- //
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	margin: 0 0 $gutter/2;
+	text-rendering: optimizeLegibility;
+
+	&.eyebrow {
+		margin-bottom: -$gutter/2;
+
+		max-width: 100%;
+	}
+}
+
+h1,
+.h1 {
+	font: $fontStackBarlowBold;
+	font: $fontStackBerlingoRegular;
+	font-size: 5.55rem;
+	font-size: 120px;
+	line-height: 5.75rem;
+	@media (max-width: $bpS) {
+		font-size: 2.625rem;
+		line-height: 2.625rem;
+	}
+
+}
+
+h2,
+.h2 {
+	font: $fontStackBarlowBold;
+	font-size: 2.5rem;
+}
+
+h3,
+.h3 {
+	font-size: 1.17rem;
+}
+
+h4,
+.h4 {
+	font: $fontStackBarlowBold;
+	font-size: 1.5rem;
+
+}
+
+h5,
+.h5 {
+	font: $fontStackBarlowBold;
+	font-size: .875rem;
+	letter-spacing: .1em;
+}
+
+h6,
+.h6 {
+	font: $fontStackBarlowBold;
+	font-size: .75rem;
+}
+
+
+// Text -------------------------------------------------------------- //
+p,
+address,
+ol,
+ul,
+label,
+blockquote {
+	margin: 0 0 $gutter/2;
+	font-style: normal;
+	font-size: 1.125rem;
+}
+a {
+	text-decoration: none;
+}

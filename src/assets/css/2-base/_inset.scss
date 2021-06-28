@@ -1,0 +1,8 @@
+.inset {
+	// background-color: blue;
+	height: $headerHeight;
+	width: 100%;
+	@media (max-width: $bpM) {
+		height: 0px;
+	}
+}

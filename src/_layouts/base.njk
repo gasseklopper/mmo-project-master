@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<html lang="de">
+
+		<head>
+			<meta charset='utf-8'>
+			<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+			<title>{{ title }}</title>
+			<meta name='viewport' content='width=device-width, initial-scale=1'>
+			<link rel='stylesheet' type='text/css' media='screen' href='/assets/main.css'>
+			<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+			<script src='/assets/main.js'></script>
+			<script>
+				document.documentElement.className = "js";
+			</script>
+
+		</head>
+		<body class="loading">
+			{% include "toTopButton.njk" %}
+			{% include "mobile_menu.njk" %}
+
+			<div class="theme-wrapper theme-dark color-scheme-default">
+				<header class="header">
+					{% include "nav.njk" %}
+				</header>
+				<div class="inset"></div>
+				<main class="main_content">
+					{{ content | safe }}
+				</main>
+				{% include "footer.njk" %}
+			</div>
+			<script src='/assets/vendor.js'></script>
+		</body>
+
+	</html>

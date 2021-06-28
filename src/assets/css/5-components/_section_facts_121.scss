@@ -1,0 +1,50 @@
+.section_facts_121 {
+    min-height: 720px;
+    width: 100%;
+    // background-color: red;
+    .column {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+
+    &__content_wrapper {
+        color: white;
+        height: 100%;
+    }
+
+    &__content_top {
+        padding: 64px 40px;
+        background-color: $primary;
+        height: 50%;
+        // width: 100%;
+        .h5 {
+            color: $border-color;
+        }
+
+        .h1 {
+            padding-right: 30px;
+        }
+    }
+
+    &__content_bottom {
+        color: black;
+        padding: 64px 40px;
+        background-color: $gray-color-light;
+        height: 50%;
+    }
+
+    &__image_wrapper {
+        position: relative;
+        min-height: 800px;
+        height: 100%;
+        width: 100%;
+        background-image: url("./images/facts_oststern_121.jpg");
+        background-position: center;
+        background-size: cover;
+        @media (max-width: $bpL) {
+            min-height: 870px;
+        }
+
+    }
+   
+}

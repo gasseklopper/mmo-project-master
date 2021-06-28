@@ -1,0 +1,47 @@
+<div class="section section_teaser_main">
+<div class="anchor" id="{{params.anchor}}"></div>
+  <div class="row">
+    <div class="column large-6 sameHeight">
+      <div class="section_teaser_main__content_wrapper">
+        
+        <div class="section_teaser_main__content_top">
+          <h5 class="h5">{{ params.eyebrow }}</h5>
+          {% if params.animate_headline == true %}
+          <h2 class="h1 animate__animated animate__slideInLeft wow " data-wow-duration="1s" data-wow-delay="2s">
+            {{ params.headline | safe }}
+          </h2>
+          {% else %}
+          <h2 class="h1">{{ params.headline | safe }}</h2>
+          {% endif %}
+          <h4 class="h4">{{ params.subline }}</h4>
+        </div>
+
+        <div class="section_teaser_main__content_bottom">
+          {{ params.bodytext | safe }} 
+          {% if params.button.icon_button == true %}
+          <div class="{{ params.button.style }}">
+            <div class="button_icon__icon">
+              <img src=" {{ params.button.icon.src }}" alt="">
+            </div>
+            <div class="button_icon__text">
+              {{ params.button.content }}
+            </div>
+          </div>
+          {% else %}
+          <div class="{{ params.button.style }}">{{ params.button.content }}</div>
+          {% endif %}
+        </div>
+
+      </div>
+    </div>
+    <div class="column large-6 first-on-small origin-on-large sameHeight background-primary">
+      <div class="section_teaser_main__image_wrapper {% if not params.logo %}thumbnail{% endif %}" style="background-image: url('{{ params.background_image.src }}'); {% if params.background_image.x is defined and params.background_image.y is defined %}background-position: calc({{ params.background_image.x }} * 100%) calc({{ params.background_image.y }} * 100%){% endif %}">
+        {% if params.logo %}
+        <div class="section_teaser_main__logo thumbnail">
+          <img class="" src="{{ params.logo }}" alt="">
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

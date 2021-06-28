@@ -1,0 +1,32 @@
+.section_fassade {
+    min-height: 720px;
+    width: 100%;
+    // background-color: red;
+    
+    .column {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+
+    &__image {
+        
+        position: relative;
+        img {
+            width: 100%;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            top: 45px;
+            left: 38px;
+            background-color: $gray-color-light;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            @media (max-width: $bpM) {
+                display: none;
+             }
+        }
+    }
+
+}

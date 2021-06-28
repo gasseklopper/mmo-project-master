@@ -1,0 +1,195 @@
+
+//intial map
+.maps {
+    height: 600px;
+    @media (max-width: $bpM) {
+      height: 480px;
+    }
+}
+
+
+
+//Zoom button styling
+.mapboxgl-ctrl-zoom-in {
+	background-image: url(data:image/svg+xml;charset=utf8,<svg%20viewBox%3D%270%200%2020%2020%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27>%0A%20%20<path%20style%3D%27fill%3A%23ff0000%3B%27%20d%3D%27M%2010%206%20C%209.446%206%209%206.4459904%209%207%20L%209%209%20L%207%209%20C%206.446%209%206%209.446%206%2010%20C%206%2010.554%206.446%2011%207%2011%20L%209%2011%20L%209%2013%20C%209%2013.55401%209.446%2014%2010%2014%20C%2010.554%2014%2011%2013.55401%2011%2013%20L%2011%2011%20L%2013%2011%20C%2013.554%2011%2014%2010.554%2014%2010%20C%2014%209.446%2013.554%209%2013%209%20L%2011%209%20L%2011%207%20C%2011%206.4459904%2010.554%206%2010%206%20z%27%20%2F>%0A<%2Fsvg>%0A) !important;
+}
+
+//map marker Styling
+.marker {
+    background-image: url('/assets/images/mapbox/mapbox-icon.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+//Pop up Styling
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  color: black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Filter Styling
+.filter-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font: 14px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  color: #fff;
+  justify-content: center;
+  @media (max-width: $bpM) {
+    font-weight: 600;
+    font: 11px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  }
+}
+     
+.filter-group input[type='checkbox'] + label {
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  border: 2px white solid;
+  width: 33%;
+  margin-bottom: 0;
+  text-align: center;
+}
+  
+.filter-group input[type='checkbox'] {
+  display: none;
+}
+     
+.filter-group input[type='checkbox'] + label {
+  background-color: #101C36;
+  display: block;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+}
+     
+.filter-group input[type='checkbox'] + label {
+  background-color: #101C36;
+  opacity: .3;
+  text-transform: capitalize;
+}
+     
+.filter-group input[type='checkbox']:checked + label {
+  background-color: #101C36;
+  opacity: 1;
+}
+
+@media (min-width: $bpM) {
+  .filter-group input[type='checkbox'] + label:hover {
+    opacity: .3;
+  } 
+  .filter-group input[type='checkbox']:checked + label:hover {
+    opacity: .6;
+  } 
+}
+  
+.filter-group input[type='checkbox'] + label:before {
+  content: '';
+  margin-right: 5px;
+}
+
+
+#poi-Restaurants + label:before {
+  background-image: url('/assets/images/icons/map/Restaurants.svg');
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: ' ';
+  margin-right: 10px;
+}
+
+#poi-Bar-Café + label:before {
+  background-image: url('/assets/images/icons/map/Bar-Café.svg');
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: ' ';
+  margin-right: 10px;
+}
+
+#poi-Retail + label:before {
+  background-image: url('/assets/images/icons/map/Retail.svg');
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: ' ';
+  margin-right: 10px;
+}
+
+#poi-Fitness + label:before {
+  background-image: url('/assets/images/icons/map/Fitness.svg');
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: ' ';
+  margin-right: 10px;
+}
+
+#poi-Hotels + label:before {
+  background-image: url('/assets/images/icons/map/Hotels.svg');
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: ' ';
+  margin-right: 10px;
+}
+
+#poi-Banken + label:before {
+  background-image: url('/assets/images/icons/map/Banken.svg');
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: ' ';
+  margin-right: 10px;
+}
+
+#poi-Kultur-Freizeit + label:before {
+  background-image: url('/assets/images/icons/map/Kultur-Freizeit.svg');
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: ' ';
+  margin-right: 10px;
+}
+
+#poi-Kita + label:before {
+  background-image: url('/assets/images/icons/map/Kita.svg');
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: ' ';
+  margin-right: 10px;
+}
+
+#poi-Tankstelle + label:before {
+  background-image: url('/assets/images/icons/map/Tankstelle.svg');
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: ' ';
+  margin-right: 10px;
+}
+
+    .mapbox-logo{ display: none; } .mapboxgl-ctrl-logo { display: none !important; }

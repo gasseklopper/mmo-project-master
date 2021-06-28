@@ -1,0 +1,46 @@
+.button_test {
+	// width: 100%;
+	z-index: 500;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: color('primary');
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, .1);
+	transform: translateY(0);
+	transition: transform $duration $timing;
+
+	&--hide {
+		// display: none;
+		transform: translateY(300px);
+		transition: transform $duration $timing;
+	}
+
+	.to_top_button {
+		all: unset;
+		background-color: transparent;
+		border: none;
+
+		&:hover {
+			transform: scale(1.2);
+			cursor: pointer;
+		}
+	}
+	@media (max-width: $bpXS) {
+		transform: scale(.6);
+		bottom: 0;
+		right: 0;
+
+		&--hide {
+			// display: none;
+			transform: translateY(300px);
+			transition: transform $duration $timing;
+		}
+	}
+}
+
+

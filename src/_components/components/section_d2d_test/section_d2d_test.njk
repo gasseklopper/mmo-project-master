@@ -1,0 +1,60 @@
+<section class="section section_d2d_test">
+    <h2 class="h1">
+        d2d Grid test
+    </h2>
+    <div class="row">
+        <div class="column large-4">
+            <div class="section_d2d_test__box">
+                <div class="h3">
+                    Box 1
+                </div>
+            </div>
+        </div>
+        <div class="column large-4">
+            <div class="section_d2d_test__box">
+                <div class="h3">
+                    Box 2
+                </div>
+            </div>
+        </div>
+        <div class="column large-4">
+            <div class="section_d2d_test__box">
+                <div class="h3">
+                    Box 3
+                </div>
+            </div>
+        </div>
+        <div class="column large-4">
+            <div class="section_d2d_test__box">
+                <div class="h3">
+                    Box 4
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section_d2d_test">
+    <h2 class="h1">
+        {{ params.headline }}
+    </h2>
+    <div class="row">
+       {% for item in params.box %} 
+       <div class="column small-{{item.column_small}} medium-{{item.column_medium}} large-{{item.column_large}}">
+           <div class="section_d2d_test__box_container">
+               <div class="section_d2d_test__box">
+                   <div class="section_d2d_test__box_image">
+                       <img src="{{ item.img.src }}" alt="{{ item.img.alt }}">
+                   </div>
+                   <div class="section_d2d_test__box_content">
+                       <div class="h2">
+                           {{ item.headline }}
+                       </div>
+                       {{ item.bodytext | safe }}
+                       <div class="{{ item.button.style }}">{{ item.button.content }}</div>
+                   </div>
+               </div>
+           </div>
+        </div>
+       {% endfor %}
+    </div>
+</section>

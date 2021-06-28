@@ -1,0 +1,51 @@
+<div class="section_teaser_facts">
+  <div class="row">
+    <div class="column large-3 sameHeight">
+      <div class="section_teaser_facts__left_wrapper">
+        <div class="section_teaser_facts__left_top_content">
+          <div class="h2">
+            {{ params.headline | safe }}
+          </div>
+          {{ params.bodytext | safe }}
+        <div class="{{ params.button.style }}">{{ params.button.content }}</div>
+        </div>
+        <div class="section_teaser_facts__left_bottom_content">
+          <div class="section_teaser_facts__left_bottom_content_image">
+            <img class="thumbnail" src="{{ params.image_left.src }}" alt="">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="column large-4 sameHeight">
+      <div class="section_teaser_facts__middle_wrapper">
+        <div class="section_teaser_facts__middle_top_content">
+          {% for item in params.facts %}
+          <div class="section_teaser_facts__middle_top_content_item">
+            <p class="section_teaser_facts__middle_top_content_item_first">{{ item.item }}</p>
+            <div class="section_teaser_facts__middle_top_content_item_middle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="39.927" height="20" viewBox="0 0 39.927 20">
+                <path id="icons8-right_arrow" d="M30.988,12.98a1.666,1.666,0,0,0-1.27,2.811l5.111,5.524H2.659a1.664,1.664,0,1,0,0,3.327h32.17l-5.111,5.524a1.665,1.665,0,1,0,2.443,2.261L40.9,22.978l-8.737-9.449A1.668,1.668,0,0,0,30.988,12.98Z" transform="translate(-0.971 -12.979)" fill="#e6b74d"/>
+              </svg>
+            </div>
+            <p class="section_teaser_facts__middle_top_content_item_last">{{ item.result }}</p>            
+          </div>
+          {% endfor %}
+        </div>
+        <div class="section_teaser_facts__middle_bottom_content">
+          {{ params.facts_bodytext | safe }}
+        </div>
+      </div>
+    </div>
+    <div class="column large-5 sameHeight">
+      <div class="section_teaser_facts__right_wrapper">
+        <div class="section_teaser_facts__right_image thumbnail" style="background-image: url('{{ params.image_right.src }}'); {% if params.image_right.x is defined and params.image_right.y is defined %}background-position: calc({{ params.image_right.x }} * 100%) calc({{ params.image_right.y }} * 100%){% endif %}">
+        </div>
+        <div class="section_teaser_facts__right_content">
+          {{ params.image_bodytext }}
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.section_erreichbarkeit {
+    min-height: 720px;
+    width: 100%;
+   
+    .column {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .h2 {
+        padding-top: 35px;
+    }
+
+    .h2, .h4, p {
+        @media (max-width: $bpM) {
+            padding-left: $gutter_30;
+            padding-right: $gutter_30;
+        }
+    }
+
+
+    &__image {
+        
+        position: relative;
+        transform: translateX(-10%);
+        @media (max-width: $bpM) {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            transform: translateX(-8%);
+            margin-top: 60px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 45px;
+            left: 38px;
+            background-color: $gray-color-light;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+
+}

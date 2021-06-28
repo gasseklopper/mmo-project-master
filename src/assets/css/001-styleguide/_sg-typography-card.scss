@@ -1,0 +1,19 @@
+.sg-typography-card {
+    // min-height: 150px;
+    padding-top: $gutter*2;
+    width: 100%;
+    border-bottom: 2px solid  var(--text2);
+
+    &__text {
+        // padding: $gutter;
+        // border-radius: 6px 6px 0 0;
+        // height: 250px;
+    }
+
+    &__content {
+        // padding: $gutter;
+        // height: 70px;
+        // border-radius: 0 0 6px 6px;
+        // border: 1px solid $gray-color-dark;
+    }
+}

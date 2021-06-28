@@ -1,0 +1,28 @@
+<div id="lage" class="section section_lage">
+  <div class="row">
+    <div class="column large-6 sameHeight">
+      <div class="section_lage__content_wrapper">
+        <div class="section_lage__content_top">
+          <h5 class="h5">{{ params.eyebrow }}</h5>
+          <h2 class="h1">{{ params.headline }}</h2>
+          <h4 class="h4">{{ params.subline }}</h4>
+        </div>
+        <div class="section_lage__content_bottom">
+          
+          {{ params.bodytext | safe }}
+          
+          <div class="{{ params.button.style }}">{{ params.button.content }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="column large-6 first-on-small origin-on-large sameHeight background-primary">
+      <div class="section_lage__image_wrapper {% if not params.logo %}thumbnail{% endif %}" style="background-image: url('{{ params.background_image.src }}'); {% if params.background_image.x is defined and params.background_image.y is defined %}background-position: calc({{ params.background_image.x }} * 100%) calc({{ params.background_image.y }} * 100%){% endif %}">
+        {% if params.logo %}
+        <div class="section_lage__logo thumbnail">
+          <img class="" src="{{ params.logo }}" alt="">
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

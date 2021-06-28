@@ -1,0 +1,123 @@
+---
+title: d2d_test
+metaDescription: This is a sample meta description. If one is not present in
+  your page/post's front matter, the default metadata.desciption will be used
+  instead.
+date: 2017-01-01T00:00:00.000Z
+permalink: /d2d_test.html
+description: d2d_test
+headline: lorem Headline
+bodytext: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste veniam rem odit et corrupti eaque, praesentium in ex suscipit ipsam reiciendis velit adipisci magnam? Sit officiis rerum eos aliquam!</p>
+image_src: https://picsum.photos/1000/1800/?random
+animalList: 
+    [
+        "lion",
+        "zebra",
+        "wolf",
+        "dog",
+        "gorilla",
+        "tapir"
+    ]
+eleventyNavigation:
+  key: d2d_test
+  order: 1
+---
+
+
+{%- from "system/component.njk" import component -%}
+{# section d2d_test #}
+{{ component('section_d2d_test', {
+  headline: 'd2d Grid test',
+  box: [
+    {
+      column_large: '4',
+      column_medium: '4',
+      column_small: '12',
+      img: {
+        src: 'https://picsum.photos/1000/700/?random',
+        alt: 'Alternative text bild'
+      },
+      headline: 'box_1',
+      bodytext: '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur reprehenderit et, sint beatae suscipit dolor velit, placeat, molestiae corporis voluptate. Autem magni illo et tenetur velit officiis nesciunt fugiat!</p>',
+      button: {
+        style: 'button',
+        content: 'Mehr erfahren'
+      }
+    },
+    {
+      column_large: '4',
+      column_medium: '4',
+      column_small: '12',
+      img: {
+        src: 'https://picsum.photos/1000/701/?random',
+        alt: 'Alternative text bild'
+      },
+      headline: 'box_1',
+      bodytext: '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur reprehenderit et, sint beatae suscipit dolor velit, placeat, molestiae corporis voluptate. Autem magni illo et tenetur velit officiis nesciunt fugiat!</p>',
+      button: {
+        style: 'button',
+        content: 'Mehr erfahren'
+      }
+    },
+    {
+      column_large: '4',
+      column_medium: '4',
+      column_small: '12',
+      img: {
+        src: 'https://picsum.photos/1000/702/?random',
+        alt: 'Alternative text bild'
+      },
+      headline: 'box_1',
+      bodytext: '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur reprehenderit et, sint beatae suscipit dolor velit, placeat, molestiae corporis voluptate. Autem magni illo et tenetur velit officiis nesciunt fugiat!</p>',
+      button: {
+        style: 'button',
+        content: 'Mehr erfahren'
+      }
+    },
+    {
+      column_large: '12',
+      column_medium: '12',
+      column_small: '6',
+      img: {
+        src: 'https://picsum.photos/1000/702/?random',
+        alt: 'Alternative text bild'
+      },
+      headline: 'box_1',
+      bodytext: '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur reprehenderit et, sint beatae suscipit dolor velit, placeat, molestiae corporis voluptate. Autem magni illo et tenetur velit officiis nesciunt fugiat!</p>',
+      button: {
+        style: 'button',
+        content: 'Mehr erfahren'
+      }
+    }
+  ]
+}) }}
+
+{# section teaser main #}
+{{ component('section_teaser_main', {
+  anchor: 'lage',
+  eyebrow: 'LAGE',
+  headline:  'Ostend Community',
+  animate_headline: true,
+  subline:  'Subline mit Fokus Lage…',
+  bodytext: '<p>Das Projekt Oststern liegt mitten im Frankfurter Trendviertel Ostend. Es steht, wie kaum ein anderer Frankfurter Stadtteil, für modernes urbanes Lebensgefühl und steten Wandel. 
+Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an Gastronomie und Einzelhandel machen das Ostend zu einem lebendigen Stadtteil mit ganz besonderem Charme.</p>',
+  logo: './assets//images/logo/Oststern_121_lage_logo.svg',
+  background_image: {
+    src: '../assets/images/lage_image.jpg',
+    x: '0.1',
+    y: '1'
+  },
+  button: {
+    style: 'button',
+    content: 'Mehr erfahren'
+  }
+}) }}
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>

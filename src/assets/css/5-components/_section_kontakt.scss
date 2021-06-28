@@ -1,0 +1,74 @@
+.section_kontakt {
+    margin-bottom: 120px;
+    margin-top: 140px;
+    .column {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+
+    height: 100%;
+    // background-color: red;
+    @media (max-width: $bpL) {
+        // background-color: green;
+    }
+
+    &__intro {
+        padding: 80px 40px;
+        background-color: $gray-color;
+        h5 {
+            color: $border-color;
+        }
+    }
+
+    &__outro {
+        padding: 80px 40px;
+    }
+
+    &__ansprache {
+        height: 785px;
+    }
+
+    &__kontakt_1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 160px;
+        background-color: $primary;
+        height: 630px;
+        padding: 30px;
+        padding-bottom: 65px;
+    }
+
+    &__kontakt_1_content {
+        color: white;
+        a {
+            color: white;
+            border-bottom: $border-color 2px solid;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__kontakt_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 80px;
+        background-color: $secondary;
+        height: 635px;
+        padding: 30px;
+        padding-bottom: 65px;
+    }
+
+    &__kontakt_2_content {
+        color: white;
+        a {
+            color: white;
+            border-bottom: $border-color 2px solid;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,202 @@
+---
+title: overlap_test_001
+metaDescription: This is a sample meta description. If one is not present in
+  your page/post's front matter, the default metadata.desciption will be used
+  instead.
+date: 2017-01-01T00:00:00.000Z
+permalink: /overlap_test_001.html
+description: overlap_test_001
+headline: lorem Headline
+bodytext: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste veniam rem odit et corrupti eaque, praesentium in ex suscipit ipsam reiciendis velit adipisci magnam? Sit officiis rerum eos aliquam!</p>
+image_src: https://picsum.photos/1000/1800/?random
+animalList: 
+    [
+        "lion",
+        "zebra",
+        "wolf",
+        "dog",
+        "gorilla",
+        "tapir"
+    ]
+eleventyNavigation:
+  key: overlap_test_001
+  order: 1
+---
+    <header>
+	<h1>Overlaps With Benefits</h1>
+</header>
+
+<section class="about">
+	<p>Praesent vulputate, leo id faucibus elementum, arcu urna viverra mi, nec cursus dolor lectus sit amet nunc. Nam ultrices lorem et mauris dignissim finibus.</p>
+</section>
+
+<section class="photo photo1">  
+  <img src="https://picsum.photos/1000/1801/?random"> 
+</section>
+
+<section class="photo photo2">  
+  <img src="https://picsum.photos/1000/1802/?random"> 
+</section>
+
+<section class="photo photo3">  
+  <img src="https://picsum.photos/1000/1800/?random"> 
+</section>
+{# Main_teaser #}
+{# {% include "section_lage.njk" %} #}
+{%- from "system/component.njk" import component -%}
+{{ component('section_teaser_main', {
+  anchor: 'lage',
+  eyebrow: 'LAGE',
+  headline:  'Ostend Community',
+  animate_headline: true,
+  subline:  'Subline mit Fokus Lage…',
+  bodytext: '<p>Das Projekt Oststern liegt mitten im Frankfurter Trendviertel Ostend. Es steht, wie kaum ein anderer Frankfurter Stadtteil, für modernes urbanes Lebensgefühl und steten Wandel. 
+Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an Gastronomie und Einzelhandel machen das Ostend zu einem lebendigen Stadtteil mit ganz besonderem Charme.</p>',
+  logo: './assets//images/logo/Oststern_121_lage_logo.svg',
+  background_image: {
+    src: '../assets/images/lage_image.jpg',
+    x: '0.1',
+    y: '1'
+  },
+  button: {
+    style: 'button',
+    content: 'Mehr erfahren'
+  }
+}) }}
+
+{% include "section_erreichbarkeit.njk" %}
+{% include "section_facts_erreichbarkeit.njk" %}
+{% include "section_urbanitaet.njk" %}
+
+{# erholung teaser #}
+{# {% include "section_erholung.njk" %} #}
+{{ component('section_teaser_facts', {
+  headline:  'Erholung',
+  animate_headline: true,
+  bodytext: '<p>Das Freizeitangebot, mit dem 
+300m entfernt liegenden Hafenpark, Sportplätzen sowie diverse Fitnessstudios in unmittelbarer Nähe, ist unschlagbar.</p>',
+  button: {
+    style: 'button',
+    content: 'Zur Karte'
+  },
+  image_left: {
+    src: '../assets/images/Ostpark3_image.jpg'
+  },
+  image_right: {
+    src: '../assets/images/Hafenpark4_image.jpg',
+    x: '0.1',
+    y: '0'
+  },
+  facts: [
+      {
+        item: '300 m',
+        result: 'Hafenpark'
+      },
+      {
+        item: '1,8 km',
+        result: 'Ostpark'
+      },
+      {
+        item: '1,4 km',
+        result: 'Schwedlersee'
+      }
+    ],
+    facts_bodytext: '<p>Stadtwald und Main bieten ideale Joggingstrecken, ob in der Pause oder nach der Arbeit. Wer frische Luft genießen möchte, kann den begrünten Quartiersplatz zwischen den beiden Officegebäuden des Oststerns zur kurzen Erholungspause nutzen oder im nahegelegenen Ostpark oder Hafenpark abschalten. </p>',
+    image_bodytext: 'Für einen schnellen Einkauf oder auch einen Lunchbreak findet sich einer der größten Supermärkte Frankfurts im direkten Umfeld, ebenso Bäcker, Metzger und eine Vielzahl an Restaurants und Cafés.' 
+}) }}
+
+
+{% include "section_architektur.njk" %}
+
+{# besonderheiten teaser #}
+{# {% include "section_besonderheiten.njk" %} #}
+{{ component('section_teaser_facts', {
+  headline:  'Besonderheiten',
+  animate_headline: true,
+  bodytext: '<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>',
+  button: {
+    style: 'button',
+    content: 'Zur Karte'
+  },
+  image_left: {
+    src: '../assets/images/gebaeude_OSW_1.jpg'
+  },
+  image_right: {
+    src: '../assets/images/OSW_Lobby.jpg',
+    x: '0.1',
+    y: '0'
+  },
+  facts: [
+      {
+        item: '6',
+        result: 'Stockwerke'
+      },
+      {
+        item: 'XXX',
+        result: 'Stockwerke'
+      },
+      {
+        item: 'XX',
+        result: 'Stockwerke'
+      }
+    ],
+    facts_bodytext: '<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>',
+    image_bodytext: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna' 
+}) }}
+
+{# OSTSTERN 121 #}
+{# {% include "section_facts_121.njk" %} #}
+{{ component('section_teaser_main', {
+  eyebrow: 'OSTSTERN 121',
+  headline:  'Smarte Arbeitswelt statt Auto&shy;industrie',
+  animate_headline: true,
+  subline:  'Hier erwacht das Ostend neu',
+  bodytext: '<p> Das ehemalige „Mercedes-Areal“ im Frankfurter Ostend wird aktuell neu entwickelt und mit einem Nutzungsmix aus Wohn- und Gewerbebauten beplant. Die Innenstadt nahe Lage und gute Verkehrsanbindung sowie die im Quartier vorhandenen Geschäfte machen das Ostend zu einem vielschichtigen und lebendigen Stadtteil mit ganz besonderem Charme.</p>',
+  logo: '',
+  background_image: {
+    src: '../assets/images/facts_oststern_121.jpg',
+    x: '0.1',
+    y: '1'
+  },
+  button: {
+    style: 'button',
+    content: 'Zu den Renderings'
+  }
+}) }}
+
+
+{% include "section_fassade.njk" %}
+{% include "section_slider_001.njk" %}
+
+ {# keyfacts #}
+{# {% include "section_keyfacts.njk" %} #}
+{{ component('section_teaser_main', {
+  anchor: 'keyfacts',
+  eyebrow: 'KEYFACTS',
+  headline:  'Daten und Fakten',
+  animate_headline: true,
+  subline:  'Alle wichtigen Informationen im Überblick',
+  bodytext: '<p>Im folgenden Abschnitt finden Sie alle relevanten Gebäudefakten zur Ausstattung, Grundrisse und Quadraturen.
+            Eine zusammenfassende Präsentation steht zum Download bereit.</p>',
+  logo: '',
+  background_image: {
+    src: '../assets/images/keyfacts_image.jpg',
+    x: '0.1',
+    y: '1'
+  },
+  button: {
+    icon_button: true,
+    icon: {
+      src: '../assets/images/icons/icons8-pictures_folder.svg'
+    },
+    style: 'button_icon',
+    content: 'Präsentation herunterladen'
+  }
+}) }}
+
+
+{% include "section_ausstattung.njk" %}
+{% include "section_bueroflaechen.njk" %}
+{% include "section_grundrisse.njk" %}
+{% include "section_kontakt.njk" %}
+{# {% include "maps.njk" %} #}

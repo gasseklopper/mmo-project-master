@@ -1,0 +1,76 @@
+.hero_goldengrid {
+
+	// background-image: url("./images/golden_grid/GoldenCanonGrid.svg");
+  display: grid;
+  position: relative;
+  height: calc(100vh - 80px);
+  width: 100%;
+//   width: 1280px;
+  grid-template-rows: 1fr 3.03fr 1.33fr 2.7fr 2.7fr 1.33fr 1.57fr 1.45fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr 1.33fr 1fr 1.58fr 4.83fr 3.167fr 3.167fr 4.83fr 1.58fr 1fr 1.33fr 2fr 1fr 1fr;
+  @media (max-width: $bpM) {
+	height:100vh;
+ }
+  .one {
+
+	  background-color: red;
+	grid-column: 1 / 17;
+	grid-row: 1;
+  }
+  .two {
+	  img {
+		//   width: 100%;
+		//   height: 100%;
+	  }
+	background-color: blue;
+	// height: 100%;
+	// width: 100%;
+	background-image: url('../assets/images/photography/black/Black_011.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	grid-column: 8 / 13;
+	grid-row: 1 / 10;
+  }
+  .three {
+	//   background-color: red;
+	grid-column: 7 /16;
+	grid-row: 3 / 6;
+	.h1 {
+		padding-top: $gutter;
+	}
+  }
+  .four {
+	  background-color: green;
+	  background-image: url('../assets/images/photography/black/Black_001.jpg');
+	  background-repeat: no-repeat;
+	background-size: cover;
+	grid-column: 1 / 6;
+	grid-row: 3 / 6;
+  }
+  .five {
+	  background-color: red;
+	grid-column: 2;
+	grid-row: 5;
+  }
+  .six {
+	  background-color: red;
+	grid-column: 3;
+	grid-row: 6;
+  }
+  .seven {
+	  background-color: red;
+	grid-column: 3;
+	grid-row: 7;
+  }
+  .eight {
+	  background-color: red;
+	grid-column: 3;
+	grid-row: 8;
+  }
+  .nine {
+	  background-color: $primary;
+	grid-column: 10 / 17;
+	grid-row: 8 / 10;
+  }
+}

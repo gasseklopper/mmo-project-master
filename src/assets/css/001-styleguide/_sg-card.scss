@@ -1,0 +1,32 @@
+.sg-card {
+    position: relative;
+    color: var(--text1);
+    background-color: var(--surface3);
+
+    border-radius: 6px;
+    color: var(--text1);
+    // background-color: var(--surface1);
+    min-height:420px;
+
+    &__avatar {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%,0);
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        background-image: url('../assets/images/photography/black/Black_001.jpg');
+        border: 30px solid var(--surface3);
+    }
+
+    &__image {
+        height: 300px;
+        width: 100%;
+        background-image: url('../assets/images/photography/black/Black_001.jpg');
+    }
+
+    &__box {
+        padding: $gutter*4 $gutter*2 $gutter*2;
+    }
+}

@@ -1,0 +1,119 @@
+.section_besonderheiten {
+    padding-top: 70px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    min-height: 720px;
+    width: 100%;
+    background-color: $gray-color-light;
+    
+    .column {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+
+    &__left_top_content {
+        
+    }
+
+    &__left_wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // background-color: sandybrown;
+    }
+
+    &__left_bottom_content_image {
+        // background-color: red;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        img {
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: flex-end;
+            
+        }
+    }
+
+    &__middle_wrapper {
+        margin-top: 270px;
+        color: white;
+        background-color: $primary;
+    }
+
+    &__middle_top_content {
+        padding: 40px 40px 20px 40px;
+        @media (max-width: $bpL) {
+            padding: 40px 40px 20px 40px;
+         }
+    }
+
+    &__middle_top_content_item {
+        flex-shrink: 1;
+        font-size: 24px;
+        display: flex;
+        // justify-content: space-between;
+    }
+
+    &__middle_top_content_item_last {
+        padding-right: 60px;
+        padding-top: 4px;
+        font: $fontStackMatterMedium;
+        font-size: 24px;
+        margin: 0;
+        @media (max-width: $bpL) {
+            padding-right: 0px;
+        }
+    }
+
+    &__middle_top_content_item_middle {
+        width: 70px;
+        display: flex;
+        svg {
+            align-self: center;
+        }
+        @media (max-width: $bpL) {
+            width: 50px;
+        }
+    }
+
+    &__middle_top_content_item_first {
+        width: 120px;
+        font: $fontStackMatterMedium;
+        font-size: 32px;
+        margin: 0;
+        @media (max-width: $bpL) {
+            width: 100px;
+        }
+          
+    }
+
+
+    &__middle_bottom_content {
+        padding: 15px 40px 20px 40px;
+        @media (max-width: $bpL) {
+            padding: 20;
+         }
+    }
+
+    &__right_wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__right_image {
+        width: 100%;
+        height: 580px;
+        background-image: url("./images/OSW_Lobby.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__right_content {
+        color: white;
+        background-color: $secondary;
+        padding: 40px 40px 80px 40px;
+    }
+
+}

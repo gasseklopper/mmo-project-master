@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1919.8" height="1081" viewBox="0 0 1919.8 1081">
+  <g id="GoldenCanonGrid" transform="translate(0.5)">
+    <g id="Grid_1_">
+      <g id="Group-3" transform="translate(0 1)">
+        <path id="Line" d="M1.2,1.1,1917.7,1077.9" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+        <path id="Line_1_" d="M1.2,1077.9,1917.7,1.1" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+      </g>
+      <g id="Group-3_1_" transform="translate(959.422 1)">
+        <path id="Line_2_" d="M.6,1.1,958.9,1077.9" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+        <path id="Line_3_" d="M.6,1077.9,958.8,1.1" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+      </g>
+      <g id="Group-3_2_" transform="translate(0 1)">
+        <path id="Line_4_" d="M.6,1.1,958.9,1077.9" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+        <path id="Line_5_" d="M.6,1077.9,958.8,1.1" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+      </g>
+      <g id="Group-3_3_">
+        <path id="SVGID_x5F_1_x5F_" d="M.3,1.1,479.7,1078.9" fill="none"/>
+        <path id="Line_7_" d="M.3,1078.9,479.7,1.1" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+      </g>
+      <g id="Group-3_4_" transform="translate(479)">
+        <path id="Line_8_" d="M.3,1.1,479.4,1078.9" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+        <path id="Line_9_" d="M.3,1078.9,479.4,1.1" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+      </g>
+      <g id="Group-3_5_" transform="translate(960)">
+        <path id="Line_10_" d="M.3,1.1,478.4,1078.9" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+        <path id="Line_11_" d="M.3,1078.9,478.4,1.1" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+      </g>
+      <g id="Group-3_6_" transform="translate(1439)">
+        <path id="Line_12_" d="M.3,1.1,479.4,1078.9" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+        <path id="Line_13_" d="M.3,1078.9,479.4,1.1" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1" opacity="0.2"/>
+      </g>
+      <path id="Line_14_" d="M959.4.5v1080" fill="none" stroke="#1dffe0" stroke-linecap="square" stroke-width="1"/>
+      <path id="Line_15_" d="M479.4.5v1080" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1"/>
+      <path id="Line_16_" d="M716.3.5v1080" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1"/>
+      <path id="Line_17_" d="M1199.3.5v1080" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1"/>
+      <path id="Line_18_" d="M238.3.5v1080" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1"/>
+      <path id="Line_19_" d="M1678.3.5v1080" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1"/>
+      <path id="Line_20_" d="M1438.8.5v1080" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1"/>
+      <path id="Line_21_" d="M0,216.5H1918.8" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1"/>
+      <path id="Line_22_" d="M0,864.7H1918.8" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1"/>
+      <path id="Line_23_" d="M0,719.7H1918.8" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1"/>
+      <path id="Line_24_" d="M0,359.7H1918.8" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

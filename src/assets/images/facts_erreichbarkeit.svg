@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="996" height="292" viewBox="0 0 996 292">
+  <g id="Group_316" data-name="Group 316" transform="translate(-462.5 -2516)">
+    <line id="Line_5" data-name="Line 5" x1="996" transform="translate(462.5 2710)" fill="none" stroke="#000" stroke-width="3"/>
+    <text id="Tram_Linie_11" data-name="Tram Linie 11" transform="translate(1354 2564)" font-size="18" font-family="Helvetica"><tspan x="-108.062" y="0">Tram Linie 11</tspan></text>
+    <text id="_0_1_km" data-name="0,1 km" transform="translate(1323 2534)" font-size="24" font-family="Helvetica"><tspan x="-72.023" y="0">0,1 km</tspan></text>
+    <text id="_0_3_km_U-Bahn_Station_0_3_km_S-Bahn_Station_0_4_km_Bushaltestelle" data-name="0,3 km U-Bahn Station
+0,3 km S-Bahn Station
+0,4 km Bushaltestelle" transform="translate(1254 2599.875)" fill="#3c83a0" font-size="18" font-family="Helvetica" letter-spacing="0.01em"><tspan x="0" y="0">0,3 km U-Bahn Station</tspan><tspan x="0" y="28">0,3 km S-Bahn Station</tspan><tspan x="0" y="56">0,4 km Bushaltestelle</tspan></text>
+    <text id="_2_9_km_Konstablerwache_3_9_km_Hauptwache_5_km_Hauptbahnhofe" data-name="2,9 km Konstablerwache
+3,9 km Hauptwache
+5 km Hauptbahnhofe" transform="translate(744 2599.875)" fill="#3c83a0" font-size="18" font-family="Helvetica" letter-spacing="0.01em"><tspan x="0" y="0">2,9 km Konstablerwache</tspan><tspan x="0" y="28">3,9 km Hauptwache</tspan><tspan x="0" y="56">5 km Hauptbahnhofe</tspan></text>
+    <text id="_0_25_km" data-name="0,25 km" transform="translate(744 2534)" font-size="24" font-family="Helvetica" opacity="0.89"><tspan x="0" y="0">0,25 km</tspan></text>
+    <text id="Ostbahnhof" transform="translate(744 2564)" font-size="18" font-family="Helvetica"><tspan x="0" y="0">Ostbahnhof</tspan></text>
+    <g id="Group_314" data-name="Group 314" transform="translate(9)">
+      <circle id="Ellipse_17" data-name="Ellipse 17" cx="15" cy="15" r="15" transform="translate(813 2695)"/>
+      <path id="icons8-train" d="M19.5,0a3.484,3.484,0,0,0-3.437,3H15A6.871,6.871,0,0,0,8,9.717V38.273a6.673,6.673,0,0,0,3.749,5.936l-4.811,4a1.01,1.01,0,1,0,1.281,1.562L14,44.928a7.05,7.05,0,0,0,1,.062h20a7.05,7.05,0,0,0,1-.062l5.78,4.843a1.01,1.01,0,1,0,1.281-1.562l-4.811-4a6.673,6.673,0,0,0,3.749-5.936V9.717a6.871,6.871,0,0,0-7-6.717H33.932a3.469,3.469,0,0,0-6.874,0H22.934A3.484,3.484,0,0,0,19.5,0Zm0,2A1.5,1.5,0,1,1,18,3.5,1.5,1.5,0,0,1,19.5,2Zm11,0A1.5,1.5,0,1,1,29,3.5,1.5,1.5,0,0,1,30.495,2ZM19,10h12a1,1,0,0,1,1,1v2H18V11A1,1,0,0,1,19,10Zm-4,5h20a1.93,1.93,0,0,1,2,1.843v7.311a1.93,1.93,0,0,1-2,1.843H15a1.93,1.93,0,0,1-2-1.843V16.84A1.93,1.93,0,0,1,15,15Zm1,18a3,3,0,1,1-3,3A3,3,0,0,1,16,32.993Zm18,0a3,3,0,1,1-3,3A3,3,0,0,1,33.994,32.993Z" transform="translate(802.432 2755)"/>
+    </g>
+    <path id="icons8-tram" d="M25,0C17.6,0,14,1.309,14,4a1,1,0,0,0,2,0c0-.492,1-1.3,4.094-1.719l.844,4.938C12.852,8.125,8,11.676,8,15V38.281a6.766,6.766,0,0,0,5.125,6.469l-4.187,3.5a.967.967,0,0,0-.125,1.375.991.991,0,0,0,.75.375,1.066,1.066,0,0,0,.656-.25L15.906,45H34.094l5.688,4.75a1.066,1.066,0,0,0,.656.25.991.991,0,0,0,.75-.375.967.967,0,0,0-.125-1.375l-4.187-3.5A6.766,6.766,0,0,0,42,38.281V15c0-3.324-4.852-6.875-12.937-7.781l.844-4.937C33,2.7,34,3.508,34,4a1,1,0,0,0,2,0C36,1.309,32.4,0,25,0Zm0,2c1.086,0,2.02.039,2.875.094l-.844,4.969C26.367,7.027,25.7,7,25,7s-1.367.027-2.031.063l-.844-4.969C22.98,2.039,23.914,2,25,2ZM19,13H31a1,1,0,0,1,1,1v2H18V14A1,1,0,0,1,19,13Zm-4,5H35a1.93,1.93,0,0,1,2,1.844v7.313A1.93,1.93,0,0,1,35,29H15a1.93,1.93,0,0,1-2-1.844V19.844A1.93,1.93,0,0,1,15,18Zm1,16a3,3,0,1,1-3,3A3,3,0,0,1,16,34Zm18,0a3,3,0,1,1-3,3A3,3,0,0,1,34,34Z" transform="translate(1315 2755)"/>
+    <circle id="Ellipse_18" data-name="Ellipse 18" cx="15" cy="15" r="15" transform="translate(1071 2695)"/>
+    <text id="_2_2_km" data-name="2,2 km" transform="translate(1049.857 2774)" font-size="24" font-family="Helvetica" opacity="0.89"><tspan x="0" y="0">2,2 km</tspan></text>
+    <text id="Autobahn_A661_" data-name="Autobahn (A661)" transform="translate(1049.857 2804)" font-size="18" font-family="Helvetica"><tspan x="0" y="0">Autobahn (A661)</tspan></text>
+    <circle id="Ellipse_18-2" data-name="Ellipse 18" cx="15" cy="15" r="15" transform="translate(1325 2695)"/>
+    <path id="icons8-highway" d="M23.141,4l-4.26,15.476h8.738V4ZM30,4V19.476h8.738L34.478,4ZM5,21.857v2.381H9.762v2.381h4.762V24.238H43.1v2.381h4.762V24.238h4.762V21.857Zm11.923,4.762L9.39,54H27.619V26.619Zm13.077,0V54H48.229L40.7,26.619Z" transform="translate(1057.19 2601)"/>
+    <text id="_19_km" data-name="19 km" transform="translate(604 2774)" font-size="24" font-family="Helvetica"><tspan x="-65.355" y="0">19 km</tspan></text>
+    <text id="Flughafen" transform="translate(540 2804)" font-size="18" font-family="Helvetica"><tspan x="0" y="0">Flughafen</tspan></text>
+    <g id="Group_315" data-name="Group 315" transform="translate(-10)">
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="15" cy="15" r="15" transform="translate(574 2695)"/>
+      <path id="icons8-airport" d="M46.946.188C43.171.188,36.731,4.7,35.406,6.115l-6.774,6.774L4.547,9.627a1.007,1.007,0,0,0-.847.314L.282,13.453a.991.991,0,0,0-.251.909.973.973,0,0,0,.6.721l18.565,7.276L9.628,32.112H5.018a1.02,1.02,0,0,0-.659.251L.345,35.75a1.014,1.014,0,0,0-.314,1,1,1,0,0,0,.721.753l9.565,2.352,2.352,9.565a1.03,1.03,0,0,0,.69.721.968.968,0,0,0,.941-.22l3.418-3.011a1.016,1.016,0,0,0,.345-.753V40.579l9.847-9.6,7.181,18.565a.973.973,0,0,0,.721.6,1.059,1.059,0,0,0,.22.031.976.976,0,0,0,.69-.282l3.512-3.418a1.007,1.007,0,0,0,.314-.847L37.287,21.544l6.774-6.774c1.388-1.388,8.193-10.58,5.112-13.8A3.105,3.105,0,0,0,46.946.188Z" transform="translate(563.997 2604.813)"/>
+    </g>
+  </g>
+</svg>

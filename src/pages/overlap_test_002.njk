@@ -1,0 +1,107 @@
+---
+title: overlap_test_002
+metaDescription: This is a sample meta description. If one is not present in
+  your page/post's front matter, the default metadata.desciption will be used
+  instead.
+date: 2017-01-01T00:00:00.000Z
+permalink: /overlap_test_002.html
+description: overlap_test_002
+headline: lorem Headline
+bodytext: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste veniam rem odit et corrupti eaque, praesentium in ex suscipit ipsam reiciendis velit adipisci magnam? Sit officiis rerum eos aliquam!</p>
+image_src: https://picsum.photos/1000/1800/?random
+animalList: 
+    [
+        "lion",
+        "zebra",
+        "wolf",
+        "dog",
+        "gorilla",
+        "tapir"
+    ]
+eleventyNavigation:
+  key: overlap_test_002
+  order: 1
+---
+   {%- from "system/component.njk" import component -%}
+
+
+ <div id="container">   
+<div class="description panel blue">
+    <div><h1>Layered pinning from bottom</h1>
+      <p>A simple example where overlapping panels reveal from the bottom.</p>
+      <div class="scroll-down">Scroll down<div class="arrow"></div></div>
+    </div>
+  </div>
+
+
+  <section class="panel red">
+    <div class="panel_inner">
+      {{ component('section_teaser_main', {
+  anchor: 'lage',
+  eyebrow: 'LAGE',
+  headline:  'Ostend Community',
+  animate_headline: true,
+  subline:  'Subline mit Fokus Lage…',
+  bodytext: '<p>Das Projekt Oststern liegt mitten im Frankfurter Trendviertel Ostend. Es steht, wie kaum ein anderer Frankfurter Stadtteil, für modernes urbanes Lebensgefühl und steten Wandel. 
+Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an Gastronomie und Einzelhandel machen das Ostend zu einem lebendigen Stadtteil mit ganz besonderem Charme.</p>',
+  logo: './assets//images/logo/Oststern_121_lage_logo.svg',
+  background_image: {
+    src: '../assets/images/lage_image.jpg',
+    x: '0.1',
+    y: '1'
+  },
+  button: {
+    style: 'button',
+    content: 'Mehr erfahren'
+  }
+}) }}
+      {{ component('section_teaser_main', {
+  anchor: 'lage',
+  eyebrow: 'LAGE',
+  headline:  'Ostend Community',
+  animate_headline: true,
+  subline:  'Subline mit Fokus Lage…',
+  bodytext: '<p>Das Projekt Oststern liegt mitten im Frankfurter Trendviertel Ostend. Es steht, wie kaum ein anderer Frankfurter Stadtteil, für modernes urbanes Lebensgefühl und steten Wandel. 
+Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an Gastronomie und Einzelhandel machen das Ostend zu einem lebendigen Stadtteil mit ganz besonderem Charme.</p>',
+  logo: './assets//images/logo/Oststern_121_lage_logo.svg',
+  background_image: {
+    src: '../assets/images/lage_image.jpg',
+    x: '0.1',
+    y: '1'
+  },
+  button: {
+    style: 'button',
+    content: 'Mehr erfahren'
+  }
+}) }}
+      {{ component('section_teaser_main', {
+  anchor: 'lage',
+  eyebrow: 'LAGE',
+  headline:  'Ostend Community',
+  animate_headline: true,
+  subline:  'Subline mit Fokus Lage…',
+  bodytext: '<p>Das Projekt Oststern liegt mitten im Frankfurter Trendviertel Ostend. Es steht, wie kaum ein anderer Frankfurter Stadtteil, für modernes urbanes Lebensgefühl und steten Wandel. 
+Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an Gastronomie und Einzelhandel machen das Ostend zu einem lebendigen Stadtteil mit ganz besonderem Charme.</p>',
+  logo: './assets//images/logo/Oststern_121_lage_logo.svg',
+  background_image: {
+    src: '../assets/images/lage_image.jpg',
+    x: '0.1',
+    y: '1'
+  },
+  button: {
+    style: 'button',
+    content: 'Mehr erfahren'
+  }
+}) }}
+    </div>
+  </section>
+  <section class="panel orange">
+    <div>
+      TWO
+    </div>
+  </section>
+  <section class="panel purple">
+    {% include "footer.njk" %}	
+  </section>
+
+</div>

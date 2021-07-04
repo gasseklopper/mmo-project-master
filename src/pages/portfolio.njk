@@ -1,6 +1,10 @@
 ---
 layout: base.njk
 permalink: /portfolios/
+eleventyNavigation:
+  key: portfolio
+  order: 1
 ---
+
 {% set portfolioslist = collections.portfolios %}
 {% include "portfolioslist.njk" %}

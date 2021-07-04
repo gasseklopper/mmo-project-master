@@ -1,48 +1,39 @@
 
+
+
+
  <hr class="lines spacing-giant finbyz-zoomin">
 
- <div class="row">
-	 <div class="column large-9">
-		<div class="row">
-			{% for post in postslist %}
-				<div class="column large-12">
-					<a href="{{ post.url | url}}">
-						<div class="box_basic">
-							<div class="box_basic__body">
-								<p class="h5">{{ post.data.title2 }}</p>
-								<h3>
-									{{ post.data.title }}
-								</h3>
-								<img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}">
-								<div class="rte">
-									{{ post.data.description}}
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-			{% endfor %}
-		</div>
-	 </div>
-	 <div class="column large-3">
+<div class="row">
+ <div class="column large-12">
+	 <div class="section_d2d_test">
+		 <div class="row">
+			 {% for post in postslist %}
 
-			{% for post in postslist %}
+					 <div class="column large-3 sameHeight">
+						 <div class="section_d2d_test__box_container">
+							 <div class="section_d2d_test__box">
+								 <div class="section_d2d_test__box_image">
+									 <img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}">
+								 </div>
+								 <div class="section_d2d_test__box_content">
+									 <p class="h5">{{ post.data.title2 }}</p>
+									 <div class="h3">
+										 {{ post.data.title }}
+									 </div>
+									 {{ post.data.description}}
 
-					<a href="{{ post.url | url}}">
-						<div class="box_basic">
-							<div class="box_basic__body">
-								<p class="h5">{{ post.data.title2 }}</p>
-								<h3>
-									{{ post.data.title }}
-								</h3>
-								<div class="rte">
-									{{ post.data.description}}
-								</div>
-							</div>
-						</div>
-					</a>
+									 <!-- <div class="{{ item.button.style }}">{{ item.button.content }}</div> -->
+								 </div>
+								 <div class="section_d2d_test__box_content_footer">
+									 <a href="{{ post.url | url}}">read more</a>
+								 </div>
+							 </div>
+						 </div>
+				 </div>
 
-			{% endfor %}
-
+			 {% endfor %}
+		 </div>
 	 </div>
  </div>
+</div>

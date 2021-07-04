@@ -2,5 +2,62 @@
 layout: base.njk
 permalink: /posts/
 ---
+{% set maxPosts = collections.posts.length | min(1) %}
+
+
+{% set postslist = collections.posts | head(-1) %}
+{% set postslistCounter = collections.posts | length %}
+
+
+
+
+<div class="row">
+	<div class="column large-12">
+		Headline hero
+	</div>
+</div>
+<div class="row">
+	<div class="column large-3">
+		{% include "tags_list.njk" %}
+	</div>
+	<div class="column large-9">
+		<h2>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h2>
+		<div class="section_d2d_test">
+			<div class="row">
+				{% for post in postslist %}
+
+						<div class="column large-12">
+							<div class="section_d2d_test__box_container">
+								<div class="section_d2d_test__box">
+									<div class="section_d2d_test__box_image">
+										<img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}">
+									</div>
+									<div class="section_d2d_test__box_content">
+										<p class="h5">{{ post.data.title2 }}</p>
+										<div class="h3">
+											{{ post.data.title }}
+										</div>
+										{{ post.data.description}}
+
+										<!-- <div class="{{ item.button.style }}">{{ item.button.content }}</div> -->
+									</div>
+									<div class="section_d2d_test__box_content_footer">
+										<a href="{{ post.url | url}}">read more</a>
+									</div>
+								</div>
+							</div>
+					</div>
+
+				{% endfor %}
+			</div>
+		</div>
+		<p>More posts can be found in <a href="{{ '/posts-archive/' | url }}">the archive</a>.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column large-12">
+		<h2>Posts hero</h2>
+	</div>
+</div>
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}

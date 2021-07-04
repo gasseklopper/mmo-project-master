@@ -1,19 +1,23 @@
 .section_d2d_test {
-    margin-top: 300px;
+    // margin-top: 300px;
     // height: 100vh;
 
     &__box_container {
         contain: layout inline-size;
+        width: 100%;
+        margin-bottom: $gutter;
+
     }
 
     &__box {
         display: flex;
         flex-direction: column;
         // min-height: 500px;
-        background-color: $primary;
+        background-color: var(--surface2);
         margin-bottom: $gutter;
         color: rgb(238, 236, 236);
-        
+        height: 100%;
+
     }
 
     // .column {
@@ -31,8 +35,9 @@
         display: flex;
         flex-direction: column;
         padding: $gutter;
+        height: 100%;
     }
-    
+
 }
 
 @container (min-width: 500px) {

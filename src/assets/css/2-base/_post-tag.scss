@@ -1,0 +1,13 @@
+.post-tag {
+	display:inline-block;
+	padding: $gutter/4;
+	margin: $gutter/8 0 $gutter/8 $gutter/8;
+	background-color: var(--brand);
+	color: var(--text1);
+	transition: transform .3s linear;
+	&:hover {
+		transform: scale(1.1);
+		color: var(--surface1);
+		background-color: var(--text1);
+	}
+}

@@ -4,4 +4,9 @@ permalink: /posts-archive/
 ---
 
 {% set postslist = collections.posts %}
+<div class="row">
+	<div class="column large-12">
+		{% include "tags_list.njk" %}
+	</div>
+</div>
 {% include "postslist.njk" %}

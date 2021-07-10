@@ -6,10 +6,10 @@
 	);
 	--text1-dim: hsl(var(--brand-hue) 15% 75%);
 	--text2-dim: hsl(var(--brand-hue) 10% 61%);
-	--primary-dim: hsl(var(--primary-hue) 95.23% 38.8%);
-	--secondary-dim: hsl(var(--secondary-hue) 43% 73%);
-	--tertiary-dim: hsl(var(--tertiary-hue) 88% 50%);
-	--quaternary-dim: hsl(var(--quaternary-hue) 930% 44%);
+	--primary-light:hsl(var(--primary-hue) 20% 25%);
+	--secondary-light:hsl(var(--secondary-hue) 7% 36%);
+	--tertiary-light:hsl(var(--tertiary-hue) 18% 52%);
+	--quaternary-light:hsl(var(--quaternary-hue) 8% 58%);
 	--surface1-dim: hsl(var(--brand-hue) 10% 20%);
 	--surface2-dim: hsl(var(--brand-hue) 10% 25%);
 	--surface3-dim: hsl(var(--brand-hue) 5%  30%);

@@ -1,13 +1,14 @@
 .post-tag {
 	display:inline-block;
 	padding: $gutter/4;
+	font: $fontStackBarlowBold;
 	margin: $gutter/8 0 $gutter/8 $gutter/8;
-	background-color: var(--brand);
-	color: var(--text1);
+	background-color: var(--text2);
+	color: var(--surface4);
 	transition: transform .3s linear;
 	&:hover {
 		transform: scale(1.1);
-		color: var(--surface1);
-		background-color: var(--text1);
+		color: var(--text1);
+		background-color: transparent;
 	}
 }

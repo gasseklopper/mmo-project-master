@@ -4,14 +4,14 @@
 
 * {
 	/* brand foundation */
-	--brand-hue: 184;
-	--brand-saturation: 100%;
-	--brand-lightness: 70%;
+	--brand-hue: 56;
+	--brand-saturation: 96%;
+	--brand-lightness: 56%;
 
-	--primary-hue: 180;
-	--secondary-hue: 45;
-	--tertiary-hue: 241;
-	--quaternary-hue: 344;
+	--primary-hue: 282;
+	--secondary-hue: 270;
+	--tertiary-hue: 13;
+	--quaternary-hue: 356;
 
 	@include dark-sheme-definition; // The name of "mixin"
 	@include light-sheme-definition; // The name of "mixin"

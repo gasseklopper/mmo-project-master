@@ -12,9 +12,9 @@ $version: "0.0.1";
 $primary: #6cff6c !default;
 $primary-dark: darken($primary, 3%) !default;
 $primary-light: lighten($primary, 13%) !default;
-$secondary: #3C83A0 !default;
+$secondary: #3c83a0 !default;
 $secondary-dark: darken($secondary, 3%) !default;
-$secondary-light: #63A5BF !default;
+$secondary-light: #63a5bf !default;
 $tertiary: #dfec24 !default;
 $tertiary-dark: darken($tertiary, 30%) !default;
 $tertiary-light: lighten($tertiary, 30%) !default;
@@ -30,7 +30,7 @@ $gray-color-dark: darken($gray-color, 25%) !default;
 $gray-color-light: #87969a !default;
 
 // Border colors
-$border-color: #E6B74D !default;
+$border-color: #e6b74d !default;
 $border-color-dark: darken($border-color, 10%) !default;
 
 // Background colors
@@ -55,38 +55,38 @@ $body-bg: $bg-color-light !default;
 $body-font-color: #002a32 !default;
 
 $colors: (
-  "primary": $primary,
-  "primary-dark": $primary-dark,
-  "primary-light": $primary-light,
-  "secondary": $secondary,
-  "secondary-dark": $secondary-dark,
-  "secondary-light": $secondary-light,
-  "tertiary": $tertiary,
-  "tertiary-dark": $tertiary-dark,
-  "tertiary-light": $tertiary-light,
-  "quaternary": $quaternary,
-  "quaternary-dark": $quaternary-dark,
-  "quaternary-light": $quaternary-light,
-  "dark-color": $dark-color,
-  "light-color": $light-color,
-  "gray-color": $gray-color,
-  "gray-color-dark": $gray-color-dark,
-  "gray-color-light": $gray-color-light,
-  "border-color": $border-color,
-  "border-color-dark": $border-color-dark,
-  "bg-color": $bg-color,
-  "bg-color-dark": $bg-color-dark,
-  "bg-color-light": $bg-color-light,
-  "success-color": $success-color,
-  "warning-color": $warning-color,
-  "error-color": $error-color,
-  "link-color": $link-color,
-  "link-color-dark": $link-color-dark,
-  "link-color-light": $link-color-light,
-  "code-color": $code-color,
-  "highlight-color": $highlight-color,
-  "body-bg": $body-bg,
-  "body-font-color": $body-font-color,
+	"primary": $primary,
+	"primary-dark": $primary-dark,
+	"primary-light": $primary-light,
+	"secondary": $secondary,
+	"secondary-dark": $secondary-dark,
+	"secondary-light": $secondary-light,
+	"tertiary": $tertiary,
+	"tertiary-dark": $tertiary-dark,
+	"tertiary-light": $tertiary-light,
+	"quaternary": $quaternary,
+	"quaternary-dark": $quaternary-dark,
+	"quaternary-light": $quaternary-light,
+	"dark-color": $dark-color,
+	"light-color": $light-color,
+	"gray-color": $gray-color,
+	"gray-color-dark": $gray-color-dark,
+	"gray-color-light": $gray-color-light,
+	"border-color": $border-color,
+	"border-color-dark": $border-color-dark,
+	"bg-color": $bg-color,
+	"bg-color-dark": $bg-color-dark,
+	"bg-color-light": $bg-color-light,
+	"success-color": $success-color,
+	"warning-color": $warning-color,
+	"error-color": $error-color,
+	"link-color": $link-color,
+	"link-color-dark": $link-color-dark,
+	"link-color-light": $link-color-light,
+	"code-color": $code-color,
+	"highlight-color": $highlight-color,
+	"body-bg": $body-bg,
+	"body-font-color": $body-font-color,
 );
 
 // Sizes ------------------------------------------------------------------------------------ //
@@ -120,7 +120,6 @@ $gridMinWidth: 820px;
 $shadowBig: 0 6px 12px rgba(0, 0, 0, 0.15);
 $shadowSmall: 0 2px 4px rgba(0, 0, 0, 0.15);
 
-
 // Breakpoints ------------------------------------------------------------------------------------ //
 //
 //  __________                        __                  .__        __
@@ -137,7 +136,6 @@ $bpM: 1024px;
 $bpL: 1280px;
 $bpXL: 1366px;
 $bpXXL: 1920px;
-
 
 // Animations  ------------------------------------------------------------------------------------ //
 //
@@ -168,28 +166,39 @@ $familyNotoMono: "Noto Mono", monospace;
 $fontStack: normal 400 100%/1.6 Arial, sans-serif;
 $fontStack: normal 400 112.5%/1.7 $familyOpenSans;
 
-
 // Typography Matter -------------------------------------------------- //
-$fontStackMatterRegular: normal 400 100%/1.4 'Matter regular', Helvetica, Arial, sans-serif;
-$fontStackMatterSemiBold: normal 400 100%/1.4 'Matter semibold', Helvetica, Arial, sans-serif;
-$fontStackMatterMedium: normal 400 100%/1.4 'Matter medium', Helvetica, Arial, sans-serif;
+$fontStackMatterRegular: normal 400 100%/1.4 "Matter regular", Helvetica, Arial,
+	sans-serif;
+$fontStackMatterSemiBold: normal 400 100%/1.4 "Matter semibold", Helvetica,
+	Arial, sans-serif;
+$fontStackMatterMedium: normal 400 100%/1.4 "Matter medium", Helvetica, Arial,
+	sans-serif;
 
 // Typography Barlow -------------------------------------------------- //
-$fontStackBarlowBold: normal 700 100%/1.4 'Barlow bold', Helvetica, Arial, sans-serif;
-$fontStackBarlowMedium: normal 500 100%/1.4 'Barlow medium', Helvetica, Arial, sans-serif;
-$fontStackBarlowLight: normal 300 100%/1.4 'Barlow light', Helvetica, Arial, sans-serif;
-$fontStackBarlowSemibold: normal 600 100%/1.4 'Barlow semibold', Helvetica, Arial, sans-serif;
+$fontStackBarlowBold: normal 700 100%/1.4 "Barlow bold", Helvetica, Arial,
+	sans-serif;
+$fontStackBarlowMedium: normal 500 100%/1.4 "Barlow medium", Helvetica, Arial,
+	sans-serif;
+$fontStackBarlowLight: normal 300 100%/1.4 "Barlow light", Helvetica, Arial,
+	sans-serif;
+$fontStackBarlowSemibold: normal 600 100%/1.4 "Barlow semibold", Helvetica,
+	Arial, sans-serif;
 // Typography Syne -------------------------------------------------- //
-$fontStackSyneBold: normal 700 100%/1.4 'Syne bold', Helvetica, Arial, sans-serif;
-$fontStackSyneMedium: normal 500 100%/1.4 'Syne medium', Helvetica, Arial, sans-serif;
-$fontStackSyneExtrabold: normal 800 100%/1.4 'Syne extrabold', Helvetica, Arial, sans-serif;
-$fontStackSyneSemibold: normal 600 100%/1.4 'Syne semibold', Helvetica, Arial, sans-serif;
-$fontStackSyneRegular: normal 400 100%/1.4 'Syne regular', Helvetica, Arial, sans-serif;
+$fontStackSyneBold: normal 700 100%/1.4 "Syne bold", Helvetica, Arial,
+	sans-serif;
+$fontStackSyneMedium: normal 500 100%/1.4 "Syne medium", Helvetica, Arial,
+	sans-serif;
+$fontStackSyneExtrabold: normal 800 100%/1.4 "Syne extrabold", Helvetica, Arial,
+	sans-serif;
+$fontStackSyneSemibold: normal 600 100%/1.4 "Syne semibold", Helvetica, Arial,
+	sans-serif;
+$fontStackSyneRegular: normal 400 100%/1.4 "Syne regular", Helvetica, Arial,
+	sans-serif;
 // Typography berlingo -------------------------------------------------- //
-$fontStackBerlingoRegular: normal 500 100%/1.4 'berlingo regular', Helvetica, Arial, sans-serif;
-$fontStackBerlingoBold: normal 600 100%/1.4 'berlingo regular', Helvetica, Arial, sans-serif;
-
-
+$fontStackBerlingoRegular: normal 500 100%/1.4 "berlingo regular", Helvetica,
+	Arial, sans-serif;
+$fontStackBerlingoBold: normal 600 100%/1.4 "berlingo regular", Helvetica, Arial,
+	sans-serif;
 
 // basicGrid --------------------------------------------------- //
 //
@@ -203,9 +212,9 @@ $fontStackBerlingoBold: normal 600 100%/1.4 'berlingo regular', Helvetica, Arial
 $basicGrid__width: $maxWidth;
 $basicGrid__gutter: $gutter;
 $basicGrid__sizes: (
-	'small': 0,
-	'medium': $bpXS,
-	'large': $bpM,
-	'huge': $bpL
+	"small": 0,
+	"medium": $bpXS,
+	"large": $bpM,
+	"huge": $bpL,
 );
 @import "colors-shemes";

@@ -12,9 +12,9 @@ a {
 	a {
 		position: relative;
 		line-height: 16px;
-		font-size: .9em;
+		font-size: 0.9em;
 		text-decoration: none;
-		color: color('primary');
+		color: color("primary");
 		&:hover {
 			text-decoration: underline;
 		}
@@ -26,7 +26,7 @@ a {
 			&:hover {
 				text-decoration: none;
 				&::after {
-					transition: translate, .5s;
+					transition: translate, 0.5s;
 					transform: translate(7px, 0px);
 				}
 			}
@@ -36,7 +36,7 @@ a {
 				top: -1px;
 				width: 16px;
 				height: 16px;
-				background: url("../images/icons/dark_arrow.svg")0 0 no-repeat;
+				background: url("../images/icons/dark_arrow.svg") 0 0 no-repeat;
 				display: inline-block;
 				position: absolute;
 			}
@@ -47,7 +47,7 @@ a {
 			a {
 				&:hover {
 					&::after {
-						transform: rotate(180deg)  translate(7px, 0px);
+						transform: rotate(180deg) translate(7px, 0px);
 					}
 				}
 
@@ -57,12 +57,10 @@ a {
 					left: -24px;
 				}
 			}
-		}//left end
+		} //left end
 		&--right {
 			//default arrow
 			color: red;
 		}
-
-	}//arrow end
-
-}//link end
+	} //arrow end
+} //link end

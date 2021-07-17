@@ -6,7 +6,6 @@
 		background-color: beige;
 		mix-blend-mode: multiply;
 		height: 100vh;
-
 	}
 
 	.c-fixed_target {
@@ -26,7 +25,6 @@
 		background-size: cover;
 		background-position: center center;
 		opacity: 0.75;
-
 
 		html:not(.has-scroll-smooth) & {
 			top: 0;

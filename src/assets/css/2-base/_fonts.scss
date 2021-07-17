@@ -1,10 +1,35 @@
-@include fontFace('Barlow bold', '../assets/fonts/Barlow-Bold', normal, 700);
-@include fontFace('Barlow light', '../assets/fonts/Barlow-Light', normal, 300);
-@include fontFace('Barlow medium', '../assets/fonts/Barlow-Medium', normal, 500);
-@include fontFace('Barlow semibold', '../assets/fonts/Barlow-SemiBold', normal, 600);
-@include fontFace('Berlingo regular', '../assets/fonts/berlingo-regular', normal, 500);
-@include fontFace('Syne bold', '../assets/fonts/Syne-Bold', normal, 700);
-@include fontFace('Syne extrabold', '../assets/fonts/Syne-ExtraBold', normal, 800);
-@include fontFace('Syne semibold', '../assets/fonts/Syne-SemiBold', normal, 600);
-@include fontFace('Syne medium', '../assets/fonts/Syne-Medium', normal, 500);
-@include fontFace('Syne regular', '../assets/fonts/Syne-Regular', normal, 400);
+@include fontFace("Barlow bold", "../assets/fonts/Barlow-Bold", normal, 700);
+@include fontFace("Barlow light", "../assets/fonts/Barlow-Light", normal, 300);
+@include fontFace(
+	"Barlow medium",
+	"../assets/fonts/Barlow-Medium",
+	normal,
+	500
+);
+@include fontFace(
+	"Barlow semibold",
+	"../assets/fonts/Barlow-SemiBold",
+	normal,
+	600
+);
+@include fontFace(
+	"Berlingo regular",
+	"../assets/fonts/berlingo-regular",
+	normal,
+	500
+);
+@include fontFace("Syne bold", "../assets/fonts/Syne-Bold", normal, 700);
+@include fontFace(
+	"Syne extrabold",
+	"../assets/fonts/Syne-ExtraBold",
+	normal,
+	800
+);
+@include fontFace(
+	"Syne semibold",
+	"../assets/fonts/Syne-SemiBold",
+	normal,
+	600
+);
+@include fontFace("Syne medium", "../assets/fonts/Syne-Medium", normal, 500);
+@include fontFace("Syne regular", "../assets/fonts/Syne-Regular", normal, 400);

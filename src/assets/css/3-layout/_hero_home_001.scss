@@ -7,7 +7,7 @@
 	max-width: 1400px;
 	margin: 0 auto;
 	// border-radius: 15px;
-	background: url('/assets/images/photography/black/Black_029.jpg');
+	background: url("/assets/images/photography/black/Black_029.jpg");
 	background-size: cover;
 	background-position: 50% 10%;
 	//background-size: 100% auto;
@@ -59,7 +59,7 @@
 		color: grey;
 
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			border-bottom: 1px solid white;
 			top: 50%;

@@ -4,13 +4,13 @@
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	background-color: color('primary');
+	background-color: color("primary");
 	width: 80px;
 	height: 80px;
 	border-radius: 100%;
 	display: flex;
 	justify-content: center;
-	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, .1);
+	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
 	transform: translateY(0);
 	transition: transform $duration $timing;
 
@@ -31,7 +31,7 @@
 		}
 	}
 	@media (max-width: $bpXS) {
-		transform: scale(.6);
+		transform: scale(0.6);
 		bottom: 0;
 		right: 0;
 
@@ -42,5 +42,3 @@
 		}
 	}
 }
-
-

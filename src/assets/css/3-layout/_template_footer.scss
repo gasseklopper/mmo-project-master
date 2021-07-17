@@ -6,30 +6,29 @@
 	position: relative;
 
 	.image-wrapper {
-	  //   opacity: .4;
-	  height: 100%;
-	  width: 100%;
-
-	  img {
-		background-color: color("secondary");
-		mix-blend-mode: multiply;
+		//   opacity: .4;
 		height: 100%;
 		width: 100%;
-		object-fit: cover;
-	  }
+
+		img {
+			background-color: color("secondary");
+			mix-blend-mode: multiply;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
 	}
 
 	.copy {
-	  font-size: 8vmin;
-	  height: 100vh;
-	  width: 100%;
-	  display: grid;
-	  align-content: center;
+		font-size: 8vmin;
+		height: 100vh;
+		width: 100%;
+		display: grid;
+		align-content: center;
 
-
-	  blockquote {
-		margin: 0 32px;
-	  }
+		blockquote {
+			margin: 0 32px;
+		}
 	}
 
 	.copyright {

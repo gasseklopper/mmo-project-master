@@ -23,7 +23,7 @@
 		background-color: blue;
 		// height: 100%;
 		// width: 100%;
-		background-image: url('../assets/images/photography/black/Black_011.jpg');
+		background-image: url("../assets/images/photography/black/Black_011.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 
@@ -40,7 +40,7 @@
 	}
 	.four {
 		background-color: green;
-		background-image: url('../assets/images/photography/black/Black_001.jpg');
+		background-image: url("../assets/images/photography/black/Black_001.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		grid-column: 1 / 6;

@@ -1,12 +1,11 @@
 .sg-navigation {
-    position: fixed;
-    @media (max-width: $bpM) {
-        position: relative;
-    }
+	position: fixed;
+	@media (max-width: $bpM) {
+		position: relative;
+	}
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-    }
-
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
 }

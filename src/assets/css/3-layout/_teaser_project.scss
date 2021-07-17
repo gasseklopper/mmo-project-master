@@ -1,4 +1,3 @@
-
 .project {
 	// margin-top: 500px;
 	height: 100vh;
@@ -8,14 +7,14 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: -4em;
-  }
+}
 
-  .project-image {
+.project-image {
 	position: absolute;
 	width: 100%;
-  }
+}
 
-  .image-container {
+.image-container {
 	position: absolute;
 	display: flex;
 	align-items: center;
@@ -29,15 +28,15 @@
 	z-index: 10;
 	overflow: hidden;
 	mix-blend-mode: multiply;
-  }
+}
 
-  .image-container > img {
+.image-container > img {
 	// height: 100%;
 	object-fit: cover;
 	mix-blend-mode: multiply;
-  }
+}
 
-  .project-content {
+.project-content {
 	color: color("primary");
 	width: 80%;
 	position: absolute;
@@ -47,9 +46,9 @@
 	justify-items: start;
 	align-items: center;
 	z-index: 100;
-  }
+}
 
-  .project--heading {
+.project--heading {
 	//   background-color: blue;
 	//   height: 80px;
 	overflow: hidden;
@@ -57,30 +56,35 @@
 	font-weight: lighter;
 	display: flex;
 	animation: glow 1s ease-in-out infinite alternate;
-  }
+}
 
-  .project--heading--span {
+.project--heading--span {
 	background-color: color("secondary");
 	mix-blend-mode: multiply;
-	opacity: .7;
-  }
+	opacity: 0.7;
+}
 
-  .project--number {
+.project--number {
 	display: flex;
-  }
+}
 
-  .project--role,
-  .project--work {
-	  padding-left: 400px;
+.project--role,
+.project--work {
+	padding-left: 400px;
 	word-break: word-break;
 	text-align: left;
-  }
+}
 
- @keyframes glow {
+@keyframes glow {
 	from {
-	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px color("primary"), 0 0 40px color("light-color"), 0 0 50px color("light-color"), 0 0 60px color("light-color"), 0 0 70px color("light-color");
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px color("primary"),
+			0 0 40px color("light-color"), 0 0 50px color("light-color"),
+			0 0 60px color("light-color"), 0 0 70px color("light-color");
 	}
 	to {
-	  text-shadow: 0 0 20px #fff, 0 0 30px color("primary"), 0 0 40px color("primary"), 0 0 50px color("primary"), 0 0 60px color("primary"), 0 0 70px color("primary"), 0 0 80px color("primary");
+		text-shadow: 0 0 20px #fff, 0 0 30px color("primary"),
+			0 0 40px color("primary"), 0 0 50px color("primary"),
+			0 0 60px color("primary"), 0 0 70px color("primary"),
+			0 0 80px color("primary");
 	}
-  }
+}

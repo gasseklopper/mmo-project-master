@@ -1,6 +1,5 @@
 @function color($key) {
-
-	@if type-of($key)=='color' {
+	@if type-of($key) == "color" {
 		@error 'Never user colors like `#{ $key }` as map keys';
 	}
 
@@ -10,5 +9,4 @@
 
 	@error 'Unknown `#{ $key }` in $colors.';
 	@return null;
-
 }

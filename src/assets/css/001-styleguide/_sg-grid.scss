@@ -1,13 +1,13 @@
 .sg-grid {
-    // min-height: 150px;
-    // padding-top: $gutter*2;
-    // width: 100%;
-    // border-bottom: 2px solid  $gray-color-dark;
+	// min-height: 150px;
+	// padding-top: $gutter*2;
+	// width: 100%;
+	// border-bottom: 2px solid  $gray-color-dark;
 
-    &__box {
-        border-radius: 6px;
-        margin: $gutter/2 0;
-        background-color: var(--text1);
-        height: 20px;
-    }
+	&__box {
+		border-radius: 6px;
+		margin: $gutter/2 0;
+		background-color: var(--text1);
+		height: 20px;
+	}
 }

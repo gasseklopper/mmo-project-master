@@ -21,7 +21,6 @@
 :root {
 	color-scheme: light;
 	@include dark-sheme;
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,17 +50,16 @@ html {
 	color: var(--text1);
 }
 
-
-  form {
+form {
 	display: flex;
 	gap: 2ch;
 
 	& > div {
-	  display: inline-flex;
-	  align-items: center;
-	  gap: .75ch;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.75ch;
 	}
-  }
+}
 
 //   .text-samples {
 // 	display: grid;
@@ -75,124 +73,133 @@ html {
 // 	}
 //   }
 
-  .brand {
+.brand {
 	color: var(--brand);
 	background-color: var(--brand);
-  }
+}
 
-  .brand-core {
-	color: var(--brand-core	);
+.brand-core {
+	color: var(--brand-core);
 	// background-color: var(--brand-core);
-  }
+}
 
-  .brand-inverted {
+.brand-inverted {
 	color: var(--brand-inverted);
 	background-color: var(--brand-inverted);
-  }
+}
 
-  .surface1 {
+.surface1 {
 	background-color: var(--surface1);
 	color: var(--text2);
-  }
-  .primary {
-	  background-color: var(--primary);
-  }
+}
+.primary {
+	background-color: var(--primary);
+}
 
-  .secondary {
-	  background-color: var(--secondary);
-  }
+.secondary {
+	background-color: var(--secondary);
+}
 
-  .tertiary {
-	  background-color: var(--tertiary);
-  }
+.tertiary {
+	background-color: var(--tertiary);
+}
 
-  .quaternary {
-	  background-color: var(--quaternary);
-  }
+.quaternary {
+	background-color: var(--quaternary);
+}
 
-  .surface2 {
+.surface2 {
 	background-color: var(--surface2);
 	color: var(--text2);
-  }
+}
 
-  .surface3 {
+.surface3 {
 	background-color: var(--surface3);
 	color: var(--text1);
-  }
+}
 
-  .surface4 {
+.surface4 {
 	background-color: var(--surface4);
 	color: var(--text1);
-  }
+}
 
-  .surface5 {
+.surface5 {
 	background-color: var(--surface5);
 	color: var(--text2);
-  }
+}
 
-  .surface6 {
+.surface6 {
 	background-color: var(--surface6);
 	color: var(--text2);
-  }
+}
 
-  .surface7 {
+.surface7 {
 	background-color: var(--surface7);
 	color: var(--text1);
-  }
+}
 
-  .surface8 {
+.surface8 {
 	background-color: var(--brand-inverted);
 	color: var(--text1);
-  }
+}
 
-  .brand-inverted-highlight1 {
+.brand-inverted-highlight1 {
 	background-color: var(--brand-inverted-highlight1);
 	color: var(--text1);
 }
-  .brand-inverted-highlight2 {
+.brand-inverted-highlight2 {
 	background-color: var(--brand-inverted-highlight2);
 	color: var(--text1);
-  }
+}
 
-  .textBrand {
+.textBrand {
 	color: var(--brand);
 	@nest p& {
-	  font-weight: 200;
+		font-weight: 200;
 	}
-  }
+}
 
-  .text1 {
+.text1 {
 	color: var(--text1);
 	@nest p& {
-	  font-weight: 200;
+		font-weight: 200;
 	}
-  }
+}
 
-  .text2 {
+.text2 {
 	color: var(--text2);
-  }
+}
 
-  .swatch {
+.swatch {
 	display: inline-block;
 	flex-shrink: 0;
 	inline-size: 1.5ch;
 	block-size: 1.5ch;
 	border-radius: 50%;
 
-	&.text1 { background-color: var(--text1); }
-	&.text2 { background-color: var(--text2); }
-	&.brand-core { background-color: var(--brand-core); }
-  }
+	&.text1 {
+		background-color: var(--text1);
+	}
+	&.text2 {
+		background-color: var(--text2);
+	}
+	&.brand-core {
+		background-color: var(--brand-core);
+	}
+}
 
-  .rad-shadow {
+.rad-shadow {
 	border: 1px solid hsl(var(--brand-hue) 10% 50% / 15%);
-	box-shadow: 0 1rem .5rem -.5rem;
-	box-shadow:
-	  0 2.8px 2.2px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .03)),
-	  0 6.7px 5.3px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .01)),
-	  0 12.5px 10px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .02)),
-	  0 22.3px 17.9px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .02)),
-	  0 41.8px 33.4px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .03)),
-	  0 100px 80px hsl(var(--surface-shadow) / var(--shadow-strength))
-	;
-  }
+	box-shadow: 0 1rem 0.5rem -0.5rem;
+	box-shadow: 0 2.8px 2.2px
+			hsl(var(--surface-shadow) / calc(var(--shadow-strength) + 0.03)),
+		0 6.7px 5.3px
+			hsl(var(--surface-shadow) / calc(var(--shadow-strength) + 0.01)),
+		0 12.5px 10px
+			hsl(var(--surface-shadow) / calc(var(--shadow-strength) + 0.02)),
+		0 22.3px 17.9px
+			hsl(var(--surface-shadow) / calc(var(--shadow-strength) + 0.02)),
+		0 41.8px 33.4px
+			hsl(var(--surface-shadow) / calc(var(--shadow-strength) + 0.03)),
+		0 100px 80px hsl(var(--surface-shadow) / var(--shadow-strength));
+}

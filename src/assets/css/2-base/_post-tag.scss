@@ -2,7 +2,7 @@
 
 .post-tag {
 	display: inline-block;
-	padding: $gutter/4;
+	padding: math.div($gutter, 4);
 	font: $fontStackBarlowBold;
 	margin: math.div($gutter, 8) 0 math.div($gutter, 8) math.div($gutter, 8);
 	background-color: var(--text2);

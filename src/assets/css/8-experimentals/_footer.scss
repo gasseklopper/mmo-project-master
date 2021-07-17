@@ -1,5 +1,7 @@
+@use "sass:math";
+
 .footer {
 	&__item {
-		margin-right: $gutter/4;
+		margin-right: math.div($gutter, 4);
 	}
 }

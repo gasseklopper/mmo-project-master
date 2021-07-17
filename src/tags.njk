@@ -1,5 +1,5 @@
----
-pagination:
+<!-- prettier-ignore-start -->
+
   data: collections
   size: 1
   alias: tag
@@ -15,9 +15,14 @@ eleventyComputed:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag | slug }}/
 ---
+
+<!-- prettier-ignore-end -->
+
 <h1>Tagged “{{ tag }}”</h1>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
 
-<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+<p>
+	See <a href="{{ '/tags/' | url }}">all tags</a>.
+</p>

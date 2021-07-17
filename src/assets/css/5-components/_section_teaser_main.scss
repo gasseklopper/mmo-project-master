@@ -2,7 +2,7 @@
 	min-height: 720px;
 	width: 100%;
 	position: relative;
-
+	
 	.column {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
@@ -81,7 +81,7 @@
 
 		&::before {
 			position: absolute;
-			content: '';
+			content: "";
 			top: 0;
 			height: 100%;
 			width: 100%;

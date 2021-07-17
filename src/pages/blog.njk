@@ -18,18 +18,18 @@ eleventyNavigation:
 
 
 <div class="row">
-	<div class="column large-12">
+	<div class="column large-12 spacing-giant">
 		<!-- <h1>{{ title }}</h1>
 		Headline hero -->
-		<img src="./assets/images/blog/Gruppe 93.jpg" alt="">
+		<img src="./assets/images/photography/black/Black_002.jpg" alt="">
 	</div>
 </div>
-<div class="row">
-	<div class="column large-3">
+<div class="row spacing-giant">
+	<div class="column medium-6 large-4 huge-4 spacing-medium">
 		{% include "tags_list.njk" %}
 	</div>
-	<div class="column large-9">
-		<h2>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h2>
+	<div class="column medium-6 large-8 huge-8">
+		<h2 class="h2 spacing-medium">Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h2>
 		<div class="section_d2d_test">
 			<div class="row">
 				{% for post in postslist %}
@@ -68,7 +68,7 @@ eleventyNavigation:
 </div>
 <div class="row">
 	<div class="column large-12">
-		<h2>Posts hero</h2>
+		<h2 class="h2 spacing-medium">Posts hero</h2>
 	</div>
 </div>
 {% set postslist = collections.posts %}

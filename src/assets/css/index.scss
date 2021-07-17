@@ -3,13 +3,13 @@
 // @import "../../../node_modules/locomotive-scroll/dist/locomotive-scroll";
 // @import '../../../node_modules/animate.css/animate';
 // @import '../../../node_modules/flickity/dist/flickity.css';
-@import '../../../node_modules/sass-burger/burger';
+@import "../../../node_modules/sass-burger/burger";
 
 // grid -------------------------------------------------------------- //
 @import "00-vars/00-vars";
 @import "001-styleguide/001-styleguide";
-@import 'grid/main';
-@import '1-helpers/0-mixins/0-mixins';
+@import "grid/main";
+@import "1-helpers/0-mixins/0-mixins";
 @import "1-helpers/functions";
 @import "1-helpers/background";
 @import "1-helpers/color";
@@ -44,7 +44,7 @@
 /* Page Loader */
 .js .loading::before,
 .js .loading::after {
-	content: '';
+	content: "";
 	position: fixed;
 	z-index: 1000;
 }
@@ -68,44 +68,17 @@
 	opacity: 1;
 	background: var(--text1);
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
-
 }
 
 @keyframes loaderAnim {
 	to {
 		opacity: 1;
-		transform: scale3d(0.5,0.5,1);
+		transform: scale3d(0.5, 0.5, 1);
 	}
 }
-
 
 @keyframes loaderBackground {
 	to {
 		opacity: 1;
-
 	}
 }
-
-// .test {
-// 	&__content {
-// 		height: 100%;
-// 		@include customize(theme) {
-// 			background: getValue(backgroundDark);
-// 			color: getValue(textDark);
-// 		}
-// 		background-color: green;
-// 		padding: $gutter;
-// 	}
-// }
-
-// .test2 {
-// 	&__content {
-// 		height: 100%;
-// 		@include customize(theme) {
-// 			background: getValue(backgroundLight);
-// 			color: getValue(textDark);
-// 		}
-// 		height: 800px;
-// 		padding: $gutter;
-// 	}
-// }

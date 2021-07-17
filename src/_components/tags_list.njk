@@ -1,7 +1,8 @@
-<h2>Tags</h2>
+<section class="tag-list">
+	<h2>Tags</h2>
 
-{% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-{% endfor %}
- 
+	{% for tag in collections.tagList %}
+	  {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+	  <a href="{{ tagUrl | url }}" class="tag-list__button tag-list__button--mimas"><span>{{ tag }}</span></a>
+	{% endfor %}
+</section>

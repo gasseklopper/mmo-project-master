@@ -7,17 +7,23 @@
 						<div class="section_d2d_test__box_container">
 							<div class="section_d2d_test__box">
 								<div class="section_d2d_test__box_image">
-									<img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}">
+									<!-- <img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}"> -->
 								</div>
 								<div class="section_d2d_test__box_content">
 									<p class="h5">{{ post.data.title2 }}</p>
 									<div class="h3">
 										{{ post.data.title }}
 									</div>
-									{{ post.data.description }}
+									<p class="p-large">
+										{{ post.data.description }}
+									</p>
 								</div>
 								<div class="section_d2d_test__box_content_footer">
-									<a class="link" href="{{ post.url | url}}">read more</a>
+									<a class="button-post button-post--greip" href="{{ post.url | url}}">
+										<span>
+											<span>read more</span>
+										</span>
+									</a>
 								</div>
 							</div>
 						</div>

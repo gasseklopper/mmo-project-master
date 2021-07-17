@@ -7,9 +7,9 @@ html {
 	// Set the font-size in the root element as rem is relative to the document root
 	font: $fontStackBarlowLight;
 
-	@media (max-width: $bpS) {
+	@media (max-width: $bpXS) {
 		// Must have a unit to be usable in calc()
 		--basicGrid-outer: 0px;
-		// font-size: 87.5%;
+		font-size: 77.5%;
 	}
 }

@@ -8,7 +8,7 @@ layout: base.njk
 
 		{% for tag in collections.tagList %}
 		{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-		<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+		<a href="{{ tagUrl | url }}" class="tag-list__button tag-list__button--mimas"><span>{{ tag }}</span></a>
 		{% endfor %}
 	</div>
 </div>

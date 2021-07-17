@@ -1,7 +1,9 @@
+@use "sass:math";
+
 .window {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: $gutter/2;
+	margin-bottom: math.div($gutter, 2);
 	box-shadow: $shadowSmall, 0 0 0 1px rgba(0, 0, 0, 0.05);
 	border-radius: $radiusBig;
 
@@ -63,7 +65,7 @@
 	}
 
 	&__text {
-		padding: $gutter/1.5 $gutter/1.5 $gutter/2;
+		padding: $gutter/1.5 $gutter/1.5 math.div($gutter, 2);
 		font-size: 0.9em;
 		white-space: nowrap;
 		overflow: auto;

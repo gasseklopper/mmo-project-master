@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .spacing {
 	&-giant {
 		margin-bottom: $gutter * 3;
@@ -16,7 +18,7 @@
 	}
 
 	&-small {
-		margin-bottom: $gutter/2;
+		margin-bottom: math.div($gutter, 2);
 	}
 
 	&-zero {

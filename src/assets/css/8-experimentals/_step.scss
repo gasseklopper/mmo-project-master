@@ -1,7 +1,9 @@
+@use "sass:math";
+
 // .step {
 //   display: flex;
 //   align-items: center;
-//   margin-bottom: $gutter/2;
+//   margin-bottom: math.div($gutter, 2);
 
 //   &__index {
 //     $size: 38px;

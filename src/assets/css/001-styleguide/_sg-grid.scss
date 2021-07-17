@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .sg-grid {
 	// min-height: 150px;
 	// padding-top: $gutter*2;
@@ -6,7 +8,7 @@
 
 	&__box {
 		border-radius: 6px;
-		margin: $gutter/2 0;
+		margin: math.div($gutter, 2) 0;
 		background-color: var(--text1);
 		height: 20px;
 	}

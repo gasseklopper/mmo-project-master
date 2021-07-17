@@ -1,7 +1,9 @@
+@use "sass:math";
+
 // .button {
 //   position: relative;
 //   display: inline-block;
-//   margin: 0 $gutter/4 $gutter/2 0;
+//   margin: 0 $gutter/4 math.div($gutter, 2) 0;
 //   padding: 0.8em $gutter 0.9em;
 //   line-height: 1;
 //   text-align: center;

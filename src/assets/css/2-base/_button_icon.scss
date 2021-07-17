@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .button_icon {
 	display: flex;
 	flex-direction: row;
@@ -5,7 +7,7 @@
 	// min-width: 1em;
 	width: 300px;
 	// display: block;
-	margin: 0 0 $gutter/2;
+	margin: 0 0 math.div($gutter, 2);
 	padding: 1em 1.1em;
 	line-height: 1em;
 	// text-align: center;

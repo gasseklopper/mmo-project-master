@@ -1,8 +1,10 @@
+@use "sass:math";
+
 .button {
 	height: 60px;
 	min-width: 10em;
 	display: inline-block;
-	margin: 0 0 $gutter/2;
+	margin: 0 0 math.div($gutter, 2);
 	padding: 1em 2em;
 	line-height: 1.8em;
 	text-align: center;

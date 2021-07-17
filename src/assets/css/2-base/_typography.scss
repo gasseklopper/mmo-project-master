@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Headlines -------------------------------------------------------------- //
 h1,
 h2,
@@ -11,11 +13,11 @@ h6,
 .h4,
 .h5,
 .h6 {
-	margin: 0 0 $gutter/2;
+	margin: 0 0 math.div($gutter, 2);
 	text-rendering: optimizeLegibility;
 
 	&.eyebrow {
-		margin-bottom: -$gutter/2;
+		margin-bottom: math.div(-$gutter, 2);
 
 		max-width: 100%;
 	}
@@ -32,7 +34,6 @@ h1,
 		font-size: 2.625rem;
 		line-height: 2.625rem;
 	}
-
 }
 
 h2,
@@ -50,22 +51,20 @@ h4,
 .h4 {
 	font: $fontStackBarlowBold;
 	font-size: 1.5rem;
-
 }
 
 h5,
 .h5 {
 	font: $fontStackBarlowBold;
-	font-size: .875rem;
-	letter-spacing: .1em;
+	font-size: 0.875rem;
+	letter-spacing: 0.1em;
 }
 
 h6,
 .h6 {
 	font: $fontStackBarlowBold;
-	font-size: .75rem;
+	font-size: 0.75rem;
 }
-
 
 // Text -------------------------------------------------------------- //
 p,
@@ -74,7 +73,7 @@ ol,
 ul,
 label,
 blockquote {
-	margin: 0 0 $gutter/2;
+	margin: 0 0 math.div($gutter, 2);
 	font-style: normal;
 	font-size: 1.125rem;
 }

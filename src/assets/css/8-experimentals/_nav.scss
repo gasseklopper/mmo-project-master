@@ -1,8 +1,10 @@
+@use "sass:math";
+
 .nav {
 	display: flex;
 
 	&__item {
-		padding: $gutter/2;
+		padding: math.div($gutter, 2);
 		font-size: 0.9em;
 		color: color("dark-color");
 		transition: color $duration $timing;

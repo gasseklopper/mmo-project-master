@@ -1,6 +1,8 @@
+@use "sass:math";
+
 img {
 	display: block;
-	margin-bottom: $gutter/2;
+	margin-bottom: math.div($gutter, 2);
 	max-width: 100%;
 	height: auto;
 }

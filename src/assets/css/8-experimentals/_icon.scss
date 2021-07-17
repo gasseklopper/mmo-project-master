@@ -1,5 +1,7 @@
+@use "sass:math";
+
 .icon {
-	padding-left: $gutter/2;
+	padding-left: math.div($gutter, 2);
 
 	&__symbol {
 		$size: 32px;

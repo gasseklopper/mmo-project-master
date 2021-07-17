@@ -5,6 +5,8 @@ body {
 	// Set the min-height to 100% to fill the whole page with a
 	// gradient when the body has a background gradient.
 	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 	// height: 100%;
 	// overflow: overlay;
 

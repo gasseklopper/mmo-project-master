@@ -1,5 +1,4 @@
 .row {
-
 	display: flex;
 	flex-wrap: wrap;
 	box-sizing: border-box;
@@ -26,7 +25,7 @@
 
 	.row {
 		margin: 0 $basicGrid__gutter/-2;
-		margin: 0 calc(var(--basicGrid-gutter, #{ $basicGrid__gutter }) / -2);
+		margin: 0 calc(var(--basicGrid-gutter, #{$basicGrid__gutter}) / -2);
 		padding: 0;
 		width: auto;
 		max-width: none;
@@ -36,7 +35,7 @@
 		position: relative;
 		box-sizing: border-box;
 		padding: 0 $basicGrid__gutter/2;
-		padding: 0 calc(var(--basicGrid-gutter, #{ $basicGrid__gutter }) / 2);
+		padding: 0 calc(var(--basicGrid-gutter, #{$basicGrid__gutter}) / 2);
 		width: 100%;
 
 		@each $sizeName, $size in $basicGrid__sizes {

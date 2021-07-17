@@ -1,22 +1,22 @@
 .nav {
-  display: flex;
+	display: flex;
 
-  &__item {
-    padding: $gutter/2;
-    font-size: 0.9em;
-    color: color("dark-color");
-    transition: color $duration $timing;
+	&__item {
+		padding: $gutter/2;
+		font-size: 0.9em;
+		color: color("dark-color");
+		transition: color $duration $timing;
 
-    @media (max-width: $bpXS) {
-      display: none;
-    }
+		@media (max-width: $bpXS) {
+			display: none;
+		}
 
-    &--mobile {
-      display: block;
-    }
+		&--mobile {
+			display: block;
+		}
 
-    &:hover {
-      color: color("primary");
-    }
-  }
+		&:hover {
+			color: color("primary");
+		}
+	}
 }

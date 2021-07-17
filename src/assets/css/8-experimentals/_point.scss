@@ -24,7 +24,7 @@
 		transform: scale(0);
 	}
 	70% {
-		opacity: .6;
+		opacity: 0.6;
 	}
 	100% {
 		opacity: 0;
@@ -32,7 +32,6 @@
 }
 
 .point {
-
 	$size: 18px;
 
 	position: absolute;
@@ -56,7 +55,7 @@
 
 	&__inner::before,
 	&__inner::after {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -69,8 +68,8 @@
 	&__inner::before {
 		$size: 48px;
 
-		top: calc(50% - #{ $size/2 });
-		left: calc(50% - #{ $size/2 });
+		top: calc(50% - #{$size/2});
+		left: calc(50% - #{$size/2});
 		width: $size;
 		height: $size;
 		border: 1px solid currentcolor;
@@ -81,13 +80,12 @@
 	&__inner::after {
 		$size: 38px;
 
-		top: calc(50% - #{ $size/2 });
-		left: calc(50% - #{ $size/2 });
+		top: calc(50% - #{$size/2});
+		left: calc(50% - #{$size/2});
 		width: $size;
 		height: $size;
 		background: currentcolor;
 		z-index: -1;
 		animation-name: point__inner;
 	}
-
 }

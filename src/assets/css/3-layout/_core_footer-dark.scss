@@ -1,15 +1,16 @@
 .footer-dark {
 	margin-top: 8rem;
+	background-color: var(--surface1);
 	a {
-		color: white;
+		color: var(--text1);
 		transition: transform 1.3s;
+		font: $fontStackBarlowMedium;
+		font-size: 1rem;
 
 		&:hover {
 			transform: scale(1.2);
 		}
 	}
-
-	background-color: black;
 
 	&__hero {
 		position: relative;
@@ -47,46 +48,6 @@
 			right: 50%;
 			bottom: -10%;
 		}
-
-		// @media (max-width: $size-xl) {
-		// 	top: -10%;
-		// 	left: -10%;
-		// 	width: 400px;
-		// 	height: 400px;
-		// 	&::before {
-		// 		content: 'hello world';
-		// 		position: absolute;
-		// 		right: 50%;
-		// 		bottom: -60%;
-		// 	}
-		// }
-
-		// @media (max-width: $size-md) {
-		// 	top: -3%;
-		// 	left: -4%;
-		// 	width: 300px;
-		// 	height: 300px;
-		// 	&::before {
-		// 		content: 'hello world';
-		// 		position: absolute;
-		// 		right: 50%;
-		// 		bottom: -60%;
-		// 	}
-		// }
-
-		// @media (max-width: $size-sm) {
-		// 	top: 60%;
-		// 	left: 10%;
-		// 	width: 200px;
-		// 	height: 200px;
-		// 	&::before {
-		// 		display: none;
-		// 		content: 'hello world';
-		// 		position: absolute;
-		// 		right: -50%;
-		// 		bottom: 10%;
-		// 	}
-		// }
 	}
 
 	&__navigation {
@@ -96,8 +57,10 @@
 	}
 
 	&__scrollToTop {
-		color: white;
+		color: var(--text1);
 		cursor: pointer;
+		font: $fontStackBarlowMedium;
+		font-size: 1rem;
 	}
 
 	&__link {
@@ -107,24 +70,13 @@
 
 		a {
 			font-size: 3rem;
-			color: white;
+			color: var(--text1);
 			transition: font-size 1.3s;
 
 			&:hover {
 				font-size: 5rem;
 				transform: scale(1.2);
 			}
-
-			// @media (max-width: $size-sm) {
-			// 	font-size: 2rem;
-			// 	color: white;
-			// 	transition: font-size 1.3s;
-
-			// 	&:hover {
-			// 		font-size: 3rem;
-			// 		transform: scale(1.2);
-			// 	}
-			// }
 		}
 	}
 

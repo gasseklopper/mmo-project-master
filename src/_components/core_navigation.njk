@@ -2,14 +2,14 @@
 	<div class="container container-xl">
 		<nav class="core_navigation__nav">
 			<div class="row">
-				<div class="column large-4">
+				<div class="column small-8 small-8 large-3">
 					<div class="core_navigation__brand">
 						<a href="{{ '/' | url }}">
 							Markus Morley
 						</a>
 					</div>
 				</div>
-				<div class="column large-8">
+				<div class="column large-8 hide-on-small show-on-large">
 					<div class="core_navigation__links">
 						{% set navPages = collections.all | eleventyNavigation %}
 						<div class="core_navigation__links_container">
@@ -22,14 +22,17 @@
 							{% endif %}
 							</div>
 							{%- endfor %}
-
-							<label class="switch">
-								<input type="checkbox">
-								<span class="slider round themeingbutton"></span>
-							</label>
 						</div>
 					</div>
 				</div>
+				<div class="column small-4 large-1">
+					<div class="core_navigation__color_switch">
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round themeingbutton"></span>
+						</label>
+					</div>
+				</div
 			</div>
 		</nav>
 	</div>

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -34,7 +36,7 @@
 	.column {
 		position: relative;
 		box-sizing: border-box;
-		padding: 0 $basicGrid__gutter/2;
+		padding: 0 math.div($basicGrid--gutter, 2);
 		padding: 0 calc(var(--basicGrid-gutter, #{$basicGrid__gutter}) / 2);
 		width: 100%;
 

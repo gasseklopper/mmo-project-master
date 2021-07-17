@@ -18,7 +18,7 @@
 							{% if entry.url == page.url %}
 								<div class="" {% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</div>
 							{% else %}
-								<a class="" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
+								<a class="link-nav link-nav--helike" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}><span>{{ entry.title }}</span></a>
 							{% endif %}
 							</div>
 							{%- endfor %}

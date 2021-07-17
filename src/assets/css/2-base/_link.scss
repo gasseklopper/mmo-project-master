@@ -1,23 +1,22 @@
-a {
-	position: relative;
-	text-decoration: none;
-	color: var(--brand-inverted-highlight1);
+// a {
+// 	position: relative;
+// 	text-decoration: none;
+// 	color: var(--surface2);
+// 	background-color: var(--text1);
 
-	&:hover {
-		text-decoration: underline;
-	}
-}
+// 	&:hover {
+// 		text-decoration: underline;
+// 	}
+// }
 
 .link {
-	a {
-		position: relative;
-		line-height: 16px;
-		font-size: 0.9em;
-		text-decoration: none;
-		color: color("primary");
-		&:hover {
-			text-decoration: underline;
-		}
+	position: relative;
+	line-height: 16px;
+	font-size: 0.9em;
+	text-decoration: none;
+	color: var(--text1);
+	&:hover {
+		text-decoration: underline;
 	}
 
 	&__arrow {

@@ -1,8 +1,10 @@
+@use "sass:math";
+
 .post-tag {
 	display: inline-block;
 	padding: $gutter/4;
 	font: $fontStackBarlowBold;
-	margin: $gutter/8 0 $gutter/8 $gutter/8;
+	margin: math.div($gutter, 8) 0 math.div($gutter, 8) math.div($gutter, 8);
 	background-color: var(--text2);
 	color: var(--surface4);
 	transition: transform 0.3s linear;

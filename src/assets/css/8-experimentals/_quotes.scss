@@ -96,7 +96,7 @@
 		@extend %button;
 
 		opacity: 0.2;
-		padding: math.div($gutter, 2) $gutter/8;
+		padding: math.div($gutter, 2) math.div($gutter, 8);
 		transition: opacity $duration $timing;
 
 		&:hover {

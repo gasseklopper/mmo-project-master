@@ -7,6 +7,6 @@ let colorswitch = document.querySelectorAll('.themeingbutton').forEach((elem) =>
 		} else {
 			themeWrapper.classList.remove('theme-light')
 			themeWrapper.classList.add('theme-dark')
-		} 
+		}
 	}
-  })
+})

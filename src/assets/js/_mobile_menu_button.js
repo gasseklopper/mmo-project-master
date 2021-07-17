@@ -12,7 +12,7 @@ let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 mobileMenuButton.forEach(elem => {
-    
+
     elem.onclick = () => {
         mobileMenu.forEach(elem => {
             if (elem.style.top == '') {

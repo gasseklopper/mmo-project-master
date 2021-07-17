@@ -9,5 +9,3 @@ elems.forEach((elem) => {
     // initialise
     headroom.init();
 })
-
-

@@ -195,7 +195,7 @@ var places = {
 			   "type":"Point",
 			   "coordinates":[
 				8.72698031236205,
-				50.1165047893076 
+				50.1165047893076
 			   ]
 			}
 		},
@@ -643,7 +643,7 @@ var places = {
 			   "type":"Point",
 			   "coordinates":[
 				8.704878827706677,
-				50.112383305205896, 
+				50.112383305205896,
 			   ]
 			}
 		},
@@ -783,7 +783,7 @@ var places = {
 			   "type":"Point",
 			   "coordinates":[
 				8.70621865115999,
-				50.11208644119723, 
+				50.11208644119723,
 			   ]
 			}
 		},
@@ -855,21 +855,21 @@ var places = {
 			'coordinates': [8.71157213340723, 50.11154494192954]
 			}
 		},
-	  
+
 	]
  };
 
  const mapPresent = document.querySelectorAll('.maps')
 
  mapPresent.forEach((elem) => {
-	
+
 	var filterGroup = document.getElementById('filter-group');
 	mapboxgl.accessToken = 'pk.eyJ1IjoibW1vcmxleWhsIiwiYSI6ImNrbHV5c25kZjBuZm0yd28zYncwdGlnOWcifQ.0ii1h91pTh7MM9NLoIXuEA';
-	
+
 	var mq = window.matchMedia( "(min-width: 820px)" );
-	
+
 	console.log('mq', mq)
-	
+
 	if (mq.matches){
 		var map = new mapboxgl.Map({
 			container: 'map', // container ID
@@ -890,25 +890,25 @@ var places = {
 			attributionControl: true,
 			logoEnabled: false
 		});
-	};
-	
-	
+	}
+
+
 	//disable zoom on map
 	map.scrollZoom.disable();
-	
+
 	//disable Mobile desktop behavoir
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 		map.dragPan.disable();
 		// map.scrollZoom.enable();
 		const isTouchEvent = e => e.originalEvent && "touches" in e.originalEvent;
 		const isTwoFingerTouch = e => e.originalEvent.touches.length >= 2;
-	  
+
 		map.on("dragstart", event => {
 		  if (isTouchEvent(event) && !isTwoFingerTouch(event)) {
 			 map.dragPan.disable();
 		  }
 		});
-	  
+
 		// Drag events not emited after dragPan disabled, so I use touch event here
 		map.on("touchstart", event => {
 			if (isTouchEvent(event) && isTwoFingerTouch(event)) {
@@ -921,29 +921,29 @@ var places = {
 		// Hide rotation control.
 		showCompass: false
 	}), 'bottom-left');
-	
+
 	map.on('load', function () {
 		// Add a GeoJSON source containing place coordinates and information.
 		map.addSource('places', {
 			'type': 'geojson',
 			'data': places,
 		});
-		 
+
 		places.features.forEach(function (feature) {
 			var symbol = feature.properties['icon'];
 			console.log('symbol', symbol)
 			var layerID = 'poi-' + symbol;
 			console.log('layerID', layerID)
-		
-			
-	
+
+
+
 		// Add a layer for this symbol type if it hasn't been added already.
 			if (!map.getLayer(layerID)) {
 				map.addLayer({
 					'id': layerID,
 					'type': 'symbol',
 					'source': 'places',
-					
+
 					'layout': {
 					'icon-image': symbol,
 					'icon-allow-overlap': true,
@@ -956,7 +956,7 @@ var places = {
 					},
 					'filter': ['==', 'icon', symbol]
 				});
-	
+
 				// Change icon size on zoom
 				// map.on('zoom', () => {
 				//     const scalePercent = 1 + (map.getZoom() - 8)  * 0.4;
@@ -964,19 +964,19 @@ var places = {
 				//     svgElement.style.transform = `scale(${scalePercent})`;
 				//     svgElement.style.transformOrigin = 'bottom';
 				// });
-				
+
 				// Add checkbox and label elements for the layer.
 				var input = document.createElement('input');
 				input.type = 'checkbox';
 				input.id = layerID;
 				input.checked = true;
 				filterGroup.appendChild(input);
-			
+
 				var label = document.createElement('label');
 				label.setAttribute('for', layerID);
 				label.textContent = symbol;
 				filterGroup.appendChild(label);
-			
+
 			// When the checkbox changes, update the visibility of the layer.
 				input.addEventListener('change', function (e) {
 					map.setLayoutProperty(
@@ -985,64 +985,63 @@ var places = {
 						e.target.checked ? 'visible' : 'none'
 					);
 				});
-	
+
 				map.on('click', layerID, function (e) {
 					var coordinates = e.features[0].geometry.coordinates.slice();
 					var description = e.features[0].properties.description;
-					 
+
 					// Ensure that if the map is zoomed out such that multiple
 					// copies of the feature are visible, the popup appears
 					// over the copy being pointed to.
 					while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
 					coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
 					}
-					 
+
 					new mapboxgl.Popup()
 					.setLngLat(coordinates)
 					.setHTML(description)
 					.addTo(map);
 				});
-					 
+
 					// Change the cursor to a pointer when the mouse is over the places layer.
 				map.on('mouseenter', layerID, function () {
 					map.getCanvas().style.cursor = 'pointer';
 				});
-					 
+
 					// Change it back to a pointer when it leaves.
 				map.on('mouseleave', layerID, function () {
 					map.getCanvas().style.cursor = '';
 				});
 			}
 		});
-	
-	
+
+
 	});
-	
+
 	map.on('click', 'places', function (e) {
 		var coordinates = e.features[0].geometry.coordinates.slice();
 		var description = e.features[0].properties.description;
-		 
+
 		// Ensure that if the map is zoomed out such that multiple
 		// copies of the feature are visible, the popup appears
 		// over the copy being pointed to.
 		while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
 			coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
 		}
-		 
+
 		new mapboxgl.Popup()
 		.setLngLat(coordinates)
 		.setHTML(description)
 		.addTo(map);
 	});
-		 
+
 	// Change the cursor to a pointer when the mouse is over the places layer.
 	map.on('mouseenter', 'places', function () {
 		map.getCanvas().style.cursor = 'pointer';
 	});
-		
+
 	// Change it back to a pointer when it leaves.
 	map.on('mouseleave', 'places', function () {
 		map.getCanvas().style.cursor = '';
 	});
  })
- 

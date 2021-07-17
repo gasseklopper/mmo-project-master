@@ -1,52 +1,46 @@
 @mixin dark-sheme-definition {
-
 	/* dark */
-	--brand-core-dark:    hsl(
-		var(--brand-hue)
-		calc(var(--brand-saturation))
-		calc(var(--brand-lightness))
+	--brand-core-dark: hsl(
+		var(--brand-hue) calc(var(--brand-saturation))
+			calc(var(--brand-lightness))
 	);
 
 	--brand-dark: hsl(
-		var(--brand-hue)
-		calc(var(--brand-saturation) / 2)
-		calc(var(--brand-lightness) / 1.5)
+		var(--brand-hue) calc(var(--brand-saturation) / 2)
+			calc(var(--brand-lightness) / 1.5)
 	);
 
 	--brand-inverted-dark: hsl(
-	calc(var(--brand-hue) - 100)
-	calc(var(--brand-saturation))
-	calc(var(--brand-lightness))
+		calc(var(--brand-hue) - 100) calc(var(--brand-saturation))
+			calc(var(--brand-lightness))
 	);
 
 	--brand-inverted-highlight1: hsl(
-		calc(var(--brand-hue) + 150)
-		calc(var(--brand-saturation))
-		calc(var(--brand-lightness))
+		calc(var(--brand-hue) + 150) calc(var(--brand-saturation))
+			calc(var(--brand-lightness))
 	);
 
 	--brand-inverted-highlight2: hsl(
-		calc(var(--brand-hue) - 150)
-		calc(var(--brand-saturation))
-		calc(var(--brand-lightness))
+		calc(var(--brand-hue) - 150) calc(var(--brand-saturation))
+			calc(var(--brand-lightness))
 	);
 
-	--primary-dark:hsl(var(--primary-hue) 20% 25%);
-	--secondary-dark:hsl(var(--secondary-hue) 7% 36%);
-	--tertiary-dark:hsl(var(--tertiary-hue) 18% 52%);
-	--quaternary-dark:hsl(var(--quaternary-hue) 8% 58%);
+	--primary-dark: hsl(var(--primary-hue) 20% 25%);
+	--secondary-dark: hsl(var(--secondary-hue) 7% 36%);
+	--tertiary-dark: hsl(var(--tertiary-hue) 18% 52%);
+	--quaternary-dark: hsl(var(--quaternary-hue) 8% 58%);
 	--text1-dark: hsl(var(--brand-hue) 15% 85%);
 	--text2-dark: hsl(var(--brand-hue) 5% 65%);
-	--surface1-dark: hsl(var(--brand-hue) 10% 10%);
-	--surface2-dark: hsl(var(--brand-hue) 10% 15%);
-	--surface3-dark: hsl(var(--brand-hue) 5%  20%);
+	--surface1-dark: hsl(var(--brand-hue) 0% 0%);
+	--surface2-dark: hsl(var(--brand-hue) 5% 10%);
+	--surface3-dark: hsl(var(--brand-hue) 5% 20%);
 	--surface4-dark: hsl(var(--brand-hue) 5% 25%);
 	--surface5-dark: var(--brand);
 	--surface6-dark: var(--text1);
 	--surface7-dark: var(--text2);
 	--surface8-dark: hsl(var(--brand-hue) 5% 25%);
 	--surface-shadow-dark: var(--brand-hue) 50% 3%;
-	--shadow-strength-dark: .8;
+	--shadow-strength-dark: 0.8;
 }
 
 @mixin dark-sheme {
@@ -55,10 +49,10 @@
 	--brand-inverted: var(--brand-inverted-dark);
 	--brand-inverted-highlight1: var(--brand-inverted-highlight1-dark);
 	--brand-inverted-highlight2: var(--brand-inverted-highlight2-dark);
-	--primary:var(--primary-dark);
-	--secondary:var(--secondary-dark);
-	--tertiary:var(--tertiary-dark) ;
-	--quaternary:var(--quaternary-dark);
+	--primary: var(--primary-dark);
+	--secondary: var(--secondary-dark);
+	--tertiary: var(--tertiary-dark);
+	--quaternary: var(--quaternary-dark);
 	--text1: var(--text1-dark);
 	--text2: var(--text2-dark);
 	--surface1: var(--surface1-dark);

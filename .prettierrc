@@ -10,7 +10,7 @@
 			}
 		},
 		{
-			"files": ["*.html", "*.njk"],
+			"files": ["*.html"],
 			"options": {
 				"parser": "html",
 				"useTabs": true,

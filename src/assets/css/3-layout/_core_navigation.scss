@@ -7,51 +7,40 @@
 }
 
 .core_navigation {
-	// @include customize(theme) {
-	// 	background-color: getValue(backgroundLight);
-	// 	color: getValue(textDark);
-	// }
-	background-color: $gray-color;
+	background-color: transparent;
 	// background-color: red;
-	color: white;
+	color: var(--text1);
 	opacity: 1;
 	width: 100%;
 	height: $headerHeight;
-	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
-
-	// .column {
-	//     padding-left: 0!important;
-	//     padding-right: 0!important;
-	// }
+	// box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+	display: block;
 
 	@media (max-width: $bpM) {
 		// height: $headerHeightMobile;
 	}
-	display: block;
-	@media (max-width: $bpL) {
+
+	@media (max-width: $bpS) {
 		display: none;
 	}
+
 	a {
 		text-decoration: underline;
-
-		// @include customize(theme) {
-		// 	color: getValue(textDark);
-		// }
+		color: var(--text1);
 	}
 
 	&__brand {
-		// background-color: red;
 		display: flex;
 		flex-direction: row;
 		height: $headerHeight;
 		align-items: center;
+
 		img {
 			margin: 0;
 		}
 	}
 
 	&__links_container {
-		// background-color: red;
 		height: $headerHeight;
 		display: flex;
 		flex-direction: row;

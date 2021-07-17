@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .author {
 	display: flex;
 	align-items: center;
@@ -8,7 +10,7 @@
 
 		width: $size;
 		height: $size;
-		margin-right: $gutter/1.5;
+		margin-right: math.div($gutter, 1.5);
 		border-radius: 100%;
 	}
 }

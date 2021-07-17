@@ -12,7 +12,7 @@
 //     display: flex;
 //     justify-content: center;
 //     align-items: center;
-//     margin-right: $gutter/1.5;
+//     margin-right: math.div($gutter, 1.5);
 //     width: $size;
 //     height: $size;
 //     background: color("primary");

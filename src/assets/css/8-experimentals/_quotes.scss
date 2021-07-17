@@ -50,8 +50,8 @@
 		max-width: calc(#{$maxWidth} / 2 + var(--offset));
 
 		@media (max-height: 900px) {
-			padding-top: $sectionPadding/2;
-			padding-bottom: $sectionPadding/2;
+			padding-top: math.div($sectionPadding, 2);
+			padding-bottom: math.div($sectionPadding, 2);
 		}
 
 		@media (max-width: $bpL) {

@@ -37,7 +37,7 @@
 }
 
 .h1 {
-	margin-bottom: $gutter/1.5;
+	margin-bottom: math.div($gutter, 1.5);
 	font-size: 2em;
 	line-height: 1.4;
 

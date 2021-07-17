@@ -65,7 +65,8 @@
 	}
 
 	&__text {
-		padding: $gutter/1.5 $gutter/1.5 math.div($gutter, 2);
+		padding: math.div($gutter, 1.5) math.div($gutter, 1.5)
+			math.div($gutter, 2);
 		font-size: 0.9em;
 		white-space: nowrap;
 		overflow: auto;

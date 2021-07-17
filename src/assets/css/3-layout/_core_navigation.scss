@@ -29,12 +29,32 @@
 			text-decoration: underline;
 		}
 	}
+	&__brand_link {
+	}
 
 	&__brand {
 		display: flex;
 		flex-direction: row;
 		height: $headerHeight;
 		align-items: center;
+		// background-color: green;
+		&::before {
+			position: absolute;
+			top: 37%;
+			left: 176px;
+			content: "back home";
+			opacity: 0;
+		}
+		&:hover {
+			// background-color: yellow;
+			&::before {
+				opacity: 1;
+				position: absolute;
+				top: 37%;
+				left: 146px;
+				transition: all 0.3s linear;
+			}
+		}
 
 		img {
 			margin: 0;

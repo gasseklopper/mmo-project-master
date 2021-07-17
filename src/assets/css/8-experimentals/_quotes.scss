@@ -45,7 +45,10 @@
 		padding: $sectionPadding 0;
 		padding-right: $gutter * 3;
 		padding-left: calc(
-			var(--basicGrid-outer, #{$basicGrid__outer}) + #{$basicGrid__gutter/2}
+			var(--basicGrid-outer, #{$basicGrid__outer}) + #{math.div(
+					$basicGrid--gutter,
+					2
+				)}
 		);
 		max-width: calc(#{$maxWidth} / 2 + var(--offset));
 
@@ -60,7 +63,10 @@
 
 		@media (max-width: $bpM) {
 			padding-right: calc(
-				var(--basicGrid-outer, #{$basicGrid__outer}) + #{$basicGrid__gutter/2}
+				var(--basicGrid-outer, #{$basicGrid__outer}) + #{math.div(
+						$basicGrid--gutter,
+						2
+					)}
 			);
 			max-width: none;
 		}

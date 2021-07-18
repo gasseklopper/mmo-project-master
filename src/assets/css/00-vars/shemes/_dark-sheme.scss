@@ -39,8 +39,8 @@
 	--surface6-dark: var(--text1);
 	--surface7-dark: var(--text2);
 	--surface8-dark: hsl(var(--brand-hue) 5% 25%);
-	--surface-shadow-dark: var(--brand-hue) 50% 3%;
-	--shadow-strength-dark: 0.8;
+	--surface-shadow-dark: var(--brand-hue) 0% 10%;
+	--shadow-strength-dark: 0.12;
 }
 
 @mixin dark-sheme {

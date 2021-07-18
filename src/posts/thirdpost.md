@@ -1,14 +1,16 @@
 ---
 layout: post.njk
 title: UI Animation, Motion Design & Micro Interaction Basics presentation (wip)
+title2: UI Animation, Motion Design
 date: 2020-01-01
 author: Markus Morley
-summary: An overview of UI animation for beginners!
+description: An overview of UI animation for beginners!  An overview of UI animation for beginners!  An overview of UI animation for beginners!  An overview of UI animation for beginners!
 tags:
-  - Adobe xd
-  - animations
-  - inspiration
+    - Adobe xd
+    - animations
+    - inspiration
 ---
+
 An overview of UI animation for beginners!
 
 ![easing](/static/img/common-easing-curves.jpg "easing")

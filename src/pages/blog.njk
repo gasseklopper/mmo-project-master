@@ -63,12 +63,8 @@ eleventyNavigation:
 				{% endfor %}
 			</div>
 		</div>
-		<p>More posts can be found in <a href="{{ '/posts-archive/' | url }}">the archive</a>.</p>
-	</div>
-</div>
-<div class="row">
-	<div class="column large-12">
-		<h2 class="h2 spacing-medium">Posts hero</h2>
+
+		<p>More posts can be found in <a class="link-nav link-nav--helike" href="{{ '/posts-archive/' | url }}"><span>the archive</span></a>.</p>
 	</div>
 </div>
 {% set postslist = collections.posts %}

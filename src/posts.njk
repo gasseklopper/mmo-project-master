@@ -11,7 +11,7 @@ length %}
 	<div class="column large-12">Headline hero</div>
 </div>
 <div class="row">
-	<div class="column large-3">{% include "tags_list.njk" %}</div>
+	<div class="column large-3 ">{% include "tags_list.njk" %}</div>
 	<div class="column large-9">
 		<h2>
 			Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{%
@@ -54,9 +54,5 @@ length %}
     </div>
 
 </div>
-<div class="row">
-	<div class="column large-12">
-		<h2>Posts hero</h2>
-	</div>
-</div>
-{% set postslist = collections.posts %} {% include "postslist.njk" %}
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}

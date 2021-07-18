@@ -42,6 +42,8 @@ h2,
 h3,
 .h3 {
 	font-size: 1.775rem;
+	line-height: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 h4,
@@ -52,7 +54,7 @@ h4,
 
 h5,
 .h5 {
-	color: yellow;
+	color: var(--text2);
 	font: $fontStackBarlowBold;
 	font-size: 1rem;
 	letter-spacing: 0.1rem;

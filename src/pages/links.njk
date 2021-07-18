@@ -1,0 +1,69 @@
+---
+title: links
+metaDescription: This is a sample meta description. If one is not present in
+  your page/post's front matter, the default metadata.desciption will be used
+  instead.
+date: 2017-01-01T00:00:00.000Z
+permalink: /links.html
+description: links
+eleventyNavigation:
+  key: links
+  order: 1
+---
+{% set maxLinks = collections.links.length | min(1) %}
+{% set linkslist = collections.links | head(-1) %}
+{% set linkslistCounter = collections.links | length %}
+
+<div class="row spacing-giant">
+	<div class="column medium-6 large-4 huge-4 spacing-medium">
+		{% include "tags_list.njk" %}
+	</div>
+	<div class="column medium-6 large-8 huge-8">
+		<h2 class="h2 spacing-medium">Latest {% if maxLinks == 1 %}Link{% else %}{{ maxLinks }} Posts{% endif %}</h2>
+		<div class="section_d2d_test">
+			<div class="row">
+				{% for post in linkslist %}
+
+					<div class="column large-12">
+						<div class="section_d2d_test__box_container">
+							<div class="section_d2d_test__box {% if post.data.highlight == true %}section_d2d_test__box--reverse{% endif %} rad-shadow">
+								<!-- <div class="section_d2d_test__box_image">
+									<img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}">
+								</div> -->
+								<div class="section_d2d_test__box_content">
+									<h5 class="h5">{{ post.data.title2 }}</h5>
+
+									<div class="h3">
+										{{ post.data.title }}
+									</div>
+									{{ post.data.description}}
+
+									<!-- <div class="{{ item.button.style }}">{{ item.button.content }}</div> -->
+								</div>
+								<div class="section_d2d_test__box_content_footer">
+									<a class="button-post button-post--greip" href="{{ post.url | url}}">
+										<span>
+											<span>read more</span>
+										</span>
+									</a>
+									{% for tag in post.data.tags %}
+										{% if tag == "posts" %}
+										{% else %}
+										{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+											<a href="{{ tagUrl | url }}" class="tag-list__button tag-list__button--mimas"><span>{{ tag }}</span></a>
+										{% endif %}
+									{% endfor %}
+								</div>
+							</div>
+						</div>
+					</div>
+
+				{% endfor %}
+			</div>
+		</div>
+
+		<p>More posts can be found in <a class="link-nav link-nav--helike" href="{{ '/posts-archive/' | url }}"><span>the archive</span></a>.</p>
+	</div>
+</div>
+{% set linkslist = collections.links %}
+{% include "linkslist.njk" %}

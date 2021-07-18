@@ -4,3 +4,4 @@ coverage
 
 # Ignore all NJK files:
 *.njk
+*.yml

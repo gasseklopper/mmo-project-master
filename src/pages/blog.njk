@@ -57,12 +57,12 @@ eleventyNavigation:
 										</span>
 									</a>
 									{% for tag in post.data.tags %}
-									{% if tag == "posts" %}
-									{% else %}
-									{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-										<a href="{{ tagUrl | url }}" class="tag-list__button tag-list__button--mimas"><span>{{ tag }}</span></a>
-									{% endif %}
-								{% endfor %}
+										{% if tag == "posts" %}
+										{% else %}
+										{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+											<a href="{{ tagUrl | url }}" class="tag-list__button tag-list__button--mimas"><span>{{ tag }}</span></a>
+										{% endif %}
+									{% endfor %}
 								</div>
 							</div>
 						</div>

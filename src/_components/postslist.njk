@@ -19,12 +19,19 @@
 										{{ post.data.description }}
 									</p>
 								</div>
-								<div class="section_d2d_test__box_content_footer">
+								<div class="section_d2d_test__box_content_footer section_d2d_test__box_content_footer--postlist">
 									<a class="button-post button-post--greip" href="{{ post.url | url}}">
 										<span>
 											<span>read more</span>
 										</span>
 									</a>
+									{% for tag in post.data.tags %}
+										{% if tag == "posts" %}
+										{% else %}
+										{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+											<a href="{{ tagUrl | url }}" class="tag-list__button tag-list__button--mimas"><span>{{ tag }}</span></a>
+										{% endif %}
+									{% endfor %}
 								</div>
 							</div>
 						</div>

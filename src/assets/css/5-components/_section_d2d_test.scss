@@ -36,6 +36,10 @@
 		justify-content: space-between;
 		align-items: flex-end;
 		padding: $gutter;
+		&--postlist {
+			flex-direction: column;
+			align-items: flex-start;
+		}
 	}
 
 	a:focus,

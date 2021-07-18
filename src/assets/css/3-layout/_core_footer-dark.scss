@@ -1,5 +1,6 @@
 .footer-dark {
 	margin-top: 8rem;
+
 	a {
 		color: var(--text1);
 		transition: transform 1.3s;
@@ -22,6 +23,9 @@
 		left: 50%;
 		z-index: 1;
 		transition: transform 1.3s;
+		img {
+			margin: 0;
+		}
 
 		&:hover {
 			transform: scale(1.2);
@@ -30,22 +34,18 @@
 
 	&__image-002 {
 		position: absolute;
-		height: 600px;
 		width: 500px;
-		top: -10%;
+		top: -0%;
 		left: -10%;
 		z-index: 1;
 		transition: transform 3s;
 
-		&:hover {
-			transform: scale(1.2);
+		img {
+			margin: 0;
 		}
 
-		&::before {
-			content: "hello world";
-			position: absolute;
-			right: 50%;
-			bottom: -10%;
+		&:hover {
+			transform: scale(1.2);
 		}
 	}
 

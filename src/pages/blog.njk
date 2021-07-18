@@ -42,6 +42,7 @@ eleventyNavigation:
 								</div> -->
 								<div class="section_d2d_test__box_content">
 									<h5 class="h5">{{ post.data.title2 }}</h5>
+
 									<div class="h3">
 										{{ post.data.title }}
 									</div>
@@ -55,6 +56,13 @@ eleventyNavigation:
 											<span>read more</span>
 										</span>
 									</a>
+									{% for tag in post.data.tags %}
+									{% if tag == "posts" %}
+									{% else %}
+									{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+										<a href="{{ tagUrl | url }}" class="tag-list__button tag-list__button--mimas"><span>{{ tag }}</span></a>
+									{% endif %}
+								{% endfor %}
 								</div>
 							</div>
 						</div>

@@ -6,32 +6,18 @@
 				{% for post in linkslist %}
 					<div class="column  sameHeight">
 						<div class="section_d2d_test__box_container rad-shadow">
-							<div class="section_d2d_test__box {% if post.data.highlight == true %}section_d2d_test__box--reverse{% endif %} ">
-								<div class="section_d2d_test__box_image">
-									<!-- <img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}"> -->
-								</div>
+							<div class="section_d2d_test__box_links {% if post.data.highlight == true %}section_d2d_test__box--reverse{% endif %} ">
 								<div class="section_d2d_test__box_content">
-									<h5 class="h5">{{ post.data.title2 }}</h5>
 									<div class="h3">
 										{{ post.data.title }}
 									</div>
-									<p class="p-large">
-										{{ post.data.description }}
-									</p>
 								</div>
 								<div class="section_d2d_test__box_content_footer section_d2d_test__box_content_footer--postlist">
 									<a class="button-post button-post--greip" href="{{ post.url | url}}">
 										<span>
-											<span>read more</span>
+											<span>Go to link</span>
 										</span>
 									</a>
-									{% for tag in post.data.tags %}
-										{% if tag == "posts" %}
-										{% else %}
-										{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-											<a href="{{ tagUrl | url }}" class="tag-list__button tag-list__button--mimas"><span>{{ tag }}</span></a>
-										{% endif %}
-									{% endfor %}
 								</div>
 							</div>
 						</div>

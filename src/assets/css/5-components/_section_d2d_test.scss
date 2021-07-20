@@ -18,6 +18,21 @@
 		}
 	}
 
+	&__box_links {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+		background-color: var(--surface2);
+		margin-bottom: $gutter;
+		color: var(--text1);
+		height: 100%;
+		&--reverse {
+			background-color: var(--text1);
+			color: var(--surface2);
+		}
+	}
+
 	img {
 		width: 100%;
 		height: auto;

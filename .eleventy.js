@@ -43,7 +43,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+		return (tags || []).filter(tag => ["all", "nav", "post", "posts", "links"].indexOf(tag) === -1);
 	}
 
 	eleventyConfig.addFilter("filterTagList", filterTagList)
@@ -54,8 +54,9 @@ module.exports = function (eleventyConfig) {
 		collection.getAll().forEach(item => {
 			(item.data.tags || []).forEach(tag => tagSet.add(tag));
 		});
+	
 
-		return filterTagList([...tagSet]);
+		return filterTagList([...tagSet].sort());
 	});
 
 

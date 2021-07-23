@@ -3,6 +3,6 @@
 
 	{% for tag in collections.tagList %}
 	  {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-	  <a href="{{ tagUrl | url }}" class="tag-list__button tag-list__button--mimas"><span>{{ tag }}</span></a>
+	  <a href="{{ tagUrl | url }}" class="button-tags"><span>{{ tag }}</span></a>
 	{% endfor %}
 </section>

@@ -1,12 +1,10 @@
 <section class="tag-list">
 	<h2 class="h2 spacing-medium">Tags</h2>
-
-	{% for tag in collections.tagList %}	
+	{% for tag in collections.tagList %}
 	<div class="">link tag {{ tag }}</div>
 		{% for post in linkslist %}
 			{% for linktag in post.data.tags %}
 				{% if tag === linktag %}
-					
 					<div class="">{{ post.data.title }}</div>
 				{% endif %}
 			{% endfor %}
@@ -14,34 +12,31 @@
 	{% endfor %}
 </section>
 
-
-
-<div class="row">
-	<div class="column large-12">
-		<div class="section_d2d_test">
-			<h1 class="h2 spacing-medium">linkslist</h1>
-			<div class="row">
-				{% for post in linkslist %}
-					<div class="column  sameHeight">
-						<div class="section_d2d_test__box_container rad-shadow">
-							<div class="section_d2d_test__box_links {% if post.data.highlight == true %}section_d2d_test__box--reverse{% endif %} ">
-								<div class="section_d2d_test__box_content">
-									<div class="h3">
-										{{ post.data.title }}
-									</div>
-								</div>
-								<div class="section_d2d_test__box_content_footer section_d2d_test__box_content_footer--postlist">
-									<a class="button-post button-post--greip" href="{{ post.url | url}}">
-										<span>
-											<span>Go to link</span>
-										</span>
-									</a>
-								</div>
+<section class="tag-list">
+	<h2 class="h2 spacing-medium">Tags</h2>
+	{% for tag in collections.tagList %}
+	<div class="h4">{{ tag }}</div>
+		{% for post in linkslist %}
+			{% for linktag in post.data.tags %}
+				{% if tag === linktag %}
+				<div class="tag-list__box_container rad-shadow">
+					<div class="tag-list__box_links {% if post.data.highlight == true %}tag-list__box--reverse{% endif %} ">
+						<div class="tag-list__box_content">
+							<div class="h3">
+								{{ post.data.title }}
 							</div>
 						</div>
+						<div class="tag-list__box_content_footer tag-list__box_content_footer--postlist">
+							<a class="button-post button-post" href="{{ post.url | url}}">
+								<span>
+									<span>Go to link</span>
+								</span>
+							</a>
+						</div>
 					</div>
-				{% endfor %}
-			</div>
-		</div>
-	</div>
-</div>
+				</div>
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	{% endfor %}
+</section>

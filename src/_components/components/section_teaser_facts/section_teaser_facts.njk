@@ -7,7 +7,7 @@
             {{ params.headline | safe }}
           </div>
           {{ params.bodytext | safe }}
-        <div class="{{ params.button.style }}">{{ params.button.content }}</div>
+        <div class="{{ params.button-tags.style }}">{{ params.button-tags.content }}</div>
         </div>
         <div class="section_teaser_facts__left_bottom_content">
           <div class="section_teaser_facts__left_bottom_content_image">
@@ -15,7 +15,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
     <div class="column large-4 sameHeight">
       <div class="section_teaser_facts__middle_wrapper">
@@ -28,7 +28,7 @@
                 <path id="icons8-right_arrow" d="M30.988,12.98a1.666,1.666,0,0,0-1.27,2.811l5.111,5.524H2.659a1.664,1.664,0,1,0,0,3.327h32.17l-5.111,5.524a1.665,1.665,0,1,0,2.443,2.261L40.9,22.978l-8.737-9.449A1.668,1.668,0,0,0,30.988,12.98Z" transform="translate(-0.971 -12.979)" fill="#e6b74d"/>
               </svg>
             </div>
-            <p class="section_teaser_facts__middle_top_content_item_last">{{ item.result }}</p>            
+            <p class="section_teaser_facts__middle_top_content_item_last">{{ item.result }}</p>
           </div>
           {% endfor %}
         </div>
@@ -45,7 +45,7 @@
           {{ params.image_bodytext }}
         </div>
       </div>
-      
+
     </div>
   </div>
 </div>

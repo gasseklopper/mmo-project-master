@@ -38,7 +38,7 @@
         {{ params.headline }}
     </h2>
     <div class="row">
-       {% for item in params.box %} 
+       {% for item in params.box %}
        <div class="column small-{{item.column_small}} medium-{{item.column_medium}} large-{{item.column_large}}">
            <div class="section_d2d_test__box_container">
                <div class="section_d2d_test__box">
@@ -50,7 +50,7 @@
                            {{ item.headline }}
                        </div>
                        {{ item.bodytext | safe }}
-                       <div class="{{ item.button.style }}">{{ item.button.content }}</div>
+                       <div class="{{ item.button-tags.style }}">{{ item.button-tags.content }}</div>
                    </div>
                </div>
            </div>

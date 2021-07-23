@@ -18,7 +18,7 @@
 
 	&__content_top {
 		padding: 64px 40px;
-		background-color: $primary;
+		background-color: var(--surface1);
 		height: 50%;
 		@media (max-width: $bpM) {
 			padding-left: $gutter_30;
@@ -26,14 +26,14 @@
 		}
 
 		.h5 {
-			color: $border-color;
+			color: var(--text2);
 		}
 	}
 
 	&__content_bottom {
 		color: black;
 		padding: 64px 40px;
-		background-color: $gray-color-light;
+		background-color: var(--surface3);
 		height: 50%;
 		@media (max-width: $bpL) {
 			padding: 64px 40px 220px 40px;
@@ -81,7 +81,7 @@
 			top: 0;
 			height: 100%;
 			width: 100%;
-			background-color: $primary;
+			background-color: var(--surface1);
 			opacity: 0.4;
 			z-index: -1;
 		}

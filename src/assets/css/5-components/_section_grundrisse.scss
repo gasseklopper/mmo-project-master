@@ -1,7 +1,7 @@
 .section_grundrisse {
 	height: 500px;
 	width: 100%;
-	background-color: $gray-color-light;
+	background-color: var(--surface3);
 	.column {
 		padding-left: 0 !important;
 		padding-right: 0 !important;

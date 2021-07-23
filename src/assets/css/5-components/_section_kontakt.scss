@@ -16,7 +16,7 @@
 		padding: 80px 40px;
 		background-color: $gray-color;
 		h5 {
-			color: $border-color;
+			color: var(--text2);
 		}
 	}
 
@@ -33,7 +33,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		margin-top: 160px;
-		background-color: $primary;
+		background-color: var(--surface1);
 		height: 630px;
 		padding: 30px;
 		padding-bottom: 65px;
@@ -43,7 +43,7 @@
 		color: white;
 		a {
 			color: white;
-			border-bottom: $border-color 2px solid;
+			border-bottom: var(--text2) 2px solid;
 			&:hover {
 				text-decoration: none;
 			}
@@ -65,7 +65,7 @@
 		color: white;
 		a {
 			color: white;
-			border-bottom: $border-color 2px solid;
+			border-bottom: var(--text2) 2px solid;
 			&:hover {
 				text-decoration: none;
 			}

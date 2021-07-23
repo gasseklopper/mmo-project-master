@@ -3,7 +3,7 @@
   <div class="row">
     <div class="column large-6 sameHeight">
       <div class="section_teaser_main__content_wrapper">
-        
+
         <div class="section_teaser_main__content_top">
           <h5 class="h5">{{ params.eyebrow }}</h5>
           {% if params.animate_headline == true %}
@@ -17,18 +17,18 @@
         </div>
 
         <div class="section_teaser_main__content_bottom">
-          {{ params.bodytext | safe }} 
-          {% if params.button.icon_button == true %}
-          <div class="{{ params.button.style }}">
-            <div class="button_icon__icon">
-              <img src=" {{ params.button.icon.src }}" alt="">
+          {{ params.bodytext | safe }}
+          {% if params.button-tags.icon_button-tags == true %}
+          <div class="{{ params.button-tags.style }}">
+            <div class="button-tags_icon__icon">
+              <img src=" {{ params.button-tags.icon.src }}" alt="">
             </div>
-            <div class="button_icon__text">
-              {{ params.button.content }}
+            <div class="button-tags_icon__text">
+              {{ params.button-tags.content }}
             </div>
           </div>
           {% else %}
-          <div class="{{ params.button.style }}">{{ params.button.content }}</div>
+          <div class="{{ params.button-tags.style }}">{{ params.button-tags.content }}</div>
           {% endif %}
         </div>
 

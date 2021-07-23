@@ -4,7 +4,7 @@
 	margin-bottom: 40px;
 	min-height: 720px;
 	width: 100%;
-	background-color: $gray-color-light;
+	background-color: var(--surface3);
 
 	.column {
 		padding-left: 0 !important;
@@ -37,7 +37,7 @@
 	&__middle_wrapper {
 		margin-top: 270px;
 		color: white;
-		background-color: $primary;
+		background-color: var(--surface1);
 	}
 
 	&__middle_top_content {

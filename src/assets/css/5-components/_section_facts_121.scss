@@ -14,11 +14,11 @@
 
 	&__content_top {
 		padding: 64px 40px;
-		background-color: $primary;
+		background-color: var(--surface1);
 		height: 50%;
 		// width: 100%;
 		.h5 {
-			color: $border-color;
+			color: var(--text2);
 		}
 
 		.h1 {
@@ -29,7 +29,7 @@
 	&__content_bottom {
 		color: black;
 		padding: 64px 40px;
-		background-color: $gray-color-light;
+		background-color: var(--surface3);
 		height: 50%;
 	}
 

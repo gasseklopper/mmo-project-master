@@ -19,7 +19,7 @@
 	border-radius: 0;
 	background-color: $secondary-light;
 	border-radius: 2em;
-	color: $primary;
+	color: var(--surface1);
 	// vertical-align: middle;
 
 	&__text {

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="885" height="1371.5" viewBox="0 0 885 1371.5">
   <g id="Ausstattung" transform="translate(-460 -8969)">
-    <line id="Line_5" data-name="Line 5" y2="1292.5" transform="translate(960.5 9048)" fill="none" stroke="#000" stroke-width="3"/>
+    <line id="Line_5" data-name="Line 5" y2="1292.5" transform="translate(960.5 9048)" fill="none" stroke="var(--text1)" stroke-width="3"/>
     <g id="Group_209" data-name="Group 209" transform="translate(0 209)">
       <text id="Komfortlüftung" transform="translate(905 9257)" font-size="18" font-family="Helvetica"><tspan x="-117.062" y="0">Komfortlüftung</tspan></text>
       <g id="Group_204" data-name="Group 204" transform="translate(0 -1)">

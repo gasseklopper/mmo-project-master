@@ -13,7 +13,7 @@
 }
 .panel p,
 .panel li {
-	color: black;
+	color: var(--text1);
 	font-weight: 400;
 	text-align: left;
 	font-size: 0.8em;
@@ -436,7 +436,7 @@ header {
 	bottom: 30px;
 	left: 50%;
 	transform: translate(-50%, 0);
-	color: black;
+	color: var(--text1);
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 16px;

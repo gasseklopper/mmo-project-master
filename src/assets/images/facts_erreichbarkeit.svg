@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="996" height="292" viewBox="0 0 996 292">
   <g id="Group_316" data-name="Group 316" transform="translate(-462.5 -2516)">
-    <line id="Line_5" data-name="Line 5" x1="996" transform="translate(462.5 2710)" fill="none" stroke="#000" stroke-width="3"/>
+    <line id="Line_5" data-name="Line 5" x1="996" transform="translate(462.5 2710)" fill="none" stroke="var(--text1)" stroke-width="3"/>
     <text id="Tram_Linie_11" data-name="Tram Linie 11" transform="translate(1354 2564)" font-size="18" font-family="Helvetica"><tspan x="-108.062" y="0">Tram Linie 11</tspan></text>
     <text id="_0_1_km" data-name="0,1 km" transform="translate(1323 2534)" font-size="24" font-family="Helvetica"><tspan x="-72.023" y="0">0,1 km</tspan></text>
     <text id="_0_3_km_U-Bahn_Station_0_3_km_S-Bahn_Station_0_4_km_Bushaltestelle" data-name="0,3 km U-Bahn Station

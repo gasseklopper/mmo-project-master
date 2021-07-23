@@ -38,7 +38,7 @@
 //       .burger-icon {
 //         width: 30px;
 //         height: 2px;
-//         background: #000;
+//         background: var(--text1);
 //         position: relative;
 
 //         &::before,
@@ -48,7 +48,7 @@
 //           display: block;
 //           width: 100%;
 //           height: 100%;
-//           background: #000;
+//           background: var(--text1);
 //         }
 
 //         &::before {
@@ -70,7 +70,7 @@
 //         text-transform: uppercase;
 //         font-size: 15px;
 //         span {
-//           border-bottom: 1px solid #000;
+//           border-bottom: 1px solid var(--text1);
 //         }
 //       }
 //       &--right {

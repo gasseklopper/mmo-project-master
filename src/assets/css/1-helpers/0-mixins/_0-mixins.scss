@@ -1,6 +1,5 @@
 // Mixins
 @mixin fontFace($family, $src, $style: normal, $weight: 400) {
-
 	/*
 	 * Including a font with different weights:
 	 * @include fontFace('FontName', '../fonts/regular', normal, 400);
@@ -12,9 +11,9 @@
 		font-family: $family;
 		// src: url('#{$src}.woff2') format('woff2'), url('#{$src}.woff') format('woff');
 		// src: url('#{$src}.woff2') format('woff2');
-		src: url('#{$src}.woff') format('woff');
+		src: url("#{$src}.woff") format("woff");
 		font-style: $style;
 		font-weight: $weight;
+		font-display: swap;
 	}
-
 }

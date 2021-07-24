@@ -1,7 +1,7 @@
 // import { gsap } from 'gsap'
 // import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import { preloader } from "./_preloader";
+// import { preloader } from "./_preloader";
 
 // import css for webpack
 import "../css/index.scss";
@@ -63,14 +63,14 @@ import "./_headroom.js";
 /////////////////////////preloader images ///////////////////////////////////////////////
 // menu (<nav> element)
 // const menuEl = document.querySelector('.menu');
-const main_contentEl = document.querySelector("body");
+// const main_contentEl = document.querySelector("body");
 
-// preload the images set as data attrs in the menu items
-preloader("img").then(() => {
-	// initialize the smooth scroll
-	// const scroll = new LocomotiveScroll({el: menuEl, smooth: true});
-	// initialize custom cursor
-	// const cursor = new Cursor(document.querySelector('.cursor'));
-	// initialize menu
-	// new Menu(main_contentEl);
-});
+// // preload the images set as data attrs in the menu items
+// preloader("img").then(() => {
+// 	// initialize the smooth scroll
+// 	// const scroll = new LocomotiveScroll({el: menuEl, smooth: true});
+// 	// initialize custom cursor
+// 	// const cursor = new Cursor(document.querySelector('.cursor'));
+// 	// initialize menu
+// 	// new Menu(main_contentEl);
+// });

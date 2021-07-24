@@ -1,0 +1,14 @@
+---
+layout: base.njk
+permalink: /links-archive/
+---
+
+{% set linklist = collections.links %}
+
+<div class="row">
+	<div class="column large-12 spacing-giant">
+		{% include "tags_list.njk" %}
+	</div>
+</div>
+
+{% include "linkslist.njk" %}

@@ -2,8 +2,8 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setBrowserSyncConfig({
-		open: 'external',
-		browser: "chrome"
+		open: "external",
+		browser: "chrome",
 	});
 
 	eleventyConfig.addPassthroughCopy("src/images");
@@ -13,12 +13,14 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
 	// Watch our compiled assets for changes
-	eleventyConfig.addWatchTarget('./src/assets/compiled-assets/main.css');
-	eleventyConfig.addWatchTarget('./src/assets/compiled-assets/main.js');
-	eleventyConfig.addWatchTarget('./src/assets/compiled-assets/vendor.js');
+	eleventyConfig.addWatchTarget("./src/assets/compiled-assets/main.css");
+	eleventyConfig.addWatchTarget("./src/assets/compiled-assets/main.js");
+	eleventyConfig.addWatchTarget("./src/assets/compiled-assets/vendor.js");
 
 	// Copy src/compiled-assets to /assets
-	eleventyConfig.addPassthroughCopy({ 'src/assets/compiled-assets': 'assets' });
+	eleventyConfig.addPassthroughCopy({
+		"src/assets/compiled-assets": "assets",
+	});
 
 	// Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -26,7 +28,6 @@ module.exports = function (eleventyConfig) {
 	// Merge data instead of overriding
 	// https://www.11ty.dev/docs/data-deep-merge/
 	eleventyConfig.setDataDeepMerge(true);
-
 
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
@@ -43,22 +44,41 @@ module.exports = function (eleventyConfig) {
 	});
 
 	function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "nav", "post", "posts", "links"].indexOf(tag) === -1);
+		return (tags || []).filter(
+			(tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+		);
 	}
 
-	eleventyConfig.addFilter("filterTagList", filterTagList)
+	eleventyConfig.addFilter("filterTagList", filterTagList);
 
 	// Create an array of all tags
 	eleventyConfig.addCollection("tagList", function (collection) {
 		let tagSet = new Set();
-		collection.getAll().forEach(item => {
-			(item.data.tags || []).forEach(tag => tagSet.add(tag));
+		collection.getAll().forEach((item) => {
+			(item.data.tags || []).forEach((tag) => tagSet.add(tag));
 		});
-	
 
 		return filterTagList([...tagSet].sort());
 	});
 
+	// LinksTagList
+	function filterlinksTagList(tags) {
+		return (tags || []).filter(
+			(tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+		);
+	}
+
+	eleventyConfig.addFilter("filterlinksTagList", filterlinksTagList);
+
+	// Create an array of all tags
+	eleventyConfig.addCollection("linkstagList", function (collection) {
+		let tagSet = new Set();
+		collection.getAll().forEach((item) => {
+			(item.data.tags || []).forEach((tag) => tagSet.add(tag));
+		});
+
+		return filterlinksTagList([...tagSet].sort());
+	});
 
 	/* Markdown Plugins */
 	let markdownIt = require("markdown-it");
@@ -66,16 +86,16 @@ module.exports = function (eleventyConfig) {
 	let options = {
 		html: true,
 		breaks: true,
-		linkify: true
+		linkify: true,
 	};
 	let opts = {
-		permalink: false
+		permalink: false,
 	};
 
-	eleventyConfig.setLibrary("md", markdownIt(options)
-		.use(markdownItAnchor, opts)
+	eleventyConfig.setLibrary(
+		"md",
+		markdownIt(options).use(markdownItAnchor, opts)
 	);
-
 
 	return {
 		templateFormats: ["md", "njk", "html", "liquid"],
@@ -91,9 +111,9 @@ module.exports = function (eleventyConfig) {
 		dir: {
 			input: "src",
 			includes: "_components",
-			layouts: '_layouts',
+			layouts: "_layouts",
 			data: "_data",
-			output: "_site"
-		}
+			output: "_site",
+		},
 	};
 };

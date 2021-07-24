@@ -16,7 +16,7 @@ eleventyNavigation:
 
 <div class="row spacing-giant">
 	<div class="column medium-6 large-4 huge-4 spacing-medium">
-		{% include "tags_list.njk" %}
+		{% include "links_tags_list.njk" %}
 	</div>
 	<div class="column medium-6 large-8 huge-8">
 		<h2 class="h2 spacing-medium">Latest {% if maxLinks == 1 %}Link{% else %}{{ maxLinks }} Posts{% endif %}</h2>
@@ -54,7 +54,7 @@ eleventyNavigation:
 				{% endfor %}
 			</div>
 		</div>
-		<p>More posts can be found in <a class="link-nav link-nav--helike" href="{{ '/posts-archive/' | url }}"><span>the archive</span></a>.</p>
+		<p>More posts can be found in <a class="link-nav link-nav--helike" href="{{ '/links-archive/' | url }}"><span>the archive</span></a>.</p>
 	</div>
 </div>
 {% set linkslist = collections.links %}

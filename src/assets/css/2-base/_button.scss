@@ -130,6 +130,7 @@
 	}
 
 	&:hover > span > span {
+		color: var(--surface3);
 		animation: MoveUpInitial 0.2s forwards, MoveUpEnd 0.2s forwards 0.2s;
 	}
 
@@ -151,7 +152,6 @@
 
 	> span {
 		overflow: hidden;
-		mix-blend-mode: difference;
 	}
 }
 

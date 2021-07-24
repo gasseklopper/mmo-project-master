@@ -131,6 +131,7 @@
 
 	&:hover > span > span {
 		color: var(--surface3);
+		font-weight: 700;
 		animation: MoveUpInitial 0.2s forwards, MoveUpEnd 0.2s forwards 0.2s;
 	}
 

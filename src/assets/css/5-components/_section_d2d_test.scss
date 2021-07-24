@@ -57,90 +57,90 @@
 		}
 	}
 
-	a:focus,
-	button:focus {
-		/* Provide a fallback style for browsers
-	 that don't support :focus-visible */
-		outline: none;
-	}
+	// a:focus,
+	// button:focus {
+	// 	/* Provide a fallback style for browsers
+	//  that don't support :focus-visible */
+	// 	outline: none;
+	// }
 
-	a:focus:not(:focus-visible),
-	button:focus:not(:focus-visible) {
-		/* Remove the focus indicator on mouse-focus for browsers
-	 that do support :focus-visible */
-	}
+	// a:focus:not(:focus-visible),
+	// button:focus:not(:focus-visible) {
+	// 	/* Remove the focus indicator on mouse-focus for browsers
+	//  that do support :focus-visible */
+	// }
 
-	a:focus-visible,
-	button:focus-visible {
-		/* Draw a very noticeable focus style for
-	 keyboard-focus on browsers that do support
-	 :focus-visible */
-		outline: 2px solid #443ffc;
-		outline-offset: 3px;
-	}
+	// a:focus-visible,
+	// button:focus-visible {
+	// 	/* Draw a very noticeable focus style for
+	//  keyboard-focus on browsers that do support
+	//  :focus-visible */
+	// 	outline: 2px solid #443ffc;
+	// 	outline-offset: 3px;
+	// }
 
-	a:focus-visible {
-		background: none;
-	}
+	// a:focus-visible {
+	// 	background: none;
+	// }
 
-	.button-post {
-		cursor: pointer;
-		background: var(--text1);
-		border: none;
-		padding: 1.5rem 3rem;
-		margin: 0;
-		font-family: inherit;
-		font-size: inherit;
-		position: relative;
-		display: inline-block;
-	}
+	// .button-post {
+	// 	cursor: pointer;
+	// 	background: var(--text1);
+	// 	border: none;
+	// 	padding: 1.5rem 3rem;
+	// 	margin: 0;
+	// 	font-family: inherit;
+	// 	font-size: inherit;
+	// 	position: relative;
+	// 	display: inline-block;
+	// }
 
-	.button-post::before,
-	.button-post::after {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+	// .button-post::before,
+	// .button-post::after {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// }
 
-	.button-post {
-		overflow: hidden;
-		color: #fff;
-		font-family: input-mono-narrow, monospace;
-		font-weight: 500;
-		padding: 1rem 2rem;
-	}
+	// .button-post {
+	// 	overflow: hidden;
+	// 	color: #fff;
+	// 	font-family: input-mono-narrow, monospace;
+	// 	font-weight: 500;
+	// 	padding: 1rem 2rem;
+	// }
 
-	.button-post span {
-		display: block;
-		position: relative;
-	}
+	// .button-post span {
+	// 	display: block;
+	// 	position: relative;
+	// }
 
-	.button-post > span {
-		overflow: hidden;
-		mix-blend-mode: difference;
-	}
+	// .button-post > span {
+	// 	overflow: hidden;
+	// 	mix-blend-mode: difference;
+	// }
 
-	.button-post:hover > span > span {
-		animation: MoveUpInitial 0.2s forwards, MoveUpEnd 0.2s forwards 0.2s;
-	}
+	// .button-post:hover > span > span {
+	// 	animation: MoveUpInitial 0.2s forwards, MoveUpEnd 0.2s forwards 0.2s;
+	// }
 
-	.button-post::before {
-		content: "";
-		background: var(--surface3);
-		width: 100%;
-		height: 100%;
-		transform-origin: 50% 100%;
-		clip-path: polygon(0 -12%, 111% 0, 111% 111%, -5% 110%);
-		transition: clip-path 0.2s;
-		transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
-	}
+	// .button-post::before {
+	// 	content: "";
+	// 	background: var(--surface3);
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	transform-origin: 50% 100%;
+	// 	clip-path: polygon(0 -12%, 111% 0, 111% 111%, -5% 110%);
+	// 	transition: clip-path 0.2s;
+	// 	transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+	// }
 
-	.button-post:hover::before {
-		transition-duration: 0.3s;
-		clip-path: polygon(0 0, 101% 0, 0 0, 0% 100%);
-	}
+	// .button-post:hover::before {
+	// 	transition-duration: 0.3s;
+	// 	clip-path: polygon(0 0, 101% 0, 0 0, 0% 100%);
+	// }
 }
 
 @container (min-width: 500px) {

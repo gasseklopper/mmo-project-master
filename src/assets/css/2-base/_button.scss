@@ -105,7 +105,7 @@
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-	color: #fff;
+	color: var(--text1);
 	font-family: input-mono-narrow, monospace;
 	font-weight: 500;
 
@@ -140,7 +140,13 @@
 
 	span {
 		display: block;
-		position: relative;
+		content: "";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 1.5rem 3rem;
 	}
 
 	> span {
@@ -151,7 +157,7 @@
 
 .button-tags {
 	background: var(--surface4);
-	color: var(--text2);
+	color: var(--text1);
 	cursor: pointer;
 	border: none;
 	padding: 0.5rem 1rem;

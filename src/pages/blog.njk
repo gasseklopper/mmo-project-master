@@ -54,6 +54,7 @@ eleventyNavigation:
 								</div>
 								<div class="section_d2d_test__box_content_footer">
 									<a class="button-post button-post" href="{{ post.url | url}}">
+										read more
 										<span>
 											<span>read more</span>
 										</span>
@@ -62,7 +63,7 @@ eleventyNavigation:
 										{% if tag == "posts" %}
 										{% else %}
 										{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-											<a href="{{ tagUrl | url }}" class="button-tags"><span>{{ tag }}</span></a>
+											<a href="{{ tagUrl | url }}" class="button-tags">{{ tag }}<span>{{ tag }}</span></a>
 										{% endif %}
 									{% endfor %}
 								</div>

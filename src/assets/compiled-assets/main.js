@@ -37,7 +37,7 @@ eval("let colorswitch = document\r\n\t.querySelectorAll(\".themeingbutton\")\r\n
   \************************************************/
 /***/ (function() {
 
-eval("const switcher = document.querySelectorAll('#theme-switcher').forEach(el => {\r\n\r\n\tconst doc = document.firstElementChild\r\n\r\n\tel.addEventListener('input', e =>\r\n\t\tsetTheme(e.target.value))\r\n\r\n\tconst setTheme = theme =>\r\n\t\tdoc.setAttribute('color-scheme', theme)\r\n\t// doc.classList.add('color-scheme');\r\n});\r\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/_colors-shemes-switch.js?");
+eval("const switcher = document.querySelectorAll(\"#theme-switcher\").forEach((el) => {\r\n\tconst doc = document.firstElementChild;\r\n\r\n\tel.addEventListener(\"input\", (e) => setTheme(e.target.value));\r\n\r\n\tconst setTheme = (theme) => doc.setAttribute(\"color-scheme\", theme);\r\n\t// doc.classList.add('color-scheme');\r\n});\r\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/_colors-shemes-switch.js?");
 
 /***/ }),
 

@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="column large-12">
 		<div class="section_d2d_test">
-			<h1 class="h2 spacing-medium">postlist</h1>
+			<h1 class="h2 spacing-medium">postesttlist</h1>
 			<div class="row">
 				{% for post in postslist %}
 					<div class="column medium-6 large-4 huge-3 sameHeight">
@@ -11,7 +11,7 @@
 									<!-- <img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}"> -->
 								</div>
 								<div class="section_d2d_test__box_content">
-									<h5 class="h5">{{ post.data.title2 }}</h5>
+									<div class="h5">{{ post.data.title2 }}</div>
 									<div class="h3">
 										{{ post.data.title }}
 									</div>
@@ -21,6 +21,7 @@
 								</div>
 								<div class="section_d2d_test__box_content_footer section_d2d_test__box_content_footer--postlist">
 									<a class="button-post button-post" href="{{ post.url | url}}">
+										read more
 										<span>
 											<span>read more</span>
 										</span>
@@ -29,7 +30,7 @@
 										{% if tag == "posts" %}
 										{% else %}
 										{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-											<a href="{{ tagUrl | url }}" class="button-tags"><span>{{ tag }}</span></a>
+											<a href="{{ tagUrl | url }}" class="button-tags">{{ tag }}<span>{{ tag }}</span></a>
 										{% endif %}
 									{% endfor %}
 								</div>

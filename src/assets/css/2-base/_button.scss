@@ -167,7 +167,9 @@
 	border-radius: 0.5rem;
 	overflow: hidden;
 	span {
-		position: relative;
+		position: absolute;
+		left: 1rem;
+
 		// mix-blend-mode: difference;
 	}
 

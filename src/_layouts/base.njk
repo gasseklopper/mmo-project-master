@@ -5,6 +5,7 @@
 			<meta charset='utf-8'>
 			<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 			<title>{{ title }}</title>
+			<meta name="description" content="{{ metaDescription }}" >
 			<meta name='viewport' content='width=device-width, initial-scale=1'>
 			<link rel='stylesheet' type='text/css' media='screen' href='/assets/main.css'>
 			<script src='/assets/main.js'></script>
@@ -14,7 +15,6 @@
 
 		</head>
 		<body class="loading">
-			{% include "toTopButton.njk" %}
 			{% include "mobile_menu.njk" %}
 
 			<div class="theme-wrapper theme-dark">

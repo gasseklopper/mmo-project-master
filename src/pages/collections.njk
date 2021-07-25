@@ -1,0 +1,50 @@
+---
+title: collections
+metaDescription: This is a sample meta description. If one is not present in
+  your page/post's front matter, the default metadata.desciption will be used
+  instead.
+date: 2017-01-01T00:00:00.000Z
+permalink: /collections.html
+description: collections
+eleventyNavigation:
+  key: collections
+  order: 1
+---
+
+{% for post in collections.links %}
+<div class="">
+	collection links
+	{{ post.data.title }}
+	<div class="h3">
+		TAGS:
+		{{ post.data.linksTags }}
+	</div>
+
+</div>
+{% endfor %}
+
+{% for post in collections.posts %}
+<div class="">
+	collection links
+	{{ post.data.title }}
+	<div class="h3">
+		TAGS:
+		{{ post.data.tags }}
+	</div>
+
+</div>
+{% endfor %}
+
+{% for post in collections.linkstagList %}
+<div class="">
+	collection tags linkstagList
+	{{ post }}
+</div>
+{% endfor %}
+
+{% for post in collections.tagList %}
+<div class="">
+	collection tags tagList
+	{{ post }}
+</div>
+{% endfor %}

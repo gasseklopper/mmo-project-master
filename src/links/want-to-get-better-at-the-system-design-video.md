@@ -5,7 +5,7 @@ title2: Want to Get Better at the System Design VIDEO
 date: 2021-01-23T13:17:28.818Z
 author: Markus Morley
 description: This video will give you a great start at mastering the art of system design. This video will give you a great start at mastering the art of system design.This video will give you a great start at mastering the art of system design.This video will give you a great start at mastering the art of system design.This video will give you a great start at mastering the art of system design.This video will give you a great start at mastering the art of system design.
-tags:
+links:
     - LINKS TEST MOVIE
 ---
 

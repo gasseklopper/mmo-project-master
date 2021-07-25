@@ -5,7 +5,7 @@ title2: UI Animation, Motion Design
 date: 2020-01-01
 author: Markus Morley
 description: An overview of UI animation for beginners!  An overview of UI animation for beginners!  An overview of UI animation for beginners!  An overview of UI animation for beginners!
-tags:
+links:
     - LINKS TEST MOVIE
 ---
 

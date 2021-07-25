@@ -74,7 +74,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection("linkstagList", function (collection) {
 		let tagSet = new Set();
 		collection.getAll().forEach((item) => {
-			(item.data.tags || []).forEach((tag) => tagSet.add(tag));
+			(item.data.links || []).forEach((tag) => tagSet.add(tag));
 		});
 
 		return filterlinksTagList([...tagSet].sort());

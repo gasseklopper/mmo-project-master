@@ -3,7 +3,10 @@
 		ALLLLLLLLLLLLLLLLLLLLLLLL
 		<section class="tag-list">
 			<h2 class="h2 spacing-medium">LINKS Tags</h2>
-			{% for tag in collections.linkstagList %}
+			{% for post in linkslist %}
+			hallo
+			{% endfor %}
+			<!-- {% for tag in collections.linkstagList %}
 				<div class="h3">link tag {{ tag }}</div>
 					{% for post in linkslist %}
 								{% for linktag in post.data.linksTags %}
@@ -12,17 +15,17 @@
 									{% endif %}
 								{% endfor %}
 					{% endfor %}
-			{% endfor %}
+			{% endfor %} -->
 		</section>
 		HALLLLLLLLLLLLLLLLLLLLLLLL
 		<section class="tag-list">
 			<h2 class="h2 spacing-medium">LINKS Tags</h2>
-			{% for tag in collections.linkstagList %}
+			<!-- {% for tag in collections.linkstagList %} -->
 
 				<div class="h4">{{ tag }}</div>
 					{% for post in linkslist %}
-						{% for linktag in post.data.links %}
-							{% if tag === linktag %}
+						<!-- {% for linktag in post.data.links %}
+							{% if tag === linktag %} -->
 							<div class="tag-list__box_container rad-shadow">
 								<div class="tag-list__box_links {% if post.data.highlight == true %}tag-list__box--reverse{% endif %} ">
 									<div class="tag-list__box_content">
@@ -40,11 +43,11 @@
 									</div>
 								</div>
 							</div>
-							{% endif %}
-						{% endfor %}
+							<!-- {% endif %}
+						{% endfor %} -->
 					{% endfor %}
 
-			{% endfor %}
+			<!-- {% endfor %} -->
 		</section>
 	</div>
 </div>

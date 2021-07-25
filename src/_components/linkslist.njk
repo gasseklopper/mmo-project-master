@@ -21,7 +21,7 @@
 
 				<div class="h4">{{ tag }}</div>
 					{% for post in linkslist %}
-						{% for linktag in post.data.linksTags %}
+						{% for linktag in post.data.links %}
 							{% if tag === linktag %}
 							<div class="tag-list__box_container rad-shadow">
 								<div class="tag-list__box_links {% if post.data.highlight == true %}tag-list__box--reverse{% endif %} ">

@@ -1,6 +1,6 @@
 ---
 pagination:
-  data: collections
+  data: collections.linkstagList
   size: 1
   alias: tag
   filter:
@@ -9,12 +9,11 @@ pagination:
     - post
     - posts
     - tagList
-    - links
   addAllPagesToCollections: true
 layout: base.njk
 eleventyComputed:
   title: Tagged “{{ tag }}”
-permalink: /tags/{{ tag | slug }}/
+permalink: /links/{{ tag | slug }}/
 ---
 
 <div class="row">
@@ -22,13 +21,14 @@ permalink: /tags/{{ tag | slug }}/
 	<br>
 	<br>
 	<br>
+	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 		<h1>Tagged “{{ tag }}”</h1>
 
 		{% set postslist = collections[ tag ] %}
-		{% include "postslist.njk" %}
+		{% include "linkslist.njk" %}
 
 		<p>
-			See <a class="link-nav link-nav--helike" href="{{ '/tags/' | url }}"><span>all tags</span></a>.
+			See <a class="link-nav link-nav--helike" href="{{ '/links/' | url }}"><span>all tags</span></a>.
 		</p>
 	</div>
 </div>

@@ -5,6 +5,8 @@ title2: may 2 post
 description: the forst post from me wiith jamstack1 the forst post from me wiith jamstack1 the forst post from me wiith jamstack1 the forst post from me wiith jamstack1 the forst post from me wiith jamstack1 the forst post from me wiith jamstack1
 date: 2020-10-07
 featuredImage: /images/uploads/Black_004.jpg
+tags:
+    - LINKS TEST MOVIE
 ---
 
 hello this the body of my first blog post

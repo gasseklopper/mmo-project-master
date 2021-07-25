@@ -6,9 +6,7 @@ date: 2020-01-01
 author: Markus Morley
 description: An overview of UI animation for beginners!  An overview of UI animation for beginners!  An overview of UI animation for beginners!  An overview of UI animation for beginners!
 tags:
-    - Adobe xd
-    - animations
-    - inspiration
+    - LINKS TEST MOVIE
 ---
 
 An overview of UI animation for beginners!

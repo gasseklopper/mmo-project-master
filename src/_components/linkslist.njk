@@ -1,49 +1,50 @@
-<section class="tag-list">
-	<h2 class="h2 spacing-medium">Tags</h2>
-	{% for tag in collections.linkstagList %}
-
-		<div class="">link tag {{ tag }}</div>
-			{% for post in linklist %}
-
-						{% for linktag in post.data.tags %}
-							{% if tag === linktag %}
-								<div class="">{{ post.data.title }}</div>
-							{% endif %}
-						{% endfor %}
-
+<div class="row">
+	<div class="column">
+		ALLLLLLLLLLLLLLLLLLLLLLLL
+		<section class="tag-list">
+			<h2 class="h2 spacing-medium">LINKS Tags</h2>
+			{% for tag in collections.linkstagList %}
+				<div class="h3">link tag {{ tag }}</div>
+					{% for post in linkslist %}
+								{% for linktag in post.data.linksTags %}
+									{% if tag === linktag %}
+										<div class="">{{ post.data.title }}</div>
+									{% endif %}
+								{% endfor %}
+					{% endfor %}
 			{% endfor %}
+		</section>
+		HALLLLLLLLLLLLLLLLLLLLLLLL
+		<section class="tag-list">
+			<h2 class="h2 spacing-medium">LINKS Tags</h2>
+			{% for tag in collections.linkstagList %}
 
-	{% endfor %}
-</section>
-HALLLLLLLLLLLLLLLLLLLLLLLL
-<section class="tag-list">
-	<h2 class="h2 spacing-medium">Tags</h2>
-	{% for tag in collections.linkstagList %}
-
-		<div class="h4">{{ tag }}</div>
-			{% for post in linklist %}
-				{% for linktag in post.data.tags %}
-					{% if tag === linktag %}
-					<div class="tag-list__box_container rad-shadow">
-						<div class="tag-list__box_links {% if post.data.highlight == true %}tag-list__box--reverse{% endif %} ">
-							<div class="tag-list__box_content">
-								<div class="h3">
-									{{ post.data.title }}
+				<div class="h4">{{ tag }}</div>
+					{% for post in linkslist %}
+						{% for linktag in post.data.linksTags %}
+							{% if tag === linktag %}
+							<div class="tag-list__box_container rad-shadow">
+								<div class="tag-list__box_links {% if post.data.highlight == true %}tag-list__box--reverse{% endif %} ">
+									<div class="tag-list__box_content">
+										<div class="h3">
+											{{ post.data.title }}
+										</div>
+									</div>
+									<div class="tag-list__box_content_footer tag-list__box_content_footer--postlist">
+										<a class="button-post button-post" href="{{ post.url | url}}">
+											Go to link
+											<span>
+												<span>Go to link</span>
+											</span>
+										</a>
+									</div>
 								</div>
 							</div>
-							<div class="tag-list__box_content_footer tag-list__box_content_footer--postlist">
-								<a class="button-post button-post" href="{{ post.url | url}}">
-									Go to link
-									<span>
-										<span>Go to link</span>
-									</span>
-								</a>
-							</div>
-						</div>
-					</div>
-					{% endif %}
-				{% endfor %}
-			{% endfor %}
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
 
-	{% endfor %}
-</section>
+			{% endfor %}
+		</section>
+	</div>
+</div>

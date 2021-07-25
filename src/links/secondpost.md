@@ -6,7 +6,7 @@ description: These 7 sources of web design inspiration are sure to ignite the cr
 date: 2020-01-01
 author: Markus Morley
 highlight: true
-links:
+linksTags:
     - LINKS TEST MOVIE
 ---
 

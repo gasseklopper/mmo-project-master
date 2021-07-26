@@ -13,7 +13,7 @@ pagination:
 layout: base.njk
 eleventyComputed:
   title: Tagged “{{ tag }}”
-permalink: /links/{{ tag | slug }}/
+permalink: /links-tag/{{ tag | slug }}/
 ---
 <div class="row">
 	<div class="column">
@@ -24,22 +24,23 @@ permalink: /links/{{ tag | slug }}/
 		<h1>Tagged “{{ tag }}”</h1>
 
 		{% set linkslist = collections.links %}
-		{% set linkstagList = collections.linkstagList %}
-
+		{% set linkstagList = collections.linkstagList[ tag ] %}
+		{{tag}}{{linkslist[0].data.tags}}
 		{% for link in linkslist %}
 			{% for tagtest in linkstagList%}
 				{% if tagtest === tag %}
 					<div class="">
+sadas
 						{{tag}}{{link.data.title}}
 					</div>
 				{% endif %}
-			{% endfor %}	
+			{% endfor %}
 		{% endfor %}
-		ende
+		endeasas
 		{% include "linkslist.njk" %}
 
 		<p>
-			See <a class="link-nav link-nav--helike" href="{{ '/links/' | url }}"><span>all tags</span></a>.
+			See <a class="link-nav link-nav--helike" href="{{ '/links/' | url }}"><span>alssssl tags</span></a>.
 		</p>
 	</div>
 </div>

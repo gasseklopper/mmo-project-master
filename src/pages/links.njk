@@ -16,9 +16,7 @@ eleventyNavigation:
 
 <div class="row spacing-giant">
 	<div class="column medium-6 large-4 huge-4 spacing-medium">
-		TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
 		{% include "links_tags_list.njk" %}
-		TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
 	</div>
 	<div class="column medium-6 large-8 huge-8">
 		<h2 class="h2 spacing-medium">Latest {% if maxLinks == 1 %}Link{% else %}{{ maxLinks }} Links{% endif %}</h2>
@@ -43,7 +41,7 @@ eleventyNavigation:
 										</span>
 									</a>
 									{% for tag in post.data.tags %}
-										{% if tag == "posts" %}
+										{% if tag == "links" %}
 										{% else %}
 										{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
 											<a href="{{ tagUrl | url }}" class="button-tags">{{ tag }}<span>{{ tag }}</span></a>

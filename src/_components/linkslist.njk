@@ -27,7 +27,7 @@
 										</span>
 									</a>
 									{% for tag in post.data.tags %}
-										{% if tag == "posts" %}
+										{% if tag == "links" %}
 										{% else %}
 										{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
 											<a href="{{ tagUrl | url }}" class="button-tags">{{ tag }}<span>{{ tag }}</span></a>

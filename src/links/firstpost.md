@@ -5,7 +5,7 @@ title2: p5.js
 date: 2021-01-01T18:59:32.254Z
 author: Markus Morley
 description: Diese Website ergänzt das Buch »Generative Gestaltung, Creative Coding im Web« (erschienen im Verlag Hermann Schmidt, 2018) und bietet direkten Zugriff auf alle Quellcodes der im Buch beschriebenen Programme.
-linksTags:
+tags:
     - LINKS TEST MOVIE
 ---
 

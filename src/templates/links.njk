@@ -1,15 +1,8 @@
 ---
-title: links
-metaDescription: This is a sample meta description. If one is not present in
-  your page/post's front matter, the default metadata.desciption will be used
-  instead.
-date: 2017-01-01T00:00:00.000Z
-permalink: /links.html
-description: links
-eleventyNavigation:
-  key: links
-  order: 1
+layout: base.njk
+permalink: /links/
 ---
+
 {% set maxLinks = collections.links.length | min(1) %}
 {% set linkslist = collections.links | head(-1) %}
 {% set linkslistCounter = collections.links | length %}

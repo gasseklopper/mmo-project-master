@@ -5,7 +5,7 @@ title2: TITLE 2 LINKS LINKS LINKS LINKS
 description: descriptionLINKS LINKS LINKS LINKS
 date: 2021-07-24T23:00:20.276Z
 featuredImage: src/images/uploads/easing-visualization-–-16.jpg
-linksTags:
+tags:
     - LINKS TEST MOVIE
 ---
 

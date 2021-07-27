@@ -2,57 +2,73 @@
 layout: base.njk
 permalink: /posts/
 ---
+{% set maxPosts = collections.posts.length | min(1) %}
+{% set postslist = collections.posts | head(-1) %}
+{% set postslistCounter = collections.posts | length %}
 
-{% set maxPosts = collections.posts.length | min(1) %} {% set postslist =
-collections.posts | head(-1) %} {% set postslistCounter = collections.posts |
-length %}
+
+
 
 <div class="row">
-	<div class="column large-12">Headline hero</div>
+	<div class="column large-12 spacing-giant">
+		<!-- <h1>{{ title }}</h1>
+		Headline hero -->
+		<div class="image-background">
+			<!-- <img class="" src="./assets/images/photography/black/Black_002.jpg" alt="image" width="500" height="600"> -->
+		</div>
+	</div>
 </div>
-<div class="row">
-	<div class="column large-3 ">{% include "tags_list.njk" %}</div>
-	<div class="column large-9">
-		<h2>
-			Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{%
-			endif %}
-		</h2>
+<div class="row spacing-giant">
+	<div class="column medium-6 large-4 huge-4 spacing-medium">
+		{% include "tags_list.njk" %}
+	</div>
+	<div class="column medium-6 large-8 huge-8">
+		<h2 class="h2 spacing-medium">Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h2>
 		<div class="section_d2d_test">
 			<div class="row">
-			{% for post in postslist %}
+				{% for post in postslist %}
 
-    			<div class="column large-12">
-    				<div class="section_d2d_test__box_container">
-    					<div class="section_d2d_test__box">
-    						<div class="section_d2d_test__box_image">
-    							<!-- <img
-    								src="{{ post.data.featuredImage | url }}"
-    								alt="{{ post.data.featuredImage }}"
-    							/> -->
-    						</div>
-    						<div class="section_d2d_test__box_content">
-    							<p class="h5">{{ post.data.title2 }}</p>
-    							<div class="h3">{{ post.data.title }}</div>
-    							{{ post.data.description}}
+					<div class="column large-12">
+						<div class="section_d2d_test__box_container">
+							<div class="section_d2d_test__box {% if post.data.highlight == true %}section_d2d_test__box--reverse{% endif %} rad-shadow">
+								<!-- <div class="section_d2d_test__box_image">
+									<img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}">
+								</div> -->
+								<div class="section_d2d_test__box_content">
+									<div class="h5">{{ post.data.title2 }}</div>
 
-    							<!-- <div class="{{ item.button.style }}">{{ item.button.content }}</div> -->
-    						</div>
-    						<div class="section_d2d_test__box_content_footer">
-    							<a href="{{ post.url | url}}">read more</a>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
+									<div class="h3">
+										{{ post.data.title }}
+									</div>
+									{{ post.data.description}}
 
-    			{% endfor %}
-    		</div>
-    	</div>
-    	<p>
-    		More posts can be found in
-    		<a href="{{ '/posts-archive/' | url }}">the archive</a>.
-    	</p>
-    </div>
+									<!-- <div class="{{ item.button.style }}">{{ item.button.content }}</div> -->
+								</div>
+								<div class="section_d2d_test__box_content_footer">
+									<a class="button-post button-post" href="{{ post.url | url}}">
+										read more
+										<span>
+											<span>read more</span>
+										</span>
+									</a>
+									{% for tag in post.data.tags %}
+										{% if tag == "posts" %}
+										{% else %}
+										{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+											<a href="{{ tagUrl | url }}" class="button-tags">{{ tag }}<span>{{ tag }}</span></a>
+										{% endif %}
+									{% endfor %}
+								</div>
+							</div>
+						</div>
+					</div>
 
+				{% endfor %}
+			</div>
+		</div>
+
+		<p>More posts can be found in <a class="link-nav link-nav--helike" href="{{ '/posts-archive/' | url }}"><span>the archive</span></a>.</p>
+	</div>
 </div>
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}

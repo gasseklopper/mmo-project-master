@@ -45,7 +45,8 @@ module.exports = function (eleventyConfig) {
 
 	function filterTagList(tags) {
 		return (tags || []).filter(
-			(tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+			(tag) =>
+				["all", "nav", "post", "posts", "links"].indexOf(tag) === -1
 		);
 	}
 
@@ -64,7 +65,7 @@ module.exports = function (eleventyConfig) {
 	// LinksTagList
 	function filterlinksTagList(tags) {
 		return (tags || []).filter(
-			(tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+			(tag) => ["all", "nav", "posts", "links"].indexOf(tag) === -1
 		);
 	}
 
@@ -73,8 +74,8 @@ module.exports = function (eleventyConfig) {
 	// Create an array of all tags
 	eleventyConfig.addCollection("linkstagList", function (collection) {
 		let tagSet = new Set();
-		collection.getAll().forEach((item) => {
-			(item.data.linksTags || []).forEach((tag) => tagSet.add(tag));
+		collection.getFilteredByTag("links").forEach((item) => {
+			(item.data.tags || []).forEach((tag) => tagSet.add(tag));
 		});
 
 		return filterlinksTagList([...tagSet].sort());

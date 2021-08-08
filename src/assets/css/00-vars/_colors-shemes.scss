@@ -18,17 +18,17 @@
 	@include dim-sheme-definition; // The name of "mixin"
 }
 
-:root {
+body {
 	color-scheme: light;
-	@include dark-sheme;
+	@include light-sheme;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		color-scheme: dark;
-		@include dark-sheme;
-	}
-}
+// @media (prefers-color-scheme: dark) {
+// 	:root {
+// 		color-scheme: dark;
+// 		@include dark-sheme;
+// 	}
+// }
 
 [color-scheme="light"] {
 	color-scheme: light;

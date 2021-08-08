@@ -4,7 +4,9 @@
 // import { preloader } from "./_preloader";
 
 // import css for webpack
+
 import "../css/index.scss";
+
 // // javscript imports
 
 import "./_colors-shemes-switch.js";

@@ -14,9 +14,16 @@
 			<link rel="preload" href="/assets/fonts/Barlow-SemiBold.woff" as="font" type="font/woff" crossorigin>
 			<script src='/assets/main.js'></script>
 			<script>
-				document.documentElement.className = "js";
+				// Do this before the body gets parsed
+				var doc = document.firstElementChild;
+				if (localStorage.getItem('color-scheme') === 'dark') {
+					doc.setAttribute("color-scheme", "dark");
+				} else if (localStorage.getItem('color-scheme') === 'light') {
+					doc.setAttribute("color-scheme", "light");
+				} else {
+					doc.setAttribute("color-scheme", "default");
+				}
 			</script>
-
 		</head>
 		<body >
 			{% include "mobile_menu.njk" %}

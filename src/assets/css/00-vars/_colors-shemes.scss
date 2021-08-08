@@ -30,9 +30,21 @@
 	}
 }
 
+@media (prefers-color-scheme: light) {
+	:root {
+		color-scheme: light;
+		@include light-sheme;
+	}
+}
+
 [color-scheme="light"] {
 	color-scheme: light;
 	@include light-sheme;
+}
+
+[color-scheme="default"] {
+	color-scheme: light;
+	@include dim-sheme;
 }
 
 [color-scheme="dark"] {

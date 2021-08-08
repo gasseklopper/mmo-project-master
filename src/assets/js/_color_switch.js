@@ -13,8 +13,8 @@ let colorswitch = document
 				doc.setAttribute("color-scheme", "light");
 				localStorage.setItem("color-scheme", "light");
 			} else {
-				doc.setAttribute("color-scheme", "dark");
-				localStorage.setItem("color-scheme", "dark");
+				doc.setAttribute("color-scheme", "light");
+				localStorage.setItem("color-scheme", "light");
 			}
 		};
 	});

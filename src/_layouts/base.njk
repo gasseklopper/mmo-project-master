@@ -16,12 +16,11 @@
 			<script>
 				// Do this before the body gets parsed
 				var doc = document.firstElementChild;
-				if (localStorage.getItem('color-scheme') === 'dark') {
+				console.log("doc", doc);
+				if (localStorage.getItem("color-scheme") === "dark") {
 					doc.setAttribute("color-scheme", "dark");
-				} else if (localStorage.getItem('color-scheme') === 'light') {
+				} else if (localStorage.getItem("color-scheme") === "light") {
 					doc.setAttribute("color-scheme", "light");
-				} else {
-					doc.setAttribute("color-scheme", "default");
 				}
 			</script>
 		</head>

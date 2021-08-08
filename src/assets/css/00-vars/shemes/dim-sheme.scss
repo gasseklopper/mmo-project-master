@@ -1,30 +1,29 @@
 @mixin dim-sheme-definition {
 	--brand-dim: hsl(
-	  var(--brand-hue)
-	  calc(var(--brand-saturation) / 1.25)
-	  calc(var(--brand-lightness) / 1.25)
+		var(--brand-hue) calc(var(--brand-saturation) / 1.25)
+			calc(var(--brand-lightness) / 1.25)
 	);
 	--text1-dim: hsl(var(--brand-hue) 15% 75%);
 	--text2-dim: hsl(var(--brand-hue) 10% 61%);
-	--primary-light:hsl(var(--primary-hue) 20% 25%);
-	--secondary-light:hsl(var(--secondary-hue) 7% 36%);
-	--tertiary-light:hsl(var(--tertiary-hue) 18% 52%);
-	--quaternary-light:hsl(var(--quaternary-hue) 8% 58%);
+	--primary-light: hsl(var(--primary-hue) 20% 25%);
+	--secondary-light: hsl(var(--secondary-hue) 7% 36%);
+	--tertiary-light: hsl(var(--tertiary-hue) 18% 52%);
+	--quaternary-light: hsl(var(--quaternary-hue) 8% 58%);
 	--surface1-dim: hsl(var(--brand-hue) 10% 20%);
 	--surface2-dim: hsl(var(--brand-hue) 10% 25%);
-	--surface3-dim: hsl(var(--brand-hue) 5%  30%);
+	--surface3-dim: hsl(var(--brand-hue) 5% 30%);
 	--surface4-dim: hsl(var(--brand-hue) 5% 35%);
 	--surface-shadow-dim: var(--brand-hue) 30% 13%;
-	--shadow-strength-dim: .2;
-  }
+	--shadow-strength-dim: 0.2;
+}
 
-  @mixin dim-sheme {
+@mixin dim-sheme {
 	--brand: var(--brand-dim);
 	--text1: var(--text1-dim);
 	--text2: var(--text2-dim);
 	--primary: var(--primary-dim);
 	--secondary: var(--secondary-dim);
-	--tertiary: var(--tertiary-dim) ;
+	--tertiary: var(--tertiary-dim);
 	--quaternary: var(--quaternary-dim);
 	--surface1: var(--surface1-dark);
 	--surface2: var(--surface2-dark);
@@ -36,4 +35,4 @@
 	--surface8: var(--surface8-dark);
 	--surface-shadow: var(--surface-shadow-dim);
 	--shadow-strength: var(--shadow-strength-dim);
-  }
+}

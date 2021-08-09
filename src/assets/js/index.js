@@ -18,7 +18,7 @@ import "./_color_switch.js";
 // import './_wow.js';
 // import './_scrollAnker.js';
 // import './_carousel.js';
-// import './_toTopButton.js';
+import './_toTopButton.js';
 import "./_headroom.js";
 import "./_mobile_menu_button.js";
 // import './_random_color.js';

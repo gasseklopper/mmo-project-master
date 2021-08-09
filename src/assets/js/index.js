@@ -22,11 +22,11 @@ import './_toTopButton.js';
 import "./_headroom.js";
 import "./_mobile_menu_button.js";
 // import './_random_color.js';
-// import smoothscroll from 'smoothscroll-polyfill'
+import smoothscroll from 'smoothscroll-polyfill'
 
 // import simpleParallax from 'simple-parallax-js';
 
-// smoothscroll.polyfill()
+smoothscroll.polyfill()
 
 // ///////////////////////// image Pralax ///////////////////////////////////////////////
 // var image = document.getElementsByClassName('thumbnail');

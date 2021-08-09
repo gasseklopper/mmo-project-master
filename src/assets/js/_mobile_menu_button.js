@@ -1,6 +1,11 @@
 const bodyScrollLock = require("body-scroll-lock");
+import { BodyScrollOptions } from "body-scroll-lock";
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+
+const options = {
+	reserveScrollBarGap: true,
+};
 
 const mobileMenuButton = document.querySelectorAll(".mobile_menu_button");
 const mobileMenu = document.querySelectorAll(".mobile_menu");
@@ -15,13 +20,13 @@ mobileMenuButton.forEach((elem) => {
 	elem.onclick = () => {
 		mobileMenu.forEach((elem) => {
 			if (elem.style.top == "") {
-				disableBodyScroll(elem);
+				disableBodyScroll(elem, options);
 				elem.style.top = "0";
 			} else if (elem.style.top == "0px") {
-				enableBodyScroll(elem);
+				enableBodyScroll(elem, options);
 				elem.style.top = "-140vh";
 			} else {
-				disableBodyScroll(elem);
+				disableBodyScroll(elem, options);
 				elem.style.top = "0";
 			}
 		});

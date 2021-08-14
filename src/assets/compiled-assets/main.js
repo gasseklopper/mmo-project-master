@@ -21,16 +21,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./node_modules/prettier sync recursive":
-/*!*************************************!*\
-  !*** ./node_modules/prettier/ sync ***!
-  \*************************************/
-/***/ (function(module) {
-
-eval("function webpackEmptyContext(req) {\n\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\te.code = 'MODULE_NOT_FOUND';\n\tthrow e;\n}\nwebpackEmptyContext.keys = function() { return []; };\nwebpackEmptyContext.resolve = webpackEmptyContext;\nwebpackEmptyContext.id = \"./node_modules/prettier sync recursive\";\nmodule.exports = webpackEmptyContext;\n\n//# sourceURL=webpack://SITE/./node_modules/prettier/_sync?");
-
-/***/ }),
-
 /***/ "./src/assets/js/_color_switch.js":
 /*!****************************************!*\
   !*** ./src/assets/js/_color_switch.js ***!
@@ -79,7 +69,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var head
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var body_scroll_lock__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! body-scroll-lock */ \"./node_modules/body-scroll-lock/lib/bodyScrollLock.esm.js\");\n/* harmony import */ var prettier__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prettier */ \"./node_modules/prettier/standalone.js\");\n/* harmony import */ var prettier__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prettier__WEBPACK_IMPORTED_MODULE_1__);\nconst bodyScrollLock = __webpack_require__(/*! body-scroll-lock */ \"./node_modules/body-scroll-lock/lib/bodyScrollLock.esm.js\");\r\n\r\n\r\nconst disableBodyScroll = bodyScrollLock.disableBodyScroll;\r\nconst enableBodyScroll = bodyScrollLock.enableBodyScroll;\r\n\r\nconst options = {\r\n\treserveScrollBarGap: true,\r\n};\r\n\r\nconst mobileMenuButton = document.querySelectorAll(\".mobile_menu_button\");\r\nconst mobileMenu = document.querySelectorAll(\".mobile_menu\");\r\nconsole.log(\"mobile_button\", mobileMenuButton);\r\n\r\n// First we get the viewport height and we multiple it by 1% to get a value for a vh unit\r\nlet vh = window.innerHeight * 0.01;\r\n// Then we set the value in the --vh custom property to the root of the document\r\ndocument.documentElement.style.setProperty(\"--vh\", `${vh}px`);\r\n\r\nmobileMenuButton.forEach((elem) => {\r\n\telem.onclick = () => {\r\n\t\tmobileMenu.forEach((elem) => {\r\n\t\t\tif (elem.style.top == \"\") {\r\n\t\t\t\tdisableBodyScroll(elem, options);\r\n\t\t\t\telem.style.top = \"0\";\r\n\t\t\t} else if (elem.style.top == \"0px\") {\r\n\t\t\t\tenableBodyScroll(elem, options);\r\n\t\t\t\telem.style.top = \"-140vh\";\r\n\t\t\t} else {\r\n\t\t\t\tdisableBodyScroll(elem, options);\r\n\t\t\t\telem.style.top = \"0\";\r\n\t\t\t}\r\n\t\t});\r\n\t\tconsole.log(\"mobile_button\", elem);\r\n\t};\r\n});\r\n\r\nvar menuButton = document.getElementById(\"menuButton\");\r\nif (menuButton) {\r\n\tmenuButton.addEventListener(\"click\", (e) => {\r\n\t\tmenuButton.classList.toggle(\"is-active\");\r\n\t\te.preventDefault();\r\n\t});\r\n}\r\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/_mobile_menu_button.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var body_scroll_lock__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! body-scroll-lock */ \"./node_modules/body-scroll-lock/lib/bodyScrollLock.esm.js\");\nconst bodyScrollLock = __webpack_require__(/*! body-scroll-lock */ \"./node_modules/body-scroll-lock/lib/bodyScrollLock.esm.js\");\r\n\r\nconst disableBodyScroll = bodyScrollLock.disableBodyScroll;\r\nconst enableBodyScroll = bodyScrollLock.enableBodyScroll;\r\n\r\nconst options = {\r\n\treserveScrollBarGap: true,\r\n};\r\n\r\nconst mobileMenuButton = document.querySelectorAll(\".mobile_menu_button\");\r\nconst mobileMenu = document.querySelectorAll(\".mobile_menu\");\r\nconsole.log(\"mobile_button\", mobileMenuButton);\r\n\r\n// First we get the viewport height and we multiple it by 1% to get a value for a vh unit\r\nlet vh = window.innerHeight * 0.01;\r\n// Then we set the value in the --vh custom property to the root of the document\r\ndocument.documentElement.style.setProperty(\"--vh\", `${vh}px`);\r\n\r\nmobileMenuButton.forEach((elem) => {\r\n\telem.onclick = () => {\r\n\t\tmobileMenu.forEach((elem) => {\r\n\t\t\tif (elem.style.top == \"\") {\r\n\t\t\t\tdisableBodyScroll(elem, options);\r\n\t\t\t\telem.style.top = \"0\";\r\n\t\t\t} else if (elem.style.top == \"0px\") {\r\n\t\t\t\tenableBodyScroll(elem, options);\r\n\t\t\t\telem.style.top = \"-140vh\";\r\n\t\t\t} else {\r\n\t\t\t\tdisableBodyScroll(elem, options);\r\n\t\t\t\telem.style.top = \"0\";\r\n\t\t\t}\r\n\t\t});\r\n\t\tconsole.log(\"mobile_button\", elem);\r\n\t};\r\n});\r\n\r\nvar menuButton = document.getElementById(\"menuButton\");\r\nif (menuButton) {\r\n\tmenuButton.addEventListener(\"click\", (e) => {\r\n\t\tmenuButton.classList.toggle(\"is-active\");\r\n\t\te.preventDefault();\r\n\t});\r\n}\r\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/_mobile_menu_button.js?");
 
 /***/ }),
 
@@ -189,18 +179,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	!function() {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

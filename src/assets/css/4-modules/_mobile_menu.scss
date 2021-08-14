@@ -66,6 +66,7 @@
 	height: 60px;
 	border-radius: 100%;
 	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--surface1);
 	display: none;
 	font-size: 0px;
 	@media (max-width: $bpL) {

@@ -1,6 +1,5 @@
 const bodyScrollLock = require("body-scroll-lock");
 import { BodyScrollOptions } from "body-scroll-lock";
-import { getFileInfo } from "prettier";
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 

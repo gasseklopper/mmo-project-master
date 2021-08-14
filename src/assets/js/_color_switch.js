@@ -3,6 +3,7 @@ let colorswitch = document
 	.forEach((elem) => {
 		elem.onclick = (e) => {
 			var doc = document.firstElementChild;
+			
 			if (doc.getAttribute("color-scheme") == "dark") {
 				doc.setAttribute("color-scheme", "light");
 				localStorage.setItem("color-scheme", "light");
@@ -13,8 +14,14 @@ let colorswitch = document
 				doc.setAttribute("color-scheme", "light");
 				localStorage.setItem("color-scheme", "light");
 			} else {
-				doc.setAttribute("color-scheme", "light");
-				localStorage.setItem("color-scheme", "light");
+				if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					doc.setAttribute("color-scheme", "light");
+					localStorage.setItem("color-scheme", "light");
+				} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+					doc.setAttribute("color-scheme", "dark");
+					localStorage.setItem("color-scheme", "dark");
+				}
+				
 			}
 		};
 	});

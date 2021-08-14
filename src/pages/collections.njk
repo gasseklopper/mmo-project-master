@@ -18,7 +18,9 @@ eleventyNavigation:
 			{{ post.data.title }}
 			<div class="h3">
 				TAGS:
-				{{ post.data.tags }}
+				{% for tag in  post.data.tags %}
+				{{ tag }}&nbsp;
+				{% endfor %}
 			</div>
 
 		</div>
@@ -29,8 +31,9 @@ eleventyNavigation:
 			collection links
 			{{ post.data.title }}
 			<div class="h3">
-				TAGS:
-				{{ post.data.tags }}
+				{% for tag in  post.data.tags %}
+				{{ tag }}&nbsp;
+				{% endfor %}
 			</div>
 
 		</div>
@@ -39,14 +42,14 @@ eleventyNavigation:
 		{% for post in collections.linkstagList %}
 		<div class="">
 			collection tags linkstagList
-			{{ post }}
+			{{ post }}&nbsp;
 		</div>
 		{% endfor %}
 
 		{% for post in collections.tagList %}
 		<div class="">
 			collection tags tagList
-			{{ post }}
+			{{ post }}&nbsp;
 		</div>
 		{% endfor %}
 	</div>

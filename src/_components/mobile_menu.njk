@@ -9,18 +9,16 @@
     <div class="mobile_menu__wrapper">
         <div class="row">
             <div class="column small-12">
-                <div class="mobile_menu__item_wrapper">
-					<div class="core_navigation__links">
+                <div class="">
+					<div class="mobile_menu__item_outer_wrapper">
 						{% set navPages = collections.all | eleventyNavigation %}
-						<div class="">
+						<div class="mobile_menu__item_wrapper">
 							{%- for entry in navPages %}
-							<div class=""  data-text="{{ entry.title }}">
-							{% if entry.url == page.url %}
-								<div class="" {% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</div>
-							{% else %}
-								<a class="" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}><span>{{ entry.title }}</span></a>
-							{% endif %}
-							</div>
+								{% if entry.url == page.url %}
+									<div class="mobile_menu__link_active" {% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</div>
+								{% else %}
+									<a class="mobile_menu__link" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}><span>{{ entry.title }}</span></a>
+								{% endif %}
 							{%- endfor %}
 						</div>
 					</div>

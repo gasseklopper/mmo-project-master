@@ -93,6 +93,8 @@ module.exports = function (eleventyConfig) {
 		permalink: false,
 	};
 
+	//create an array of all tag
+
 	eleventyConfig.setLibrary(
 		"md",
 		markdownIt(options).use(markdownItAnchor, opts)

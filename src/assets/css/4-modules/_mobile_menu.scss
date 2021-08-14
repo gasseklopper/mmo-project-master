@@ -9,7 +9,6 @@
 	top: -140vh;
 	transition: 1s;
 	display: none;
-	// overflow: hidden;
 
 	@media (max-width: $bpL) {
 		display: block;
@@ -42,8 +41,6 @@
 	&__link,
 	&__link_active {
 		text-align: center;
-		// background-color: grey;
-		// width: 100%;
 		display: inline-block;
 		color: var(--text1);
 		font-size: 24px;
@@ -58,7 +55,6 @@
 }
 
 .mobile_menu_button {
-	// width: 100%;
 	z-index: 655;
 	position: fixed;
 	bottom: 20px;

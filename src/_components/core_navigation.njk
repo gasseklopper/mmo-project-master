@@ -16,7 +16,7 @@
 							{%- for entry in navPages %}
 							<div class="core_navigation__links_item"  data-text="{{ entry.title }}">
 							{% if entry.url == page.url %}
-								<div class="" {% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</div>
+								<div class="link-nav__active" {% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</div>
 							{% else %}
 								<a class="link-nav link-nav--helike" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}><span>{{ entry.title }}</span></a>
 							{% endif %}

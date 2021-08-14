@@ -19,13 +19,13 @@
 		// height: $headerHeightMobile;
 	}
 
-	a {
-		color: var(--text1);
-		font: $fontStackBarlowSemibold;
-		letter-spacing: 0.3px;
-		font-size: 1.1rem;
-		text-decoration: none;
-	}
+	// a {
+	// 	color: var(--text1);
+	// 	font: $fontStackBarlowSemibold;
+	// 	letter-spacing: 0.3px;
+	// 	font-size: 1.1rem;
+	// 	text-decoration: none;
+	// }
 	&__brand_link {
 	}
 
@@ -35,6 +35,13 @@
 		height: $headerHeight;
 		align-items: center;
 		// background-color: green;
+		a {
+			color: var(--text1);
+			font: $fontStackBarlowSemibold;
+			letter-spacing: 0.3px;
+			font-size: 1.1rem;
+			text-decoration: none;
+		}
 		&::before {
 			position: absolute;
 			top: 37%;
@@ -104,6 +111,16 @@
 	color: var(--color-text);
 }
 
+.link-nav__active {
+	cursor: pointer;
+	font-size: 18px;
+	position: relative;
+	white-space: nowrap;
+	color: var(--color-text);
+	text-decoration: line-through;
+	font-weight: bold;
+}
+
 .link-nav::before,
 .link-nav::after {
 	position: absolute;
@@ -121,7 +138,7 @@
 }
 
 .link-nav--helike {
-	font-family: aktiv-grotesk-extended, sans-serif;
+	// font-family: aktiv-grotesk-extended, sans-serif;
 	font-weight: bold;
 }
 

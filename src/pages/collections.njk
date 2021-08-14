@@ -10,41 +10,44 @@ eleventyNavigation:
   key: collections
   order: 1
 ---
+<div class="row">
+	<div class="column">
+		{% for post in collections.links %}
+		<div class="">
+			collection links
+			{{ post.data.title }}
+			<div class="h3">
+				TAGS:
+				{{ post.data.tags }}
+			</div>
 
-{% for post in collections.links %}
-<div class="">
-	collection links
-	{{ post.data.title }}
-	<div class="h3">
-		TAGS:
-		{{ post.data.tags }}
+		</div>
+		{% endfor %}
+
+		{% for post in collections.posts %}
+		<div class="">
+			collection links
+			{{ post.data.title }}
+			<div class="h3">
+				TAGS:
+				{{ post.data.tags }}
+			</div>
+
+		</div>
+		{% endfor %}
+
+		{% for post in collections.linkstagList %}
+		<div class="">
+			collection tags linkstagList
+			{{ post }}
+		</div>
+		{% endfor %}
+
+		{% for post in collections.tagList %}
+		<div class="">
+			collection tags tagList
+			{{ post }}
+		</div>
+		{% endfor %}
 	</div>
-
 </div>
-{% endfor %}
-
-{% for post in collections.posts %}
-<div class="">
-	collection links
-	{{ post.data.title }}
-	<div class="h3">
-		TAGS:
-		{{ post.data.tags }}
-	</div>
-
-</div>
-{% endfor %}
-
-{% for post in collections.linkstagList %}
-<div class="">
-	collection tags linkstagList
-	{{ post }}
-</div>
-{% endfor %}
-
-{% for post in collections.tagList %}
-<div class="">
-	collection tags tagList
-	{{ post }}
-</div>
-{% endfor %}

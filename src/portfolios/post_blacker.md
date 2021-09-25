@@ -8,3 +8,9 @@ featuredImage: /images/uploads/Black_004.jpg
 ---
 
 hello this the body of my first blog post
+
+![](../../assets/images/photography/blacker/photography_blackerthandays_001.jpg)
+![](../../assets/images/photography/blacker/photography_blackerthandays_004.jpg)
+![](../../assets/images/photography/blacker/photography_blackerthandays_007.jpg)
+![](../../assets/images/photography/blacker/photography_blackerthandays_006.jpg)
+![](../../assets/images/photography/blacker/photography_blackerthandays_005.jpg)

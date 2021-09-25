@@ -8,3 +8,9 @@ featuredImage: src/images/uploads/easing-visualization-–-16.jpg
 ---
 
 hello this the body of my first blog post
+![](../../assets/images/photography/black/black_008.jpg)
+![](../../assets/images/photography/black/black_009.jpg)
+![](../../assets/images/photography/black/black_010.jpg)
+![](../../assets/images/photography/black/black_011.jpg)
+![](../../assets/images/photography/black/black_012.jpg)
+![](../../assets/images/photography/black/black_013.jpg)

@@ -17,6 +17,17 @@ eleventyNavigation:
 <!-- {# Main_teaser #}
 {# {% include "section_lage.njk" %} #} -->
 {%- from "system/component.njk" import component -%}
+{% set portfolioslist = collections.portfolios %}
+<nav class="menu" >
+	{% for post in portfolioslist %}
+		<a href="{{ post.url | url}}" class="menu__item" data-img="{{ post.data.featuredImage | url }}" >
+			<span class="menu__item-text"><span class="menu__item-textinner">{{ post.data.title }}</span></span>
+			<span class="menu__item-sub">{{ post.data.description}}</span>
+		</a>
+	{% endfor %}
+</nav>
+
+
 <div class="hero_goldengrid">
   <div class="one">One</div>
   <div class="two">

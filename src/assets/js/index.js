@@ -1,32 +1,31 @@
-// import { gsap } from 'gsap'
-// import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// import { preloader } from "./_preloader";
+import { preloader } from "./_preloader";
 
 // import css for webpack
-
 import "../css/index.scss";
 
 // // javscript imports
 
 import "./_colors-shemes-switch.js";
-// import "./_cursor.js";
-// // import './_test.js';
+import "./_cursor.js";
+// import "./_test.js";
 import "./_header.js";
 // import './_mapbox.js';
 import "./_color_switch.js";
 // import './_wow.js';
 // import './_scrollAnker.js';
 // import './_carousel.js';
-import './_toTopButton.js';
+import "./_toTopButton.js";
 import "./_headroom.js";
 import "./_mobile_menu_button.js";
 // import './_random_color.js';
-import smoothscroll from 'smoothscroll-polyfill'
+import smoothscroll from "smoothscroll-polyfill";
 
 // import simpleParallax from 'simple-parallax-js';
 
-smoothscroll.polyfill()
+// smoothscroll.polyfill();
 
 // ///////////////////////// image Pralax ///////////////////////////////////////////////
 // var image = document.getElementsByClassName('thumbnail');
@@ -35,7 +34,7 @@ smoothscroll.polyfill()
 // 	scale: 1.5
 // });
 
-/////////////////////////card fading scroll ///////////////////////////////////////////////
+// ///////////////////////card fading scroll ///////////////////////////////////////////////
 // gsap.registerPlugin(ScrollTrigger);
 
 // gsap.to(".panel:not(:last-child)", {
@@ -62,17 +61,17 @@ smoothscroll.polyfill()
 
 // red_panel.style.height = (rect.height + 200) + 'px';
 
-/////////////////////////preloader images ///////////////////////////////////////////////
+// ///////////////////////preloader images ///////////////////////////////////////////////
 // menu (<nav> element)
 // const menuEl = document.querySelector('.menu');
 // const main_contentEl = document.querySelector("body");
 
 // // preload the images set as data attrs in the menu items
 // preloader("img").then(() => {
-// 	// initialize the smooth scroll
-// 	// const scroll = new LocomotiveScroll({el: menuEl, smooth: true});
-// 	// initialize custom cursor
-// 	// const cursor = new Cursor(document.querySelector('.cursor'));
-// 	// initialize menu
-// 	// new Menu(main_contentEl);
+// 	initialize the smooth scroll
+// 	const scroll = new LocomotiveScroll({el: menuEl, smooth: true});
+// 	initialize custom cursor
+// 	const cursor = new Cursor(document.querySelector('.cursor'));
+// 	initialize menu
+// 	new Menu(main_contentEl);
 // });

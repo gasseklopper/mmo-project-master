@@ -101,15 +101,12 @@ a:focus {
 
 .menu {
 	// padding: 10rem 0 20vh 0;
+	padding: 7vh 1vw;
 	// width: 90vw;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	text-align: right;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	user-select: none;
 	counter-reset: menucounter;
 }
@@ -151,7 +148,7 @@ a:focus {
 	padding: 0.5rem;
 	display: block;
 	overflow: hidden;
-	font-size: 6vw;
+	font-size: 11vw;
 }
 
 .menu__item-textinner {
@@ -234,19 +231,6 @@ a:focus {
 	background-position: 50% 50%;
 }
 
-.cursor {
-	display: none;
-}
-
-.credits {
-	align-self: flex-start;
-	padding: 5rem 0 0 0;
-}
-
-.credits a {
-	text-decoration: underline;
-}
-
 @media screen and (min-width: 53em) {
 	.frame {
 		flex-direction: column;
@@ -310,17 +294,13 @@ a:focus {
 		pointer-events: none;
 	}
 	.cursor__inner {
-		fill: var(--cursor-fill);
-		stroke: var(--cursor-stroke);
+		fill: var(--text2);
+		stroke: var(--text2);
 		stroke-width: var(--cursor-stroke-width);
 		opacity: 0.3;
 	}
-	.credits {
-		padding-left: 25vw;
-	}
 }
 
-/*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
 	overflow: hidden;
 }

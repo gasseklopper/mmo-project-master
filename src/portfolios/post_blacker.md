@@ -4,7 +4,7 @@ title: Blacker
 title2: may 2 post
 description: darker s/w pictures
 date: 2020-10-07
-featuredImage: /images/uploads/Black_004.jpg
+featuredImage: /assets/images/photography/blacker/photography_blackerthandays_001.jpg
 ---
 
 hello this the body of my first blog post

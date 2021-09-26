@@ -4,7 +4,7 @@ title: Bling Bling!
 title2: may 2 post
 description: Painting with light
 date: 2020-10-07
-featuredImage: /images/uploads/Black_004.jpg
+featuredImage: /assets/images/photography/blingbling/bling_bling_009.gif
 ---
 
 <div class="row">

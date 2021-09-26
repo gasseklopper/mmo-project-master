@@ -1,18 +1,150 @@
-<ul>
-	{% for post in portfolioslist %}
-		<li>
-			<strong>
-				<a href="{{ post.url | url}}">
-					{{ post.data.title }}
-					{{ post.data.title2 }}
-					<img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}">
-				</a>
-			</strong>
-			-
-			<span>
-				{{ post.data.description}}
-			</span>
 
-		</li>
-	{% endfor %}
-</ul>
+<div class="port_box">
+	<div class="row">
+		<div class="column large-2">
+			<div class="port_box__layout port_box__layout_intro">
+				<div class="port_box__intro_text">
+					Portfolio
+				</div>
+			</div>
+		</div>
+		{% for post in portfolioslist %}
+		<!-- {{ loop.index }} -->
+		{% if  loop.index == '1' %}
+			<div class="column large-2">
+				<a href="{{ post.url | url}}">
+					<div class="port_box__layout port_box__layout_001">
+						<div class="port_box__number">
+							{{ loop.index }}
+						</div>
+						<div class="port_box__title">
+							{{ post.data.title }}
+						</div>
+						<div class="port_box__description">
+							{{ post.data.description }}
+						</div>
+					</div>
+				</a>
+		{% endif %}
+		{% if  loop.index == '2' %}
+				<a href="{{ post.url | url}}">
+					<div class="port_box__layout port_box__layout_002">
+						<div class="port_box__number">
+							{{ loop.index }}
+						</div>
+						<div class="port_box__title">
+							{{ post.data.title }}
+						</div>
+						<div class="port_box__description">
+							{{ post.data.description }}
+						</div>
+						<div class="port_box__image">
+							<img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}">
+						</div>
+					</div>
+				</a>
+			</div>
+		{% endif %}
+		{% if  loop.index == '3' %}
+		<div class="column large-4">
+			<a href="{{ post.url | url}}">
+				<div class="port_box__layout port_box__layout_003">
+					<div class="port_box__number">
+						{{ loop.index }}
+					</div>
+					<div class="port_box__title">
+						{{ post.data.title }}
+					</div>
+					<div class="port_box__description">
+						{{ post.data.description }}
+					</div>
+					<div class="port_box__image">
+						<img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}">
+					</div>
+				</div>
+			</a>
+		</div>
+		{% endif %}
+
+		{% if  loop.index == '4' %}
+		<div class="column large-4">
+			<div class="row">
+				<div class="column large-6">
+					<a href="{{ post.url | url}}">
+						<div class="port_box__layout port_box__layout_004">
+							<div class="port_box__number">
+								{{ loop.index }}
+							</div>
+							<div class="port_box__title">
+								{{ post.data.title }}
+							</div>
+							<div class="port_box__description">
+								{{ post.data.description }}
+							</div>
+							<div class="port_box__image">
+								<img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}">
+							</div>
+						</div>
+					</a>
+				</div>
+		{% endif %}
+
+		{% if  loop.index == '5' %}
+				<div class="column large-6">
+					<a href="{{ post.url | url}}">
+						<div class="port_box__layout port_box__layout_005">
+							<div class="port_box__number">
+								{{ loop.index }}
+							</div>
+							<div class="port_box__title">
+								{{ post.data.title }}
+							</div>
+							<div class="port_box__description">
+								{{ post.data.description }}
+							</div>
+						</div>
+					</a>
+		{% endif %}
+
+		{% if  loop.index == '6' %}
+					<a href="{{ post.url | url}}">
+						<div class="port_box__layout port_box__layout_006">
+							<div class="port_box__number">
+								{{ loop.index }}
+							</div>
+							<div class="port_box__title">
+								<div class="port_box-link-nav port_box-link-nav--helike""><span>{{ post.data.title }}</span></div>
+							</div>
+							<div class="port_box__description">
+								{{ post.data.description }}
+							</div>
+						</div>
+					</a>
+				</div>
+		{% endif %}
+		{% if  loop.index == '7' %}
+				<div class="column large-12">
+					<a href="{{ post.url | url}}">
+						<div class="port_box__layout port_box__layout_007">
+							<div class="port_box__number">
+								{{ loop.index }}
+							</div>
+							<div class="port_box__title">
+								{{ post.data.title }}
+							</div>
+							<div class="port_box__description">
+								{{ post.data.description }}
+							</div>
+							<div class="port_box__image">
+								<img src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}">
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+
+		{% endfor %}
+	</div>
+</div>

@@ -4,7 +4,7 @@ title: NEW YORK
 title2: may 2 post
 description: Walking and watching
 date: 2020-10-07
-featuredImage: /images/uploads/Black_004.jpg
+featuredImage: /assets/images/photography/newyork/PICT6156_fhdr.jpg
 ---
 
 <div class="row">

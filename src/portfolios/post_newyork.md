@@ -93,3 +93,45 @@ featuredImage: /assets/images/photography/newyork/PICT6156_fhdr.jpg
 		<img src="../../assets/images/photography/newyork/PICT5470_fhdr.jpg" alt="">
 	</div>
 </div>
+<div class="row">
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT4749.jpg" alt="">
+	</div>
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT4750.jpg" alt="">
+	</div>
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT4751.jpg" alt="">
+	</div>
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT4752.jpg" alt="">
+	</div>
+</div>
+<div class="row">
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT5464.jpg" alt="">
+	</div>
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT5471.jpg" alt="">
+	</div>
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT5472.jpg" alt="">
+	</div>
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT5473.jpg" alt="">
+	</div>
+</div>
+<div class="row">
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT6152.jpg" alt="">
+	</div>
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT6154.jpg" alt="">
+	</div>
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT6166.jpg" alt="">
+	</div>
+	<div class="column large-3">
+		<img src="../../assets/images/photography/newyork/PICT9146.jpg" alt="">
+	</div>
+</div>

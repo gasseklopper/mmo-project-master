@@ -9,8 +9,29 @@ featuredImage: /assets/images/photography/blacker/photography_blackerthandays_00
 
 hello this the body of my first blog post
 
-![](../../assets/images/photography/blacker/photography_blackerthandays_001.jpg)
-![](../../assets/images/photography/blacker/photography_blackerthandays_004.jpg)
-![](../../assets/images/photography/blacker/photography_blackerthandays_007.jpg)
-![](../../assets/images/photography/blacker/photography_blackerthandays_006.jpg)
-![](../../assets/images/photography/blacker/photography_blackerthandays_005.jpg)
+<div class="row">
+	<div class="column large-4">
+		<img src="../../assets/images/photography/blacker/photography_blackerthandays_001.jpg" alt="">
+	</div>
+	<div class="column large-4">
+		<img src="../../assets/images/photography/blacker/photography_blackerthandays_004.jpg" alt="">
+	</div>
+	<div class="column large-4">
+		<img src="../../assets/images/photography/blacker/photography_blackerthandays_007.jpg" alt="">
+	</div>
+	<div class="column large-4">
+		<img src="../../assets/images/photography/blacker/photography_blackerthandays_006.jpg" alt="">
+	</div>
+	<div class="column large-4">
+		<img src="../../assets/images/photography/blacker/photography_blackerthandays_005.jpg" alt="">
+	</div>
+	<div class="column large-4">
+		<img src="../../assets/images/photography/blacker/photography_blackerthandays_012.jpg" alt="">
+	</div>
+	<div class="column large-12">
+		<img src="../../assets/images/photography/blacker/photography_blackerthandays_019.jpg" alt="">
+	</div>
+	<div class="column large-4">
+		<img src="../../assets/images/photography/blacker/photography_blackerthandays_010.jpg" alt="">
+	</div>
+</div>

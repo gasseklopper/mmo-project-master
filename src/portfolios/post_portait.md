@@ -4,7 +4,7 @@ title: Portraits
 title2: may 2 post
 description: just a small collection of people i meet
 date: 2020-10-07
-featuredImage: /images/uploads/Black_004.jpg
+featuredImage: /assets/images/photography/portrait/Portrait_001.jpg
 ---
 
 <div class="row">

@@ -17,38 +17,58 @@ eleventyNavigation:
 <br>
 <br>
 <div class="about-page">
-
 	<div class="row">
-		<div class="column">
+		<div class="column large-4">
 			<h5 class="h5">about.me</h5>
-		</div>
-		<div class="column">
 			<h2 class="h2">Hi, i am Markus Morley.</h2>
-		</div>
-		<div class="column">
 			<h3 class="h3">I’m Coding Digital Experiences & Interfaces</h3>
-		</div>
-		<div class="column large-6">
 			<h4 class="h4">Desiging, living and working in Frankfurt am Main.</h4>
 			<p> i love design. build ux prototypes.
 				develop frontend components for atomic design. develop and create digital projects for a large scale approach.
 			</p>
 		</div>
-		<div class="column large-6">
+		<div class="column large-4">
 			<img src="../assets/images/photography/black/Black_002.jpg" alt="">
 		</div>
+		<div class="column large-4">
+
+			<p>
+			The contact form on this page uses [Netlify Forms](https://www.netlify.com/docs/form-handling/) to process submissions,
+			and saves them in the connected Netlify account where notifications can
+			optionally be configured. Each submission is passed through a spam filter and
+			if flagged, will display a CAPTCHA challenge to the user.
+			</p>
+
+
+
+			<form class="form" name="contact" method="POST" data-netlify="true">
+				<p>
+				<label>Your Name: <input type="text" name="name" /></label>
+				</p>
+				<p>
+				<label>Your Email: <input type="email" name="email" /></label>
+				</p>
+				<p>
+				<label>Message: <textarea name="message"></textarea></label>
+				</p>
+				<p>
+				<button type="submit">Send now</button>
+				</p>
+			</form>
+
+		</div>
 	</div>
+
+
 	<div class="row">
-		<div class="column">
+		<div class="column large-6">
 			<h2 id="photography-cite">photography cite</h2>
 			<p>“To me, photography is an art of observation. It’s about finding something interesting in an ordinary place…
 			I’ve
 			found it has little to do with the things you see and everything to do with the way you see them.”<br>
 			— Elliott Erwitt</p>
 		</div>
-	</div>
-	<div class="row">
-		<div class="column">
+		<div class="column large-6">
 			<h2 class="h2" id="tool-stack">Tool Stack</h2>
 			<p>Emmet, Foundation, Semantic UI, Skeleton, Spectre.css, Sass/SCSS, CSS Tricks Almanac, stylelint, Atomic Design,
 			  ECMA, BEM,<br>
@@ -66,7 +86,6 @@ eleventyNavigation:
 			  Windows, Colorprofiles, CMYK, RGB, google Chrome, Firefox, Edge Safari, Samsung, Iphone</p>
 		</div>
 	</div>
-
 
 	<div class="row">
 	  <div class="column">

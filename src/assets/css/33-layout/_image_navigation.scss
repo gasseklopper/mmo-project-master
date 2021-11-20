@@ -150,11 +150,11 @@ a:focus {
 	display: block;
 	overflow: hidden;
 	font-size: 11vw;
+	mix-blend-mode: difference;
 }
 
 .menu__item-textinner {
 	display: block;
-	// font-family: goldenbook, serif;
 	font-weight: 300;
 	text-transform: uppercase;
 	white-space: nowrap;

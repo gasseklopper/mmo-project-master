@@ -1,0 +1,40 @@
+<div class="demo-1">
+	<div class="main js-hover main--demo-1">
+		<div class="content content--demo-1">
+			<div class="hamburger js-hover">
+				<div class="hamburger__line hamburger__line--01">
+					<div class="hamburger__line-in hamburger__line-in--01"></div>
+				</div>
+				<div class="hamburger__line hamburger__line--02">
+					<div class="hamburger__line-in hamburger__line-in--02"></div>
+				</div>
+				<div class="hamburger__line hamburger__line--03">
+					<div class="hamburger__line-in hamburger__line-in--03"></div>
+				</div>
+				<div class="hamburger__line hamburger__line--cross01">
+					<div class="hamburger__line-in hamburger__line-in--cross01"></div>
+				</div>
+				<div class="hamburger__line hamburger__line--cross02">
+					<div class="hamburger__line-in hamburger__line-in--cross02"></div>
+				</div>
+			</div>
+			<div class="global-menu">
+				<div class="global-menu__wrap">
+					{% set navPages = collections.all | eleventyNavigation %}
+					{%- for entry in navPages %}
+					{% if entry.url == page.url %}
+					<div class="mobile_menu__link_active global-menu__item global-menu__item--demo-1" {% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</div>
+					{% else %}
+					<a class="mobile_menu__link global-menu__item global-menu__item--demo-1" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}><span>{{ entry.title }}</span></a>
+				{% endif %}
+			{%- endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+		<path class="shape-overlays__path"></path>
+		<path class="shape-overlays__path"></path>
+		<path class="shape-overlays__path"></path>
+	</svg>
+</div>

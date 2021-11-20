@@ -25,7 +25,8 @@
 			</script>
 		</head>
 		<body >
-			{% include "mobile_menu.njk" %}
+
+			{% include "mobile_menu_svg_shape.njk" %}
 
 			<div class="theme-wrapper">
 				<header class="header">
@@ -34,6 +35,7 @@
 				<div class="inset"></div>
 				<main class="main_content">
 					{{ content | safe }}
+
 				</main>
 				{% include "footer.njk" %}
 			</div>

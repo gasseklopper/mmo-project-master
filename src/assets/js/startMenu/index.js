@@ -1,7 +1,7 @@
 import Menu from "./menu";
 
-const menuEl = document.querySelectorAll(".menu");
-menuEl.forEach((menu) => {
-	new Menu(menu);
-	console.log("menu initilizrd");
+const menu = document.querySelectorAll(".menu");
+menu.forEach((menuEl) => {
+	new Menu(menuEl);
+	console.log("menuEl initilizrd");
 });

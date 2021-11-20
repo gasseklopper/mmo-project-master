@@ -4,6 +4,7 @@ import MenuItem from "./menuItem";
 export default class Menu {
 	constructor(el) {
 		// el is the menu element (<nav>)
+		console.log(el);
 		this.DOM = { el: el };
 		// the menu item elements (<a>)
 		this.DOM.menuItems = this.DOM.el.querySelectorAll(".menu__item");
@@ -36,13 +37,13 @@ export default class Menu {
 	// initial animation for revealing the menu items
 	showMenuItems() {
 		gsap.to(
-			this.menuItems.map((item) => item.DOM.textInner),
+			this.menuItems.map((item, index) => item.DOM.textInner),
 			{
-				duration: 1.2,
+				duration: (index) => index + 1 * 16.2,
 				ease: "Expo.easeOut",
 				startAt: { y: "100%" },
 				y: 0,
-				delay: (pos) => pos * 0.06,
+				delay: (pos) => pos * 0.08,
 			}
 		);
 	}

@@ -23,12 +23,14 @@ const object1 = {
 	18: "/assets/images/photography/black/Black_019.jpg",
 	19: "/assets/images/photography/black/Black_020.jpg",
 };
+
 const images = Object.entries(object1);
 
 // track the mouse position
 let mousepos = { x: 0, y: 0 };
 // cache the mouse position
 let mousePosCache = mousepos;
+// the mouse move direction
 let direction = {
 	x: mousePosCache.x - mousepos.x,
 	y: mousePosCache.y - mousepos.y,

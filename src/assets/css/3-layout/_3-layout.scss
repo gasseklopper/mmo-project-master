@@ -13,3 +13,23 @@
 @import "portfoliolist";
 @import "about-page";
 @import "sticky_hero";
+
+// create a 3 column layout with bootstrap classes
+.row-fluid {
+  .col-md-4 {
+	// add black background
+	background-color: #000;
+	// ad comic sans font
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	// add white text
+	color: #fff;
+	// add padding
+	padding: 20px;
+	// add border radius
+	border-radius: 5px;
+	// add border
+	border: 1px solid #fff;
+	// add margin
+	margin: 20px;
+  }
+}

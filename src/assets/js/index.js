@@ -10,6 +10,7 @@ import "../css/index.scss";
 
 import "./_colors-shemes-switch.js";
 import "./_cursor.js";
+import "./_test2";
 // import "./_test.js";
 import "./_header.js";
 // import './_mapbox.js';
@@ -20,12 +21,13 @@ import "./_color_switch.js";
 import "./_toTopButton.js";
 import "./_headroom.js";
 import "./_mobile_menu_button.js";
+import "./startMenu/index.js";
 // import './_random_color.js';
 import smoothscroll from "smoothscroll-polyfill";
 
 // import simpleParallax from 'simple-parallax-js';
 
-// smoothscroll.polyfill();
+smoothscroll.polyfill();
 
 // ///////////////////////// image Pralax ///////////////////////////////////////////////
 // var image = document.getElementsByClassName('thumbnail');

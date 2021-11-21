@@ -22,6 +22,7 @@ import "./_toTopButton.js";
 import "./_headroom.js";
 import "./_mobile_menu_button.js";
 import "./startMenu/index.js";
+import "./portfolio_slider/index.js";
 // import './_random_color.js';
 import smoothscroll from "smoothscroll-polyfill";
 

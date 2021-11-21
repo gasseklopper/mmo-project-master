@@ -175,7 +175,7 @@
 .hamburger {
 	width: 64px;
 	height: 64px;
-	display: block;
+	display: none;
 	cursor: pointer;
 	position: absolute;
 	bottom: 1.25em;
@@ -185,6 +185,13 @@
 	background-color: var(--text1);
 	pointer-events: auto;
 	-webkit-tap-highlight-color: var(--surface4);
+	@media (max-width: $bpL) {
+		display: block;
+		position: fixed;
+		bottom: 2.5em;
+		right: auto;
+		transform: scale(0.75);
+	}
 
 	&::after {
 		width: 64px;
@@ -403,12 +410,6 @@
 }
 
 @media screen and (max-width: 55em) {
-	.hamburger {
-		position: fixed;
-		bottom: 2.5em;
-		right: auto;
-		transform: scale(0.75);
-	}
 	.content {
 		height: auto;
 		min-height: 0;

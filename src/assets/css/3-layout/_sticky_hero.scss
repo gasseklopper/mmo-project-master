@@ -10,8 +10,17 @@
 		opacity: 0.4;
 		margin-top: 20vh;
 		text-align: center;
-		font-size: 10rem;
+		font-size: 8rem;
 		line-height: 120px;
+	}
+	@media (max-width: $bpM) {
+		h1 {
+			opacity: 0.4;
+			margin-top: 20vh;
+			text-align: center;
+			font-size: 6rem;
+			line-height: 90px;
+		}
 	}
 }
 .sticky_hero_spacer {

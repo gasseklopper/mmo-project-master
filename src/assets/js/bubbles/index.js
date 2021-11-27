@@ -6,17 +6,17 @@ var canvas = document.getElementById("canvas");
 var c = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight + 500;
 
 //canvas wight and height
 var w = canvas.width;
-var h = canvas.height / 42;
+var h = canvas.height;
 
 // create var initBubbles with 50 as value
-var initBubbles = 50;
+var initBubbles = 100;
 
 //create var minBubbles with value of 10
-var minBubbles = 25;
+var minBubbles = 55;
 
 //array for all Bubbles
 var bubbles = [];
@@ -89,7 +89,7 @@ function randomColor() {
 	var r = Math.floor(Math.random() * 256);
 	var g = Math.floor(Math.random() * 256);
 	var b = Math.floor(Math.random() * 256);
-	return "rgb(" + r + ", " + g + ", " + b + ")";
+	return "rgb(" + (r + 20) + ", " + (r + 10) + ", " + (r + 10) + ")";
 }
 
 // function to draw bubbles
@@ -97,7 +97,7 @@ function draw() {
 	// paint background with black
 	c.fillStyle = randomColor();
 	// clear the canvas
-	c.clearRect(0, 0, w, h);
+	// c.clearRect(0, 0, w, h);
 
 	// draw all bubbles
 	for (var i = 0; i < bubbles.length; i++) {

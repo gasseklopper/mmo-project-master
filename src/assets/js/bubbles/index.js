@@ -1,28 +1,29 @@
-console.log("canvas");
-
 //canvas variables
 var canvas = document.getElementById("canvas");
 
-var c = canvas.getContext("2d");
+if (canvas) {
+	// get the context
+	var c = canvas.getContext("2d");
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight + 500;
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight + 500;
 
-//canvas wight and height
-var w = canvas.width;
-var h = canvas.height;
+	//canvas wight and height
+	var w = canvas.width;
+	var h = canvas.height;
 
-// create var initBubbles with 50 as value
-var initBubbles = 100;
+	// create var initBubbles with 50 as value
+	var initBubbles = 100;
 
-//create var minBubbles with value of 10
-var minBubbles = 55;
+	//create var minBubbles with value of 10
+	var minBubbles = 55;
 
-//array for all Bubbles
-var bubbles = [];
+	//array for all Bubbles
+	var bubbles = [];
 
-// create event listener with init
-window.addEventListener("load", init);
+	// create event listener with init
+	window.addEventListener("load", init);
+}
 
 // create function init
 function init() {
@@ -32,13 +33,7 @@ function init() {
 	}
 	// call the animation loop
 	draw();
-	console.log(bubbles);
-	// animationLoop();
 }
-
-//test the bubble function
-// let b = new Bubble(100, 100, 20, 0, -2);
-// b.draw();
 
 //function to create bubbles
 function Bubble(x, y, r, vx, vy) {
@@ -94,7 +89,7 @@ function randomColor() {
 
 // function to draw bubbles
 function draw() {
-	// paint background with black
+	// paint background with randomColor()
 	c.fillStyle = randomColor();
 	// clear the canvas
 	// c.clearRect(0, 0, w, h);
@@ -109,7 +104,6 @@ function draw() {
 		// draw
 		currentBubble.draw();
 
-		// check if bubble is out of bounds
 		// check if bubble is out of bounds
 		if (
 			currentBubble.x + currentBubble.r > w ||

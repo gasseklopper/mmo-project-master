@@ -1,5 +1,5 @@
 console.log("index2.js");
-var morleyDotsmorleyDotsCanvas = document.getElementById("morleyDotsCanvas");
+var morleyDotsCanvas = document.getElementById("morleyDotsCanvas");
 
 if (morleyDotsCanvas) {
 	// get the context

@@ -1,4 +1,4 @@
-console.log("index2.js");
+// console.log("Color Stripes");
 var morleyDotsCanvas = document.getElementById("morleyDotsCanvas");
 
 if (morleyDotsCanvas) {

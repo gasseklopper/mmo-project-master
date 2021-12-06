@@ -20,11 +20,19 @@ if (canvasbg && canvas) {
 	let bgBubbles = [];
 
 	function addBubble() {
-		Bubbles.push(new Bubble("rgb(255,194,194", 2.8));
+		Bubbles.push(new Bubble("rgb(13,12,13", 2.8));
 	}
 
 	function addbgBubble() {
-		bgBubbles.push(new Bubble("rgb(255,255,255", 5.5));
+		bgBubbles.push(new Bubble("rgb(236,223,228", 5.5));
+	}
+
+	function addBubbleDark() {
+		Bubbles.push(new Bubble("rgb(236,223,228", 2.8));
+	}
+
+	function addbgBubbleDark() {
+		bgBubbles.push(new Bubble("rgb(13,12,13", 5.5));
 	}
 
 	class Bubble {
@@ -69,6 +77,7 @@ if (canvasbg && canvas) {
 				Bubbles.splice(i, 1);
 			}
 		}
+
 		for (let i = bgBubbles.length - 1; i >= 0; i--) {
 			bgBubbles[i].update();
 			if (!bgBubbles[i].life) {
@@ -77,12 +86,22 @@ if (canvasbg && canvas) {
 		}
 
 		if (Bubbles.length < canvas.width / 4) {
-			addBubble();
+			if (doc.getAttribute("color-scheme") === "dark") {
+				addBubble();
+			} else {
+				addBubbleDark();
+			}
 		}
+
 		if (bgBubbles.length < canvas.width / 12) {
-			addbgBubble();
+			if (doc.getAttribute("color-scheme") === "dark") {
+				addbgBubble();
+			} else {
+				addbgBubbleDark();
+			}
 		}
 	}
+
 	window = addEventListener("load", animate);
 
 	window = addEventListener("resize", () => {

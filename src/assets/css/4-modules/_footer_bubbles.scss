@@ -1,9 +1,6 @@
 .footer_bubbles {
-	background-color: violet;
-
 	&__canvasbg {
 		position: absolute;
-		background-color: #000;
 		top: 0;
 		left: 0;
 		height: 100%;
@@ -13,7 +10,6 @@
 
 	&__canvas {
 		position: absolute;
-		background-color: red;
 		top: 0;
 		left: 0;
 		height: 100%;

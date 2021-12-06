@@ -24,6 +24,7 @@ import "./_mobile_menu_button.js";
 import "./startMenu/index.js";
 import "./bubbles/index";
 import "./bubbles/index2";
+import "./footer/index";
 import "./portfolio_slider/index.js";
 // import './_random_color.js';
 import smoothscroll from "smoothscroll-polyfill";

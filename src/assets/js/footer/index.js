@@ -32,7 +32,7 @@ if (canvasbg && canvas) {
 	}
 
 	function addbgBubbleDark() {
-		bgBubbles.push(new Bubble("rgb(13,12,13", 5.5));
+		bgBubbles.push(new Bubble("rgb(51,0,19", 5.5));
 	}
 
 	class Bubble {

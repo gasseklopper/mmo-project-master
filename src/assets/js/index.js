@@ -25,6 +25,7 @@ import "./startMenu/index.js";
 import "./bubbles/index";
 import "./bubbles/index2";
 import "./footer/index";
+import "./circularMotion/index";
 import "./portfolio_slider/index.js";
 // import './_random_color.js';
 import smoothscroll from "smoothscroll-polyfill";

@@ -1,31 +1,49 @@
-.footer_bubbles {
-	&__canvasbg {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		filter: url("#goo");
-	}
+footer {
+	.footer_bubbles {
+		margin-top: -60vh;
+		position: relative;
+		height: 100vh;
+		margin-bottom: -65px;
+		pointer-events: none;
+		z-index: 12;
+		&__canvasbg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			filter: url("#goo");
+		}
 
-	&__canvas {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		filter: url("#goo");
-	}
+		&__canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			filter: url("#goo");
+		}
 
-	&__footer {
-		position: absolute;
-		height: 50px;
-		left: 0;
-		bottom: 0;
-		line-height: 50px;
-		width: 100%;
-		text-align: right;
-		padding-right: 2rem;
-		background-color: #000;
+		&__footer {
+			position: absolute;
+			height: 50px;
+			left: 0;
+			bottom: 0;
+			line-height: 50px;
+			width: 100%;
+			text-align: right;
+			padding-right: 2rem;
+			color: var(--text1);
+			padding: 0 3rem;
+		}
+
+		&__copyright {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__scrollToTop {
+			pointer-events: visible;
+			cursor: pointer;
+		}
 	}
 }

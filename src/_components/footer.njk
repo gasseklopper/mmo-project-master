@@ -1,60 +1,34 @@
-
 <footer>
-	<div class="footer-dark">
-		<div class="container container-2x">
-			<div class="row">
-				<div class="column xs-col-12 xl-col-12">
-					<div class="footer-dark__hero">
-						<div class="footer-dark__navigation">
-							<div class="footer-dark__link" hidden>
-								<a href="#">about</a>
-							</div>
-							<div class="footer-dark__link">
-								<a href="portfolio.html">portfolio</a>
-							</div>
-						</div>
-						<div class="footer-dark__image-001 image-background">
-							<!-- <img
-								data-scroll data-scroll-speed="6" data-scroll-delay="0.13"
-								src="/assets/images/photography/black/Template_index_013.jpg"
-								class="img-responsive "
-								alt="Markus Morley"
-								width="500" height="600"
-							/> -->
-						</div>
-						<div class="footer-dark__image-002 image-background">
-							<!-- <img
-								data-scroll data-scroll-speed="12" data-scroll-delay="0.53"
-								src="/assets/images/photography/black/Black_020.jpg"
-								class="img-responsive"
-								alt="Markus Morley"
-								width="500" height="600"
-							/> -->
-						</div>
-					</div>
+	<div class="footer_bubbles">
+		<canvas class="footer_bubbles__canvasbg"></canvas>
+		<canvas class="footer_bubbles__canvas"></canvas>
+		<footer class="footer_bubbles__footer">
+			<div class="footer_bubbles__copyright">
+				<!-- <div class="footer_bubbles__instagramm">
+					<a
+						href="https://www.instagram.com/yelrom_/"
+						target="_blank"
+						>instagram</a
+					>
+				</div> -->
+				<div class="footer_bubbles__owner">
+					<a href="/">© 2021 Markus Morley</a>
+				</div>
+				<div class="footer_bubbles__scrollToTop">
+					<div class="scrollToTopButton-js">scroll to top</div>
 				</div>
 			</div>
-		</div>
-		<div class="container container-2x">
-			<div class="row">
-				<div class="column xs-col-12 xl-col-12">
-					<div class="footer-dark__copyright">
-						<!-- <div class="footer-dark__instagramm">
-							<a
-								href="https://www.instagram.com/yelrom_/"
-								target="_blank"
-								>instagram</a
-							>
-						</div> -->
-						<div class="footer-dark__owner">
-							<a href="/">© 2021 Markus Morley</a>
-						</div>
-						<div class="footer-dark__scrollToTop">
-							<div class="scrollToTopButton-js">scroll to top</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		</footer>
+
+		<svg>
+			<defs>
+				<filter id="goo">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+					<feBlend in="SourceGraphic" in2="goo" />
+				</filter>
+			</defs>
+		</svg>
 	</div>
+
 </footer>

@@ -7,9 +7,10 @@ date: 2020-10-07
 featuredImage: /assets/images/photography/blacker/photography_blackerthandays_001.jpg
 ---
 
-hello this the body of my first blog post
-
 <div class="row">
+	<div class="column large-12">
+		hello this the body of my first blog post
+	</div>
 	<div class="column large-4">
 		<img src="../../assets/images/photography/blacker/photography_blackerthandays_001.jpg" alt="">
 	</div>

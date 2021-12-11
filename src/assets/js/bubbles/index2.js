@@ -6,7 +6,7 @@ if (morleyDotsCanvas) {
 	var c = morleyDotsCanvas.getContext("2d");
 
 	morleyDotsCanvas.width = window.innerWidth;
-	morleyDotsCanvas.height = window.innerHeight + 500;
+	morleyDotsCanvas.height = window.innerHeight * 2;
 
 	//morleyDotsCanvas wight and height
 	var w = morleyDotsCanvas.width;

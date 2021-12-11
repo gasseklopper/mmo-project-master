@@ -6,6 +6,7 @@ footer {
 		margin-bottom: -65px;
 		pointer-events: none;
 		z-index: 12;
+
 		&__canvasbg {
 			position: absolute;
 			top: 0;
@@ -41,6 +42,7 @@ footer {
 			display: flex;
 			justify-content: space-between;
 		}
+
 		&__scrollToTop {
 			pointer-events: visible;
 			cursor: pointer;

@@ -1,5 +1,6 @@
 .section_d2d_test {
 	&__box_container {
+		border: 10px solid #000;
 		contain: layout inline-size;
 		width: 100%;
 		margin-bottom: $gutter;
@@ -145,7 +146,7 @@
 
 @container (min-width: 500px) {
 	.section_d2d_test__box {
-		background-color: $secondary;
+		background-color: var(--surface2);
 		flex-direction: row;
 	}
 }

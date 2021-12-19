@@ -19,25 +19,26 @@
 
 		{% for item in params.box %}
 		<div class="column small-{{item.column_small}} medium-{{item.column_medium}} large-{{item.column_large}}">
-			<div class="card-container card-1 cardWidth" data-size="0">
+			<div class="card-container cardWidth" data-size="0">
 				<div class="card">
-					<div>
+					<div class="card__image">
 						<img src="{{ item.img.src }}" alt="{{ item.img.alt }}">
 					</div>
 
 
-					<div class="card_content">
+					<div class="card__content">
 						<h2>	{{ item.headline }}</h2>
-						<div class="meta">
-							<div class="date">{{ item.date }}</div>
-							<div class="author">{{ item.author }}</div>
-							<div class="readtime">{{ item.readtime }}</div>
+						<div class="card__meta">
+							<div class="card__date">{{ item.date }}</div>
+							<div class="card__author">{{ item.author }}</div>
+							<div class="card__readtime">{{ item.readtime }}</div>
 						</div>
-						<div class="notes">
-							<div class="desc">
-								{{ item.bodytext | safe }}
-							</div>
-							<div class="links">
+						<div class="card__desc">
+							{{ item.bodytext | safe }}
+						</div>
+						<div class="card__notes">
+
+							<div class="card__links">
 								<h3>Links</h3>
 								<ul>
 									{% for link in item.links %}
@@ -45,7 +46,9 @@
 									{% endfor %}
 								</ul>
 							</div>
-							<button>{{item.button.content}}</button>
+							<div class="card__button">
+								<button>{{item.button.content}}</button>
+							</div>
 						</div>
 					</div>
 				</div>

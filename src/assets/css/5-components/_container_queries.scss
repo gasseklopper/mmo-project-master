@@ -1,138 +1,165 @@
 /////////////////////////////////////////////////@at-root
-
-.card {
-	// display: grid;
-	// grid-template-columns: 40% auto;
-	// gap: 2rem;
-	// margin: 0 auto;
-	border: 3px solid var(--text1);
-	// padding: 1rem;
-}
-
-.card-container:before {
-	content: attr(data-size);
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: -0.6rem;
-	width: 19ch;
-	margin: 0 auto;
-	text-align: center;
-	background: var(--text1);
-	color: var(--surface2);
-}
-
-.card-container {
-	display: flex;
-	height: 100%;
-	padding-bottom: 3rem;
-}
-
-.card_content {
-	padding-top: 1rem;
-	height: 100%;
-}
-
-.meta {
-	background: blue;
-	// display: grid;
-	// grid-template-columns: 20px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-	gap: 1rem;
-	margin: 0 auto;
-	padding: 1rem;
-}
-
-a {
-	color: var(--text1);
-}
-
-.date {
-	font-size: 1.5rem;
-	font-weight: 300;
-}
-
-.notes {
-}
-
-button {
-	border: none;
-	padding: 0.5rem;
-	background: var(--text1);
-	color: white;
-	font-weight: 600;
-	letter-spacing: 0.1rem;
-	text-transform: uppercase;
-	margin-top: 1rem;
-}
-/* End Not CQ Things */
-
-/*
-  // Container Query things are here!
-  */
-
 /* First, set containment on the parent you're querying*/
 .card-container {
 	contain: style layout inline-size;
 	width: 100%;
 }
 
+.card-container {
+	display: flex;
+	height: 100%;
+	padding-bottom: $gutter;
+
+	&::before {
+		z-index: 15;
+		content: attr(data-size);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -0.6rem;
+		width: 19ch;
+		margin: 0 auto;
+		text-align: center;
+		background: var(--text1);
+		color: var(--surface2);
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+	border: 3px solid var(--text1);
+	background-color: var(--surface1);
+
+	&__image {
+		width: 40%;
+
+		img {
+			width: auto;
+			height: 100%;
+			object-fit: cover;
+			margin-bottom: 0;
+			border: 8px solid var(--surface2);
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		height: 100%;
+		width: 60%;
+	}
+
+	&__button {
+		// background-color: yellowgreen;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__meta {
+		background: blue;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 auto;
+		padding: 1rem;
+		width: 100%;
+	}
+
+	&__date {
+		font-size: 1.5rem;
+		font-weight: 300;
+	}
+
+	&__notes {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		height: 100%;
+		// background-color: yellow;
+	}
+
+	button {
+		border: none;
+		padding: 0.5rem;
+		background: var(--text1);
+		color: white;
+		font-weight: 600;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+		margin-top: 1rem;
+	}
+}
+
+/* End Not CQ Things */
+
+/*
+  // Container Query things are here!
+  */
+
 /* Then, you can style the parent's children based on its width */
 @container (max-width: 850px) {
-	.links {
-		display: none;
-	}
+	.card {
+		&__links {
+			display: none;
+		}
 
-	.date {
-		font-size: 1.25rem;
-	}
+		&__date {
+			font-size: 1.25rem;
+		}
 
-	h2 {
-		font-size: 2.2rem;
+		h2 {
+			font-size: 2.2rem;
+		}
 	}
 }
 
 @container (max-width: 650px) {
-	.desc {
-		display: none;
-	}
-
-	h2 {
-		font-size: 2rem;
-	}
-
 	.card {
-		gap: 1rem;
+		&__desc {
+			display: none;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
 	}
 }
 
 @container (max-width: 460px) {
 	.card {
-		grid-template-columns: 1fr;
-		text-align: center;
-		gap: 0.5rem;
-	}
+		display: flex;
+		flex-direction: column;
 
-	button {
-		display: block;
-		margin: 1rem auto 0;
-	}
-	.card_content {
-		padding-top: 0rem;
+		&__image {
+			width: 100%;
+		}
+
+		&__content {
+			width: 100%;
+			padding-top: 0rem;
+		}
+
+		// button {
+		// 	display: block;
+		// 	margin: 1rem auto 0;
+		// }
 	}
 }
 
 @container (max-width: 300px) {
-	h2 {
-		font-size: 1.5rem;
-	}
+	.card {
+		h2 {
+			font-size: 1.5rem;
+		}
 
-	.date {
-		display: none;
+		&__date {
+			display: none;
+		}
 	}
 }
-
+///////////////////////////////////////////////////////
 .warning {
 	max-width: 460px;
 	margin: 2rem auto;

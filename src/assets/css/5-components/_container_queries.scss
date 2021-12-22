@@ -1,5 +1,6 @@
 /////////////////////////////////////////////////@at-root
 /* First, set containment on the parent you're querying*/
+$accent-color: rgb(24, 145, 139);
 .card-container {
 	contain: style layout inline-size;
 	width: 100%;
@@ -20,15 +21,15 @@
 		width: 19ch;
 		margin: 0 auto;
 		text-align: center;
-		background: var(--text1);
-		color: var(--surface2);
+		background: $accent-color;
+		color: white;
 	}
 }
 
 .card {
 	display: flex;
 	flex-direction: row;
-	border: 3px solid var(--text1);
+	border: 3px solid $accent-color;
 	background-color: var(--surface1);
 
 	&__image {
@@ -51,7 +52,7 @@
 		width: 60%;
 	}
 
-	&__button {
+	&__button_large {
 		// background-color: yellowgreen;
 		display: flex;
 		justify-content: flex-end;
@@ -84,7 +85,7 @@
 		border: none;
 		padding: 0.5rem;
 		background: var(--text1);
-		color: white;
+		color: var(--surface1);
 		font-weight: 600;
 		letter-spacing: 0.1rem;
 		text-transform: uppercase;
@@ -99,6 +100,26 @@
   */
 
 /* Then, you can style the parent's children based on its width */
+@container (min-width: 851px) {
+	.card {
+		&__date {
+			font-size: 1.25rem;
+		}
+
+		h2 {
+			font-size: 2.2rem;
+		}
+
+		&__button_large {
+			display: flex;
+		}
+
+		&__button_small {
+			display: none;
+		}
+	}
+}
+
 @container (max-width: 850px) {
 	.card {
 		&__links {
@@ -112,6 +133,14 @@
 		h2 {
 			font-size: 2.2rem;
 		}
+
+		&__button_large {
+			display: flex;
+		}
+
+		&__button_small {
+			display: none;
+		}
 	}
 }
 
@@ -124,6 +153,12 @@
 		h2 {
 			font-size: 2rem;
 		}
+		&__button_large {
+			display: block;
+		}
+		&__button_small {
+			display: none;
+		}
 	}
 }
 
@@ -131,6 +166,14 @@
 	.card {
 		display: flex;
 		flex-direction: column;
+
+		&__button_large {
+			display: none;
+		}
+
+		&__button_small {
+			display: block;
+		}
 
 		&__image {
 			width: 100%;
@@ -150,6 +193,13 @@
 
 @container (max-width: 300px) {
 	.card {
+		&__button_large {
+			display: none;
+		}
+
+		&__button_small {
+			display: block;
+		}
 		h2 {
 			font-size: 1.5rem;
 		}

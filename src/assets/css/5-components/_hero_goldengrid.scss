@@ -1,5 +1,6 @@
 .hero_goldengrid {
 	// background-image: url("./images/golden_grid/GoldenCanonGrid.svg");
+	background-color: var(--surface1);
 	display: grid;
 	position: relative;
 	height: calc(100vh - 80px);

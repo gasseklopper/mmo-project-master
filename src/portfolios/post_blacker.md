@@ -9,7 +9,7 @@ featuredImage: /assets/images/photography/blacker/photography_blackerthandays_00
 
 <div class="row">
 	<div class="column large-12">
-		hello this the body of my first blog post
+		Blacker is a collection of photographs of the Blacker days.
     </div>
     <div class="column large-4">
     	<img src="../../assets/images/photography/blacker/photography_blackerthandays_001.jpg" alt="">

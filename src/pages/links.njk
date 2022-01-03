@@ -6,9 +6,9 @@ metaDescription: This is a sample meta description. If one is not present in
 date: 2017-01-01T00:00:00.000Z
 permalink: /links.html
 description: links
-eleventyNavigation:
+<!-- eleventyNavigation:
   key: links
-  order: 1
+  order: 1 -->
 ---
 {% set maxLinks = collections.links.length | min(1) %}
 {% set linkslist = collections.links | head(-1) %}

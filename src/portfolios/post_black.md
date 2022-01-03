@@ -7,8 +7,11 @@ date: 2020-10-07
 featuredImage: src/images/uploads/easing-visualization-–-16.jpg
 ---
 
-hello this the body of my first blog post
-
+<div class="row">
+	<div class="column large-12">
+		Black is a collection of photographs with in intense black  value.
+	</div>
+</div>
 <div class="content2">
 	<div class="content__slide">
 		<div class="content__img">

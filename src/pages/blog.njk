@@ -6,9 +6,9 @@ metaDescription: blog  This is a sample meta description. If one is not present 
 date: 2017-01-01T00:00:00.000Z
 permalink: /blog.html
 description: blog
-eleventyNavigation:
+<!-- eleventyNavigation:
   key: blog
-  order: 1
+  order: 1 -->
 ---
 {% set maxPosts = collections.posts.length | min(1) %}
 {% set postslist = collections.posts | head(-1) %}

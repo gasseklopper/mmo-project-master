@@ -4,7 +4,7 @@ title: Color Stripes
 title2: may 2 post
 description: s/w pictures
 date: 2020-10-07
-featuredImage: src/images/uploads/easing-visualization-–-16.jpg
+featuredImage: /assets/images/javascript/morley_Dots/morley_Dots_001.png
 ---
 
 <canvas id="morleyDotsCanvas"></canvas>

@@ -1,14 +1,15 @@
+@import "shemes/lights2-sheme";
 @import "shemes/dark-sheme";
 @import "shemes/light-sheme";
 @import "shemes/dim-sheme";
 
 * {
 	/* brand foundation */
-	--brand-hue: 338;
-	--brand-saturation: 100%;
-	--brand-lightness: 98%;
+	--brand-hue: 138;
+	--brand-saturation: 10%;
+	--brand-lightness: 11%;
 
-	--primary-hue: 338;
+	--primary-hue: 238;
 	--secondary-hue: 270;
 	--tertiary-hue: 13;
 	--quaternary-hue: 356;
@@ -16,6 +17,8 @@
 	@include dark-sheme-definition; // The name of "mixin"
 	@include light-sheme-definition; // The name of "mixin"
 	@include dim-sheme-definition; // The name of "mixin"
+	@include dim-sheme-definition; // The name of "mixin"
+	@include lights2-sheme-definition; // The name of "mixin"
 }
 
 :root {
@@ -39,12 +42,13 @@
 
 [color-scheme="light"] {
 	color-scheme: light;
+	@include lights2-sheme;
 	@include light-sheme;
 }
 
 [color-scheme="default"] {
 	color-scheme: light;
-	@include dim-sheme;
+	@include light-sheme;
 }
 
 [color-scheme="dark"] {
@@ -55,6 +59,11 @@
 [color-scheme="dim"] {
 	color-scheme: dim;
 	@include dim-sheme;
+}
+
+[color-scheme="lights2"] {
+	color-scheme: lights2;
+	@include lights2-sheme;
 }
 
 html {

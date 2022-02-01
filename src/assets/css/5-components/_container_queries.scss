@@ -1,6 +1,5 @@
 /////////////////////////////////////////////////@at-root
 /* First, set containment on the parent you're querying*/
-$accent-color: rgb(24, 145, 139);
 .card-container {
 	contain: style layout inline-size;
 	width: 100%;
@@ -21,7 +20,7 @@ $accent-color: rgb(24, 145, 139);
 		width: 19ch;
 		margin: 0 auto;
 		text-align: center;
-		background: $accent-color;
+		background: var(--brand);
 		color: white;
 	}
 }
@@ -29,7 +28,7 @@ $accent-color: rgb(24, 145, 139);
 .card {
 	display: flex;
 	flex-direction: row;
-	border: 3px solid $accent-color;
+	border: 3px solid var(--brand);
 	background-color: var(--surface1);
 
 	&__image {
@@ -53,13 +52,12 @@ $accent-color: rgb(24, 145, 139);
 	}
 
 	&__button_large {
-		// background-color: yellowgreen;
 		display: flex;
 		justify-content: flex-end;
 	}
 
 	&__meta {
-		background: blue;
+		background: var(--surface2);
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;

@@ -25,7 +25,7 @@
 			calc(var(--brand-lightness))
 	);
 
-	--primary-dark: hsl(var(--primary-hue) 20% 25%);
+	--primary-dark: hsl(var(--primary-hue) 100% 100%);
 	--secondary-dark: hsl(var(--secondary-hue) 7% 36%);
 	--tertiary-dark: hsl(var(--tertiary-hue) 18% 52%);
 	--quaternary-dark: hsl(var(--quaternary-hue) 8% 58%);

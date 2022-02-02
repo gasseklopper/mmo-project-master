@@ -1,9 +1,5 @@
 @mixin lights2-sheme-definition {
 	/* lights2 */
-	--brand-core-light: hsl(
-		var(--brand-hue) calc(var(--brand-saturation))
-			calc(var(--brand-lightness))
-	);
 	--brand-light: hsl(
 		var(--brand-hue) var(--brand-saturation) var(--brand-lightness)
 	);
@@ -13,7 +9,7 @@
 	--secondary-light: hsl(var(--secondary-hue) 7% 36%);
 	--tertiary-light: hsl(var(--tertiary-hue) 18% 52%);
 	--quaternary-light: hsl(var(--quaternary-hue) 8% 58%);
-	--surface1-light: hsl(var(--brand-hue) 25% 90%);
+	--surface1-light: hsl(var(--brand-hue) 100% 50%);
 	--surface2-light: hsl(var(--brand-hue) 20% 99%);
 	--surface3-light: hsl(var(--brand-hue) 20% 92%);
 	--surface4-light: hsl(var(--brand-hue) 20% 85%);
@@ -23,20 +19,69 @@
 
 @mixin lights2-sheme {
 	/* set defaults */
-	.card-container {
-		--brand: yellow;
-		--brand-core: var(--brand-core-light);
-		--text1: var(--text1-light);
-		--text2: var(--text2-light);
-		--primary: var(--primary-light);
-		--secondary: var(--secondary-light);
-		--tertiary: var(--tertiary-light);
-		--quaternary: var(--quaternary-light);
-		--surface1: var(--surface1-light);
-		--surface2: var(--surface2-light);
-		--surface3: var(--surface3-light);
-		--surface4: var(--surface4-light);
-		--surface-shadow: var(--surface-shadow-light);
-		--shadow-strength: var(--shadow-strength-light);
+	--brand: var(--brand-light);
+	--text1: var(--text1-light);
+	--text2: var(--text2-light);
+	--primary: var(--primary-light);
+	--secondary: var(--secondary-light);
+	--tertiary: var(--tertiary-light);
+	--quaternary: var(--quaternary-light);
+	--surface1: var(--surface1-light);
+	--surface2: var(--surface2-light);
+	--surface3: var(--surface3-light);
+	--surface4: var(--surface4-light);
+	--surface-shadow: var(--surface-shadow-light);
+	--shadow-strength: var(--shadow-strength-light);
+}
+
+.hsl_color {
+	.hsl-0-50 {
+		background-color: hsl(var(--brand-hue) var(--brand-lightness) 0%);
+		color: hsl(var(--brand-hue) var(--brand-lightness) 100%);
+	}
+
+	.hsl-20-50 {
+		background-color: hsl(var(--brand-hue) var(--brand-lightness) 20%);
+		color: hsl(var(--brand-hue) var(--brand-lightness) 80%);
+	}
+
+	.hsl-40-50 {
+		background-color: hsl(var(--brand-hue) var(--brand-lightness) 40%);
+	}
+
+	.hsl-60-50 {
+		background-color: hsl(var(--brand-hue) var(--brand-lightness) 60%);
+	}
+
+	.hsl-80-50 {
+		background-color: hsl(var(--brand-hue) var(--brand-lightness) 80%);
+	}
+
+	.hsl-100-50 {
+		background-color: hsl(var(--brand-hue) var(--brand-lightness) 100%);
+	}
+
+	.hsl-50-0 {
+		background-color: hsl(var(--brand-hue) 0% var(--brand-saturation));
+	}
+
+	.hsl-50-20 {
+		background-color: hsl(var(--brand-hue) 20% var(--brand-saturation));
+	}
+
+	.hsl-50-40 {
+		background-color: hsl(var(--brand-hue) 40% var(--brand-saturation));
+	}
+
+	.hsl-50-60 {
+		background-color: hsl(var(--brand-hue) 60% var(--brand-saturation));
+	}
+
+	.hsl-50-80 {
+		background-color: hsl(var(--brand-hue) 80% var(--brand-saturation));
+	}
+
+	.hsl-50-100 {
+		background-color: hsl(var(--brand-hue) 100% var(--brand-saturation));
 	}
 }

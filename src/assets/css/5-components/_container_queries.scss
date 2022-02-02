@@ -20,7 +20,7 @@
 		width: 19ch;
 		margin: 0 auto;
 		text-align: center;
-		background: var(--brand);
+		background: var(--quaternary);
 		color: white;
 	}
 }
@@ -28,7 +28,7 @@
 .card {
 	display: flex;
 	flex-direction: row;
-	border: 3px solid var(--brand);
+	border: 3px solid var(--primary);
 	background-color: var(--surface1);
 
 	&__image {

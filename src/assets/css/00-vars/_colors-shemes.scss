@@ -1,24 +1,24 @@
-@import "shemes/lights2-sheme";
 @import "shemes/dark-sheme";
 @import "shemes/light-sheme";
 @import "shemes/dim-sheme";
+@import "shemes/lights2-sheme";
 
 * {
 	/* brand foundation */
-	--brand-hue: 138;
-	--brand-saturation: 10%;
-	--brand-lightness: 11%;
+	--brand-hue: 142;
+	--brand-saturation: 80%;
+	--brand-lightness: 50%;
 
 	--primary-hue: 238;
 	--secondary-hue: 270;
 	--tertiary-hue: 13;
 	--quaternary-hue: 356;
 
-	@include dark-sheme-definition; // The name of "mixin"
-	@include light-sheme-definition; // The name of "mixin"
-	@include dim-sheme-definition; // The name of "mixin"
-	@include dim-sheme-definition; // The name of "mixin"
-	@include lights2-sheme-definition; // The name of "mixin"
+	@include dark-sheme-definition;
+	@include light-sheme-definition;
+	@include dim-sheme-definition;
+	@include dim-sheme-definition;
+	@include lights2-sheme-definition;
 }
 
 :root {
@@ -40,10 +40,9 @@
 	}
 }
 
-[color-scheme="light"] {
-	color-scheme: light;
+[color-scheme="lights2"] {
+	color-scheme: lights2;
 	@include lights2-sheme;
-	@include light-sheme;
 }
 
 [color-scheme="default"] {
@@ -67,19 +66,8 @@
 }
 
 html {
-	background-color: var(--surface1);
+	background-color: var(--brand);
 	color: var(--text1);
-}
-
-form {
-	display: flex;
-	gap: 2ch;
-
-	& > div {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.75ch;
-	}
 }
 
 .image-background {
@@ -94,17 +82,6 @@ form {
 		mix-blend-mode: multiply;
 	}
 }
-//   .text-samples {
-// 	display: grid;
-// 	gap: 1.5ch;
-
-// 	& > h1 {
-// 	  font-size: 2.5rem;
-// 	  display: inline-flex;
-// 	  align-items: center;
-// 	  gap: 1ch;
-// 	}
-//   }
 
 .brand {
 	color: var(--brand);
@@ -187,16 +164,10 @@ form {
 
 .textBrand {
 	color: var(--brand);
-	@nest p& {
-		font-weight: 200;
-	}
 }
 
 .text1 {
 	color: var(--text1);
-	@nest p& {
-		font-weight: 200;
-	}
 }
 
 .text2 {

@@ -20,8 +20,8 @@
 				console.log("doc", doc);
 				if (localStorage.getItem("color-scheme") === "dark") {
 					doc.setAttribute("color-scheme", "dark");
-				} else if (localStorage.getItem("color-scheme") === "light") {
-					doc.setAttribute("color-scheme", "light");
+				} else if (localStorage.getItem("color-scheme") === "lights2") {
+					doc.setAttribute("color-scheme", "lights2");
 				}
 			</script>
 		</head>
@@ -40,9 +40,9 @@
 				</main>
 				{% include "footer.njk" %}
 			</div>
-			<svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
+			<!-- <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
 				<circle class="cursor__inner" cx="40" cy="40" r="20"/>
-			</svg>
+			</svg> -->
 			<script src='/assets/vendor.js'></script>
 		</body>
 
